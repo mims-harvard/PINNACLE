@@ -143,8 +143,8 @@ To see and/or modify the default hyperparameters, please see the `get_hparams()`
 
 ```
 @article{pinnacle,
-  title={Contextualizing protein representations using deep learning on interactomes and single-cell experiments},
-  author={Li, Michelle M. and Huang, Yepeng and Sumathipala, Marissa and Liang, Man Qing and Valdeolivas, Alberto and Liao, Katherine and Marbach, Daniel and Zitnik, Marinka},
+  title={Contextualizing protein representations using deep learning on protein networks and single-cell data},
+  author={Li, Michelle M. and Huang, Yepeng and Sumathipala, Marissa and Liang, Man Qing and Valdeolivas, Alberto and Ananthakrishnan, Ashwin and Liao, Katherine and Marbach, Daniel and Zitnik, Marinka},
   journal={bioRxiv},
   year={2023}
 }
