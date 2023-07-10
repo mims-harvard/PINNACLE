@@ -139,6 +139,7 @@ To see and/or modify the default hyperparameters, please see the `get_hparams()`
 ## Additional Resources
 
 - [Paper](h)
+- [Demo](https://huggingface.co/spaces/michellemli/PINNACLE/)
 - [Project Website](https://zitniklab.hms.harvard.edu/projects/PINNACLE/)
 
 ```
