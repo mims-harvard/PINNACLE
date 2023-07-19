@@ -166,7 +166,4 @@ dependencies:
     - outdated==0.2.2
     - pyparsing==3.0.9
     - scipy==1.9.2
-    - torch-geometric==2.1.0.post1
-    - torch-scatter==2.0.9
-    - torch-sparse==0.6.15
 prefix: ~/miniconda3/envs/pinnacle
