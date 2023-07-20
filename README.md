@@ -98,8 +98,8 @@ After training PINNACLE (you may also simply use our already-trained models), yo
 :sparkles: To finetune PINNACLE for nominating therapeutic targets of rheumatoid arthritis:
 
 ```
-cd pinnacle
-python predict.py \
+cd finetune_pinnacle
+python train.py \
         --disease EFO_0000685 \
         --embeddings_dir ./data/pinnacle_embeds/
 ```
@@ -107,8 +107,8 @@ python predict.py \
 :sparkles: To finetune PINNACLE for nominating therapeutic targets of inflammatory bowel disease:
 
 ```
-cd pinnacle
-python predict.py \
+cd finetune_pinnacle
+python train.py \
         --disease EFO_0003767 \
         --embeddings_dir ./data/pinnacle_embeds/
 ```
