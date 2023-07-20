@@ -100,7 +100,6 @@ After training PINNACLE (you may also simply use our already-trained models), yo
 ```
 cd pinnacle
 python predict.py \
-        --task tx_target \
         --disease EFO_0000685 \
         --embeddings_dir ./data/pinnacle_embeds/
 ```
@@ -110,7 +109,6 @@ python predict.py \
 ```
 cd pinnacle
 python predict.py \
-        --task tx_target \
         --disease EFO_0003767 \
         --embeddings_dir ./data/pinnacle_embeds/
 ```
