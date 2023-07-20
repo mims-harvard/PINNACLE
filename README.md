@@ -79,7 +79,7 @@ cd pinnacle
 python train.py \
         --G_f ppi_edgelist.txt \
         --ppi_f contextual_ppi.csv \
-        --cci_bto_f mg_edgelist.txt \
+        --mg_f mg_edgelist.txt \
         --save_prefix checkpoints/
 ```
 
