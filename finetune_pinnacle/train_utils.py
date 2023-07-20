@@ -47,7 +47,7 @@ def create_parser():
     parser.add_argument("--models_output_dir", type=str, default="./tmp_model_outputs/")
     
     parser.add_argument("--embeddings_dir", type=str)
-    parser.add_argument("--embed", type=str, default="TS")
+    parser.add_argument("--embed", type=str, default="pinnacle")
     parser.add_argument("--globe", type=str, default="")
     parser.add_argument("--esm", type=str, default="")
     parser.add_argument("--random_state", type=int, default=42)

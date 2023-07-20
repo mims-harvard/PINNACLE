@@ -31,7 +31,7 @@ def get_args():
     parser.add_argument("--pc_att_channels", type=int, default=8, help="Type of normalization layer to use in up-pooling")
     
     # Save
-    parser.add_argument('--save_prefix', type=str, default='TS', help='Prefix of all saved files')
+    parser.add_argument('--save_prefix', type=str, default='pinnacle', help='Prefix of all saved files')
     parser.add_argument('--plot', type=bool, default=False, help='Boolean to fit and plot a UMAP')
     
     args = parser.parse_args()
