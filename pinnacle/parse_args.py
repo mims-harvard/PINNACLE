@@ -5,6 +5,7 @@ def get_args():
     parser = argparse.ArgumentParser(description="Learning node embeddings.")
 
     # Input
+    parser.add_argument("--G_f", type=str, default="./data/networks/global_ppi_edgelist.txt/", help="Directory to global reference PPI network")
     parser.add_argument("--ppi_dir", type=str, default="./data/networks/ppi_edgelists/", help="Directory to PPI layers")
     parser.add_argument("--mg_f", type=str, default="./data/networks/mg_edgelist.txt", help="Directory to metagraph")
     parser.add_argument("--epochs", type=int, default=300, help="Number of epochs to train")
