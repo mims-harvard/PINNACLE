@@ -77,10 +77,10 @@ You can reproduce our results or pretrain PINNACLE on your own networks:
 ```
 cd pinnacle
 python train.py \
-        --G_f ppi_edgelist.txt \
-        --ppi_f contextual_ppi.csv \
-        --mg_f mg_edgelist.txt \
-        --save_prefix checkpoints/
+        --G_f ./data/networks/global_ppi_edgelist.txt \
+        --ppi_dir ./data/networks/ppi_edgelists/ \
+        --mg_f ./data/networks/mg_edgelist.txt \
+        --save_prefix ./data/pinnacle_embeds/
 ```
 
 To see and/or modify the default hyperparameters, please see the `get_hparams()` function in `pinnacle/parse_args.py`.
