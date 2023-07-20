@@ -1,7 +1,7 @@
 from utils import read_ts_data
 
-TABULA_SAPIENS_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/data/TabulaSapiens.h5ad"
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
+TABULA_SAPIENS_DIR = "../data/raw/TabulaSapiens.h5ad"
+OUTPUT_DIR = "../data/networks/"
 
 
 ts_data = read_ts_data(TABULA_SAPIENS_DIR)

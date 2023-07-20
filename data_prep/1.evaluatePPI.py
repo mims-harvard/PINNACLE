@@ -12,10 +12,7 @@ from utils import read_ts_data, load_global_PPI, read_obo, load_celltype_ppi
 from utils import jaccard_similarity, ontology_distance, calculate_correlation, plot_box
 
 
-TABULA_SAPIENS_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/data/TabulaSapiens.h5ad"
-PPI_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2020-12-PPI/processed/ppi_edgelist.txt"
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
-CELL_ONTOLOGY_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-CellOntology/data/cell-ontology/cl-full.obo"
+PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
 
 
 def evaluate(ppi_layers, ppi, cell_ontology, cell_ontology_names):

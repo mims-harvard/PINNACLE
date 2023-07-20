@@ -13,9 +13,6 @@ from scipy.sparse import csr_matrix
 from utils import read_ts_data
 
 
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
-
-
 def get_meta(ts_data, out_f, groupby = "cell_ontology_class"):
     # Tab delimited, two columns = [cell ID, cell type label]
     meta = ts_data.obs[groupby].reset_index()

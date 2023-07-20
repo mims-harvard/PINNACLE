@@ -6,8 +6,8 @@ from utils import load_global_PPI, load_celltype_ppi, count_cells_per_celltype
 from utils import jaccard_similarity
 
 
-PPI_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2020-12-PPI/processed/ppi_edgelist.txt"
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
+PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
+OUTPUT_DIR = "../data/networks/"
 
 
 def overlapping_celltypes(celltype_ppi_1, celltype_ppi_2, cells_per_celltype):

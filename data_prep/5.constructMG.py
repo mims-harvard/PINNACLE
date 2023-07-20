@@ -7,8 +7,8 @@ import obonet
 from utils import load_celltype_ppi
 
 
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
-BTO_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-10-BTO/data/BTO.obo"
+OUTPUT_DIR = "../data/networks/"
+BTO_DIR = "../data/raw/BTO.obo"
 
 
 def filter_cci(cci_f, celltype_ppi):

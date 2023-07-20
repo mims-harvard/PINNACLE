@@ -14,9 +14,9 @@ from utils import load_global_PPI, read_ts_data, count_cells_per_celltype
 from utils import calculate_correlation
 
 
-TABULA_SAPIENS_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/data/TabulaSapiens.h5ad"
-PPI_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2020-12-PPI/processed/ppi_edgelist.txt"
-OUTPUT_DIR = "/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/"
+TABULA_SAPIENS_DIR = "../data/raw/TabulaSapiens.h5ad"
+PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
+OUTPUT_DIR = "../data/networks/"
 
 
 def subsample_cells(ts_data, groupby, num_cells_cutoff):
