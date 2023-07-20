@@ -84,77 +84,38 @@ def get_hparams(args):
                "actn": args.actn, 
                "order": args.order, 
                "norm": args.norm,
-
-               "global_lr": args.lr, 
-               "global_wd": args.wd, 
-               "global_hidden_dim_1": args.hidden_dim_1, 
-               "global_hidden_dim_2": args.hidden_dim_2, 
-               "global_hidden_dim_3": args.hidden_dim_3, 
-               "global_dropout": args.dropout, 
-               "global_actn": args.actn, 
-               "global_order": args.order, 
-               "global_norm": args.norm,
-
                "celltype_only": True if args.globe == "" else False,
                "disease": args.disease,
-               
                "celltypes": parse_celltype_arg(),
               }
     return hparams
 
 
-def setup(args, hparams):
+def setup(args):
     random_state = args.random_state if args.random_state >= 0 else None
-    
     if random_state == None:
         models_output_dir = args.models_output_dir + args.embed + "/"
         metrics_output_dir = args.metrics_output_dir + args.embed + "/"
     else:
         models_output_dir = args.models_output_dir + args.embed + ("_seed=%s" % str(random_state)) + "/"
         metrics_output_dir = args.metrics_output_dir + args.embed + ("_seed=%s" % str(random_state)) + "/"
-
     if not os.path.exists(models_output_dir): os.makedirs(models_output_dir)
     if not os.path.exists(metrics_output_dir): os.makedirs(metrics_output_dir)
     
-    if args.embed:
-        embed_path = args.embeddings_dir + args.embed + "_ppi_embed.pth"
-        labels_path = args.embeddings_dir + args.embed + "_labels_dict.txt"
-    else:
-        embed_path = labels_path = None
-
-    if args.globe:
-        global_embed_path = args.embeddings_dir + args.globe + "_ppi_embed.pth"
-        global_labels_path = args.embeddings_dir + args.globe + "_labels_dict.txt"
-    else:
-        global_embed_path = global_labels_path = None
-    
-    if args.esm:
-        esm_embed_path = args.esm + "_esm2-3b.pt"
-        esm_labels_path = args.esm + "_idmap_esm2-3b.pkl"
-    else:
-        esm_embed_path = esm_labels_path = None
-    return models_output_dir, metrics_output_dir, random_state, embed_path, labels_path, global_embed_path, global_labels_path, esm_embed_path, esm_labels_path
+    embed_path = args.embeddings_dir + args.embed + "_ppi_embed.pth"
+    labels_path = args.embeddings_dir + args.embed + "_labels_dict.txt"
+    return models_output_dir, metrics_output_dir, random_state, embed_path, labels_path
 
 
-def loadData(embed_path: str, labels_path: str, global_embed_path: str, global_labels_path: str, esm_embed_path: str, esm_labels_path: str, therapeutic_area: str, celltype_list: list, overwrite: bool, wandb, args):
+def loadData(embed_path: str, labels_path: str, therapeutic_area: str, celltype_list: list, overwrite: bool, wandb, args):
     
     embed = torch.load(embed_path)
-    if global_embed_path:
-        global_ppi = torch.load(global_embed_path)
-        embed["global"] = global_ppi[0]
-    if esm_embed_path:
-        esm_embed = torch.load(esm_embed_path)
-        embed["esm"] = esm_embed
-
     with open(labels_path, "r") as f:
         labels_dict = f.read()
     labels_dict = labels_dict.replace("\'", "\"")
     labels_dict = json.loads(labels_dict)
     subtypes = [c for c in labels_dict["Cell Type"] if c.startswith("CCI")]
     subtype_dict = {ct.split("CCI_")[1]: i for i, ct in enumerate(subtypes)}
-    #print("WARNING!!!! Getting subtypes based on proteins' cell type identity")
-    #subtypes = set([c for c in labels_dict["Cell Type"] if not c.startswith("BTO") and not c.startswith("CCI")])
-    #subtype_dict = {ct: ct for i, ct in enumerate(subtypes)}
     assert len(subtype_dict) > 0
     
     protein_names = []
@@ -168,19 +129,6 @@ def loadData(embed_path: str, labels_path: str, global_embed_path: str, global_l
     subtype_protein_dict = proteins.pivot_table(values="target", index="cell type", aggfunc={"target": list}).to_dict()["target"]
     assert len(subtype_protein_dict) > 0
 
-    if global_labels_path:
-        with open(global_labels_path, "r") as f:
-            global_labels_dict = f.read()
-        global_labels_dict = global_labels_dict.replace("\'", "\"")
-        global_labels_dict = json.loads(global_labels_dict)
-        subtype_dict["global"] = "global"
-        subtype_protein_dict["global"] = global_labels_dict["Name"][:-1]  # subject to change
-    if esm_labels_path:
-        with open(esm_labels_path, "rb") as f:
-            esm_labels = pickle.load(f)
-            subtype_dict["esm"] = "esm"
-            subtype_protein_dict["esm"] = [l.split(" ")[0] for l in esm_labels]
-
     disease_positive_proteins, disease_negative_proteins, clinically_relevant_targets = get_labels_from_evidence(subtype_protein_dict, [therapeutic_area], args.evidence_dir, args.all_drug_targets_path, args.curated_disease_dir, args.chembl2db_path, args.positive_proteins_prefix, args.negative_proteins_prefix, args.raw_targets_prefix, overwrite, "", wandb)
 
     print("Positive proteins collected for", disease_positive_proteins.keys())
@@ -191,17 +139,11 @@ def loadData(embed_path: str, labels_path: str, global_embed_path: str, global_l
     if len(celltype_list) > 0:
         filtered_disease_positive_proteins = {therapeutic_area: dict()}
         filtered_disease_negative_proteins = {therapeutic_area: dict()}
-        for c in disease_positive_proteins[therapeutic_area]:
-            if c in ["global", "esm"] or c in celltype_list:
-                filtered_disease_positive_proteins[therapeutic_area][c] = disease_positive_proteins[therapeutic_area][c]
-                filtered_disease_negative_proteins[therapeutic_area][c] = disease_negative_proteins[therapeutic_area][c]
         assert len(filtered_disease_positive_proteins[therapeutic_area].keys()) == len(celltype_list) + 1
         assert len(filtered_disease_negative_proteins[therapeutic_area].keys()) == len(celltype_list) + 1
         disease_positive_proteins = filtered_disease_positive_proteins
         disease_negative_proteins = filtered_disease_negative_proteins
         subtype_protein_dict = {k: v for k, v in subtype_protein_dict.items() if k in disease_positive_proteins[therapeutic_area]}
-    else:
-        assert len(set(sum([prots for ct, prots in disease_negative_proteins[therapeutic_area].items() if ct!="global"], start=[]))) == len(disease_negative_proteins[therapeutic_area]["global"])
     assert len(disease_positive_proteins[therapeutic_area]) > 0
 
     return embed, subtype_dict, subtype_protein_dict, disease_positive_proteins, disease_negative_proteins, clinically_relevant_targets
@@ -229,19 +171,19 @@ from model import MLP
 from copy import deepcopy
 
 
-def training_and_validation(X_train, X_val, y_train, y_val, cts_train, cts_val, groups_train, groups_val, disease, num_epoch, batch_size, weigh_sample, weigh_loss, is_global, hparams, no_val=False):
+def training_and_validation(X_train, X_val, y_train, y_val, cts_train, cts_val, groups_train, groups_val, disease, num_epoch, batch_size, weigh_sample, weigh_loss, hparams, no_val=False):
     """
     Train an MLP on a train-val split.
     """
-    norm = "norm" if not is_global else "global_norm"
-    actn = "actn" if not is_global else "global_actn"
-    hidden_dim_1 = "hidden_dim_1" if not is_global else "global_hidden_dim_1"
-    hidden_dim_2 = "hidden_dim_2" if not is_global else "global_hidden_dim_2"
-    hidden_dim_3 = "hidden_dim_3" if not is_global else "global_hidden_dim_3"
-    dropout = "dropout" if not is_global else "global_dropout"
-    lr = "lr" if not is_global else "global_lr"
-    wd = "wd" if not is_global else "global_wd"
-    order = "order" if not is_global else "global_order"
+    norm = "norm"
+    actn = "actn"
+    hidden_dim_1 = "hidden_dim_1"
+    hidden_dim_2 = "hidden_dim_2"
+    hidden_dim_3 = "hidden_dim_3"
+    dropout = "dropout"
+    lr = "lr"
+    wd = "wd"
+    order = "order"
     best_val_auprc = 0
 
     if not no_val:
@@ -297,9 +239,9 @@ def training_and_validation(X_train, X_val, y_train, y_val, cts_train, cts_val, 
     wandb.watch(model, log_freq=20)
     for i in range(num_epoch):
         print(f"Epoch {i+1}\n---------------")
-        _, _, train_y, train_preds, train_cts, train_groups = train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device, disease, is_global)
+        _, _, train_y, train_preds, train_cts, train_groups = train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device, disease)
         if not no_val:
-            _, val_auprc, val_y, val_preds, val_cts, val_groups = validate_epoch(model, val_loader, loss_func, wandb, device, is_global)
+            _, val_auprc, val_y, val_preds, val_cts, val_groups = validate_epoch(model, val_loader, loss_func, wandb, device)
             if val_auprc > best_val_auprc:
                 clf = deepcopy(model)
                 best_val_auprc = val_auprc
@@ -323,9 +265,7 @@ def training_and_validation(X_train, X_val, y_train, y_val, cts_train, cts_val, 
     return clf, best_train_y, best_train_preds, best_train_cts, best_train_groups, cts_map_train, groups_map_train, best_val_y, best_val_preds, best_val_cts, best_val_groups, cts_map_val, groups_map_val, best_epoch, best_val_auprc
 
 
-def train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device, disease, is_global):
-    is_global = "global" if is_global else "cell types"
-
+def train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device, disease):
     model.train()
     train_size = len(train_loader.dataset)
     total_sample = total_loss = 0
@@ -354,8 +294,8 @@ def train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device
 
         if i % 20 == 0:
             loss, current = loss.item(), i * len(X)
-            print(f"train loss {disease} {is_global}: {loss:.4f} [{current}/{train_size}]")
-            wandb.log({f"train loss {is_global}":loss})
+            print(f"train loss {disease}: {loss:.4f} [{current}/{train_size}]")
+            wandb.log({f"train loss":loss})
 
     print("Finished with batches...")
 
@@ -368,20 +308,20 @@ def train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device
     train_recall_50, train_precision_50, train_ap_50, _ = precision_recall_at_k(all_y, all_preds, k=50)
 
     total_loss = total_loss / total_sample  # weighted total train loss
-    wandb.log({f"train AUPRC {is_global}": train_auprc,
-               f"train AUROC {is_global}": train_auroc,
-               f"train recall@5 {is_global}": train_recall_5,
-               f"train recall@10 {is_global}": train_recall_10,
-               f"train recall@20 {is_global}": train_recall_20,
-               f"train recall@50 {is_global}": train_recall_50,
-               f"train precision@5 {is_global}": train_precision_5,
-               f"train precision@10 {is_global}": train_precision_10,
-               f"train precision@20 {is_global}": train_precision_20,
-               f"train precision@50 {is_global}": train_precision_50,
-               f"train AP@5 {is_global}": train_ap_5,
-               f"train AP@10 {is_global}": train_ap_10,
-               f"train AP@20 {is_global}": train_ap_20,
-               f"train AP@50 {is_global}": train_ap_50})
+    wandb.log({f"train AUPRC": train_auprc,
+               f"train AUROC": train_auroc,
+               f"train recall@5": train_recall_5,
+               f"train recall@10": train_recall_10,
+               f"train recall@20": train_recall_20,
+               f"train recall@50": train_recall_50,
+               f"train precision@5": train_precision_5,
+               f"train precision@10": train_precision_10,
+               f"train precision@20": train_precision_20,
+               f"train precision@50": train_precision_50,
+               f"train AP@5": train_ap_5,
+               f"train AP@10": train_ap_10,
+               f"train AP@20": train_ap_20,
+               f"train AP@50": train_ap_50})
 
     print("Finished with one full epoch...")
 
@@ -389,8 +329,7 @@ def train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device
 
 
 @torch.no_grad()
-def validate_epoch(model, val_loader, loss_func, wandb, device, is_global):
-    global_str = "global" if is_global else "cell types"
+def validate_epoch(model, val_loader, loss_func, wandb, device):
     val_size = len(val_loader.dataset)
 
     model.eval()
@@ -419,7 +358,7 @@ def validate_epoch(model, val_loader, loss_func, wandb, device, is_global):
     val_auroc, val_auprc, val_recall_5, val_precision_5, val_ap_5, val_recall_10, val_precision_10, val_ap_10, val_recall_20, val_precision_20, val_ap_20, _, _, _, _ = get_metrics(ys, preds, groups, "training")
     val_recall_50, val_precision_50, val_ap_50, _ = precision_recall_at_k(ys, preds, k=50)
 
-    wandb.log({f"val loss {global_str}":val_loss, f"val AUPRC {global_str}":val_auprc, f"val AUROC {global_str}":val_auroc, f"val recall@5 {global_str}":val_recall_5, f"val recall@10 {global_str}":val_recall_10, f"val recall@20 {global_str}":val_recall_20, f"val recall@50 {global_str}":val_recall_50, f"val precision@5 {global_str}":val_precision_5, f"val precision@10 {global_str}":val_precision_10, f"val precision@20 {global_str}":val_precision_20, f"val precision@50 {global_str}":val_precision_50, f"val AP@5 {global_str}":val_ap_5, f"val AP@10 {global_str}":val_ap_10, f"val AP@20 {global_str}":val_ap_20, f"val AP@50 {global_str}":val_ap_50})
+    wandb.log({f"val loss":val_loss, f"val AUPRC":val_auprc, f"val AUROC":val_auroc, f"val recall@5":val_recall_5, f"val recall@10":val_recall_10, f"val recall@20":val_recall_20, f"val recall@50":val_recall_50, f"val precision@5":val_precision_5, f"val precision@10":val_precision_10, f"val precision@20":val_precision_20, f"val precision@50":val_precision_50, f"val AP@5":val_ap_5, f"val AP@10":val_ap_10, f"val AP@20":val_ap_20, f"val AP@50":val_ap_50})
 
     print("Finished with calculating metrics...")
     return val_loss, val_auprc, ys, preds, cts, groups

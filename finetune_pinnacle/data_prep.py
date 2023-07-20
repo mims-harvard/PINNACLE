@@ -1,3 +1,5 @@
+import networkx as nx
+
 from collections import Counter
 from typing import Dict, List
 import numpy as np
@@ -9,6 +11,7 @@ from urllib import parse, request
 from urllib.parse import urlparse, parse_qs, urlencode
 from xml.etree import ElementTree
 
+import glob
 import torch
 from sklearn.model_selection import StratifiedGroupKFold
 import matplotlib.pyplot as plt
@@ -25,29 +28,12 @@ MAX_RETRY = 10  # To mitigate the effect of random state, we will redo data spli
 TEST_CELLTYPE_POS_NUM_MIN = 5 # For each cell type, the number of positive samples in test set must be greater than 5, or else the disease won't be evlauated
 
 
-def load_PPI_data(celltype_ppi_f):
-
-    import networkx as nx
-    global_f = "/n/data1/hms/dbmi/zitnik/lab/datasets/2020-12-PPI/processed/ppi_edgelist.txt"
-
-    def load_celltype_ppi(f):
-        ppi_layers = dict()
-        with open(f) as fin:
-            for lin in fin:
-                cluster = lin.split("\t")[1]
-                ppi_layers[cluster] = lin.strip().split("\t")[2].split(",")
-        print(ppi_layers.keys())
-        return ppi_layers
-
-
-    def load_global_PPI(f):
-        G = nx.read_edgelist(f)
-        print("Number of nodes:", len(G.nodes))
-        print("Number of edges:", len(G.edges))
-        return G
-
-    ppi_layers = load_celltype_ppi(celltype_ppi_f)
-    ppi_layers['global'] = list(load_global_PPI(global_f).nodes())
+def load_PPI_data(ppi_dir):
+    ppi_layers = dict()
+    for f in glob.glob(ppi_dir + "*"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
+        context = f.split(ppi_dir)[1].split(".")[0]
+        ppi = nx.read_edgelist(f)
+        ppi_layers[context] = ppi
     return ppi_layers
 
 
@@ -78,8 +64,6 @@ def process_and_split_data(embed, disease_positive_proteins, disease_negative_pr
 
     # Generate data for split
     for celltype in celltype_subtype:
-        if celltype in ["global", "esm"]:
-            continue
         pos_prots = disease_positive_proteins[disease][celltype]
         neg_prots = disease_negative_proteins[disease][celltype]
 
@@ -112,7 +96,7 @@ def process_and_split_data(embed, disease_positive_proteins, disease_negative_pr
         pos_test_indices = torch.tensor(indices["pos_test_indices"])
         neg_train_indices = torch.tensor(indices["neg_train_indices"])
         neg_test_indices = torch.tensor(indices["neg_test_indices"])
-        y_test = {celltype: np.concatenate([[1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype], [0 for ind in neg_test_indices if neg_prots_strata[ind] == celltype]]) for celltype in celltype_subtype if (celltype != "global" and celltype != "esm")}
+        y_test = {celltype: np.concatenate([[1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype], [0 for ind in neg_test_indices if neg_prots_strata[ind] == celltype]]) for celltype in celltype_subtype}
         print("Finished loading data splits.")
 
     else:
@@ -123,7 +107,7 @@ def process_and_split_data(embed, disease_positive_proteins, disease_negative_pr
             
             # Try all possible splits for positive examples
             for i, (pos_train_indices, pos_test_indices) in enumerate(cv.split(X=np.arange(len(pos_embed)), groups=pos_prots_group, y=pos_prots_strata)):
-                y_test = {celltype: [1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype] for celltype in celltype_subtype if (celltype != "global" and celltype != "esm")}
+                y_test = {celltype: [1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype] for celltype in celltype_subtype}
                 if np.all(np.array(list(map(sum, y_test.values()))) > TEST_CELLTYPE_POS_NUM_MIN):
                     break
             
@@ -135,7 +119,7 @@ def process_and_split_data(embed, disease_positive_proteins, disease_negative_pr
             assert np.all([Counter(pos_prots_group)[prot] == num for prot, num in Counter(np.array(pos_prots_group)[pos_train_indices]).items()])
             
             # Combine test data
-            y_test = {celltype: np.concatenate([[1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype], [0 for ind in neg_test_indices if neg_prots_strata[ind] == celltype]]) for celltype in celltype_subtype if (celltype != "global" and celltype != "esm")}
+            y_test = {celltype: np.concatenate([[1 for ind in pos_test_indices if pos_prots_strata[ind] == celltype], [0 for ind in neg_test_indices if neg_prots_strata[ind] == celltype]]) for celltype in celltype_subtype}
             return torch.tensor(pos_train_indices), torch.tensor(pos_test_indices), torch.tensor(neg_train_indices), torch.tensor(neg_test_indices), y_test
         
         try:
@@ -180,7 +164,6 @@ def process_and_split_data(embed, disease_positive_proteins, disease_negative_pr
     groups_test_pos = []
     groups_test_neg = []
     for cat in celltype_subtype:
-        if cat == "global" or cat == "esm": continue
         pos_cat_embs = [pos_embed[ind] for ind in pos_test_indices if pos_prots_strata[ind] == cat]
         neg_cat_embs = [neg_embed[ind] for ind in neg_test_indices if neg_prots_strata[ind] == cat]
         
@@ -642,11 +625,6 @@ def get_labels_from_evidence(celltype_protein_dict: Dict[str, List[str]], therap
                 with open(raw_targets_prefix + disease + '.json', 'r') as f:
                     temp = json.load(f)
                     clinically_relevant_targets.update(temp)
-
-                if "esm" not in positive_proteins[disease]:
-                    positive_proteins[disease]['esm'] = positive_proteins[disease]['global']  # esm positive proteins are the union of all celltype positive proteins
-                    negative_proteins[disease]['esm'] = negative_proteins[disease]['global']  # esm negative proteins are the union of all celltype negative proteins
-                
                 continue
             except:
                 pass
@@ -673,13 +651,9 @@ def get_labels_from_evidence(celltype_protein_dict: Dict[str, List[str]], therap
             print(disease_drug_evidence_data["drugId"].unique())
             disease_drug_evidence_data.to_csv(disease_drug_evidence_prefix + disease + ".csv", index = False, sep = "\t")
 
-        # Get positive and negative labels for proteins.  Note that globals are included in cell_type_protein_dict's keys, but it can also directly be built from the union of all other positive/negatives.
-        positive_proteins[disease] = {ct: list(disease_drug_targets.intersection(ppi_proteins)) for ct, ppi_proteins in celltype_protein_dict.items() if (ct != 'global' and ct != 'esm')}  # PPI proteins associated with the disease with drug or clinical candidate > II's evidence
-        negative_proteins[disease] = {ct: list(set(ppi_proteins).difference(all_associated_targets).intersection(druggable_targets)) for ct, ppi_proteins in celltype_protein_dict.items() if (ct != 'global' and ct != 'esm')}  # PPI proteins that are not associated with the disease except for text mining, but are still druggable
-        positive_proteins[disease]['global'] = np.unique(sum([prots for prots in positive_proteins[disease].values()], start=[])).tolist()  # global positive proteins are the union of all celltype positive proteins
-        negative_proteins[disease]['global'] = np.unique(sum([prots for prots in negative_proteins[disease].values()], start=[])).tolist()  # global negative proteins are the union of all celltype negative proteins
-        positive_proteins[disease]['esm'] = positive_proteins[disease]['global']  # esm positive proteins are the union of all celltype positive proteins
-        negative_proteins[disease]['esm'] = negative_proteins[disease]['global']  # esm negative proteins are the union of all celltype negative proteins
+        # Get positive and negative labels for proteins
+        positive_proteins[disease] = {ct: list(disease_drug_targets.intersection(ppi_proteins)) for ct, ppi_proteins in celltype_protein_dict.items()}  # PPI proteins associated with the disease with drug or clinical candidate > II's evidence
+        negative_proteins[disease] = {ct: list(set(ppi_proteins).difference(all_associated_targets).intersection(druggable_targets)) for ct, ppi_proteins in celltype_protein_dict.items()}  # PPI proteins that are not associated with the disease except for text mining, but are still druggable
 
         # Collect all targets (for diseases, not considering the intersection with PPI).
         clinically_relevant_targets[disease] = list(disease_drug_targets)
@@ -691,7 +665,7 @@ def get_labels_from_evidence(celltype_protein_dict: Dict[str, List[str]], therap
         with open(raw_targets_prefix + disease + '.json', 'w') as f:
             json.dump({disease: clinically_relevant_targets[disease]}, f)
     
-    positive_protein_counts_celltype = pd.DataFrame(positive_proteins).rename(index={ind:ind[:-2] for ind in positive_proteins[disease].keys() if (ind != 'global' and ind != 'esm')}).reset_index().melt(id_vars = ['index']).groupby(by=['index', 'variable']).aggregate(list).applymap(lambda x: len(np.unique(sum(x, start = [])))).reset_index()
+    positive_protein_counts_celltype = pd.DataFrame(positive_proteins).rename(index={ind:ind[:-2] for ind in positive_proteins[disease].keys()}).reset_index().melt(id_vars = ['index']).groupby(by=['index', 'variable']).aggregate(list).applymap(lambda x: len(np.unique(sum(x, start = [])))).reset_index()
 
     # plt.figure(figsize=(8, 4))
     sns.barplot(x='variable', y='value', data=positive_protein_counts_celltype, hue='index')
@@ -732,7 +706,6 @@ def main():
     for d in clinically_relevant_targets:
         compartment_counts = dict.fromkeys(compartments)
         for c, v in disease_positive_proteins[d].items():
-            if c == "global" or c == "esm": continue
             assert len(v) == len(set(v).intersection(set(clinically_relevant_targets[d])))
             
             for c_compartment in celltype2compartment[c]:

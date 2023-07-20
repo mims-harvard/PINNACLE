@@ -62,77 +62,57 @@ def save_plots(output_figs_path: str, positive_proportion_train: Dict[str, Dict[
     return
 
 
-def save_torch_train_val_preds(best_train_y, best_train_preds, best_train_groups, best_train_cts, best_val_y, best_val_preds, best_val_groups, best_val_cts, groups_map_train, groups_map_val, cts_map_train, cts_map_val, models_output_dir, embed_name, disease, mod, is_global, wandb):
-    if not is_global:
-        train_ranks = {}
-        val_ranks = {}
-        for ct in np.unique(best_val_cts):
-            hits = np.where(best_val_cts==ct)[0]
-            val_y_ct = best_val_y[hits]
-            val_preds_ct = best_val_preds[hits]
-            val_groups_ct = best_val_groups[hits]
-            ct_name = cts_map_val[ct]
+def save_torch_train_val_preds(best_train_y, best_train_preds, best_train_groups, best_train_cts, best_val_y, best_val_preds, best_val_groups, best_val_cts, groups_map_train, groups_map_val, cts_map_train, cts_map_val, models_output_dir, embed_name, disease, mod, wandb):
+    train_ranks = {}
+    val_ranks = {}
+    for ct in np.unique(best_val_cts):
+        hits = np.where(best_val_cts==ct)[0]
+        val_y_ct = best_val_y[hits]
+        val_preds_ct = best_val_preds[hits]
+        val_groups_ct = best_val_groups[hits]
+        ct_name = cts_map_val[ct]
 
-            if len(np.unique(val_y_ct)) < 2:
-                auroc_score, ap_score, ct_recall_5, ct_precision_5, ct_ap_5, ct_recall_10, ct_precision_10, ct_ap_10, ct_recall_20, ct_precision_20, ct_ap_20, sorted_val_y_ct, sorted_val_preds_ct, sorted_val_groups_ct, positive_proportion_val = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, np.array([-1] * len(val_y_ct)), np.array([-1] * len(val_y_ct)), np.array([-1] * len(val_y_ct)), -1
-            else:
-                auroc_score, ap_score, ct_recall_5, ct_precision_5, ct_ap_5, ct_recall_10, ct_precision_10, ct_ap_10, ct_recall_20, ct_precision_20, ct_ap_20, sorted_val_y_ct, sorted_val_preds_ct, sorted_val_groups_ct, positive_proportion_val = get_metrics(val_y_ct, val_preds_ct, val_groups_ct, "training")
-                if len(sorted_val_y_ct) > 0: sorted_val_y_ct = sorted_val_y_ct.squeeze(-1)
-                if len(sorted_val_preds_ct) > 0: sorted_val_preds_ct = sorted_val_preds_ct.squeeze(-1)
+        if len(np.unique(val_y_ct)) < 2:
+            auroc_score, ap_score, ct_recall_5, ct_precision_5, ct_ap_5, ct_recall_10, ct_precision_10, ct_ap_10, ct_recall_20, ct_precision_20, ct_ap_20, sorted_val_y_ct, sorted_val_preds_ct, sorted_val_groups_ct, positive_proportion_val = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, np.array([-1] * len(val_y_ct)), np.array([-1] * len(val_y_ct)), np.array([-1] * len(val_y_ct)), -1
+        else:
+            auroc_score, ap_score, ct_recall_5, ct_precision_5, ct_ap_5, ct_recall_10, ct_precision_10, ct_ap_10, ct_recall_20, ct_precision_20, ct_ap_20, sorted_val_y_ct, sorted_val_preds_ct, sorted_val_groups_ct, positive_proportion_val = get_metrics(val_y_ct, val_preds_ct, val_groups_ct, "training")
+            if len(sorted_val_y_ct) > 0: sorted_val_y_ct = sorted_val_y_ct.squeeze(-1)
+            if len(sorted_val_preds_ct) > 0: sorted_val_preds_ct = sorted_val_preds_ct.squeeze(-1)
+        
+        temp = pd.DataFrame({'y':sorted_val_y_ct, 'preds':sorted_val_preds_ct, 'name':[groups_map_val[prot_ind] for prot_ind in sorted_val_groups_ct]})
+        temp['type'] = ['val'] * len(temp)
+        val_ranks[ct_name] = temp
+        temp.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_val_preds_{ct_name}.csv', index=False)  # Save the validation predictions
+
+        wandb.log({f'val AUPRC cell types {ct_name}': ap_score, 
+                    f'val AUROC cell types {ct_name}': auroc_score,
+                    f'val recall@5 cell types {ct_name}': ct_recall_5,
+                    f'val precision@5 cell types {ct_name}': ct_precision_5,
+                    f'val AP@5 cell types {ct_name}': ct_ap_5,
+                    f'val recall@10 cell types {ct_name}': ct_recall_10, 
+                    f'val precision@10 cell types {ct_name}': ct_precision_10,
+                    f'val AP@10 cell types {ct_name}': ct_ap_10,
+                    f'val recall@20 cell types {ct_name}': ct_recall_20,
+                    f'val precision@20 cell types {ct_name}': ct_precision_20,
+                    f'val AP@20 cell types {ct_name}': ct_ap_20,
+                    f'val positive proportion {ct_name}': positive_proportion_val})
             
-            temp = pd.DataFrame({'y':sorted_val_y_ct, 'preds':sorted_val_preds_ct, 'name':[groups_map_val[prot_ind] for prot_ind in sorted_val_groups_ct]})
-            temp['type'] = ['val'] * len(temp)
-            val_ranks[ct_name] = temp
-            temp.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_val_preds_{ct_name}.csv', index=False)  # Save the validation predictions
+    for ct in np.unique(best_train_cts):  # We don't want to mess up train & val, so better separate
+        hits = np.where(best_train_cts==ct)[0]
+        train_y_ct = best_train_y[hits]
+        train_preds_ct = best_train_preds[hits]
+        train_groups_ct = best_train_groups[hits]
+        # ct_recall_5, ct_precision_5, ct_ap_5, _ = precision_recall_at_k(train_y_ct, train_preds_ct, k=5)
+        # ct_recall_10, ct_precision_10, ct_ap_10, _ = precision_recall_at_k(train_y_ct, train_preds_ct, k=10)
+        #_, _, _, (sorted_train_y_ct, sorted_train_preds_ct, sorted_train_groups_ct) = precision_recall_at_k(train_y_ct, train_preds_ct, k=20, prots=train_groups_ct)
+        _, _, _, (sorted_train_y_ct, sorted_train_preds_ct, sorted_train_groups_ct) = precision_recall_at_k(train_y_ct, train_preds_ct, k=10, prots=train_groups_ct)
 
-            wandb.log({f'val AUPRC cell types {ct_name}': ap_score, 
-                       f'val AUROC cell types {ct_name}': auroc_score,
-                       f'val recall@5 cell types {ct_name}': ct_recall_5,
-                       f'val precision@5 cell types {ct_name}': ct_precision_5,
-                       f'val AP@5 cell types {ct_name}': ct_ap_5,
-                       f'val recall@10 cell types {ct_name}': ct_recall_10, 
-                       f'val precision@10 cell types {ct_name}': ct_precision_10,
-                       f'val AP@10 cell types {ct_name}': ct_ap_10,
-                       f'val recall@20 cell types {ct_name}': ct_recall_20,
-                       f'val precision@20 cell types {ct_name}': ct_precision_20,
-                       f'val AP@20 cell types {ct_name}': ct_ap_20,
-                       f'val positive proportion {ct_name}': positive_proportion_val})
-                
-        for ct in np.unique(best_train_cts):  # We don't want to mess up train & val, so better separate
-            hits = np.where(best_train_cts==ct)[0]
-            train_y_ct = best_train_y[hits]
-            train_preds_ct = best_train_preds[hits]
-            train_groups_ct = best_train_groups[hits]
-            # ct_recall_5, ct_precision_5, ct_ap_5, _ = precision_recall_at_k(train_y_ct, train_preds_ct, k=5)
-            # ct_recall_10, ct_precision_10, ct_ap_10, _ = precision_recall_at_k(train_y_ct, train_preds_ct, k=10)
-            #_, _, _, (sorted_train_y_ct, sorted_train_preds_ct, sorted_train_groups_ct) = precision_recall_at_k(train_y_ct, train_preds_ct, k=20, prots=train_groups_ct)
-            _, _, _, (sorted_train_y_ct, sorted_train_preds_ct, sorted_train_groups_ct) = precision_recall_at_k(train_y_ct, train_preds_ct, k=10, prots=train_groups_ct)
-
-            ct_name = cts_map_train[ct]
-            temp = pd.DataFrame({'y': sorted_train_y_ct.squeeze(-1), 'preds':sorted_train_preds_ct.squeeze(-1), 'name':[groups_map_train[prot_ind] for prot_ind in sorted_train_groups_ct]})
-            temp['type'] = ['train'] * len(temp)
-            train_ranks[ct_name] = temp
-            temp.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_train_preds_{ct_name}.csv', index=False)  # Save the validation predictions
-        
-    else:  # Global
-
-        # val
-        _, _, _, (sorted_val_y_global, sorted_val_preds_global, sorted_val_groups_global) = precision_recall_at_k(best_val_y, best_val_preds, k=5, prots=np.array(best_val_groups))
-        positive_proportion_val = sum(best_val_y) / len(best_val_y)
-
-        wandb.log({'val positive proportion global':positive_proportion_val})
-        
-        val_ranks = pd.DataFrame({'y':sorted_val_y_global.squeeze(-1), 'preds':sorted_val_preds_global.squeeze(-1), 'name':[groups_map_val[prot_ind] for prot_ind in sorted_val_groups_global]})
-        val_ranks['type'] = ['val'] * len(val_ranks)
-        val_ranks.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_val_preds_global.csv', index=False)  # Save the validation predictions
-
-        # train
-        _, _, _, (sorted_train_y_global, sorted_train_preds_global, sorted_train_groups_global) = precision_recall_at_k(best_train_y, best_train_preds, k=20, prots=best_train_groups)
-        train_ranks = pd.DataFrame({'y':sorted_train_y_global.squeeze(-1), 'preds':sorted_train_preds_global.squeeze(-1), 'name':[groups_map_train[prot_ind] for prot_ind in sorted_train_groups_global]})
-        train_ranks['type'] = ['train'] * len(train_ranks)
-        
-        train_ranks.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_train_preds_global.csv', index=False)  # Save the validation predictions
-
+        ct_name = cts_map_train[ct]
+        temp = pd.DataFrame({'y': sorted_train_y_ct.squeeze(-1), 'preds':sorted_train_preds_ct.squeeze(-1), 'name':[groups_map_train[prot_ind] for prot_ind in sorted_train_groups_ct]})
+        temp['type'] = ['train'] * len(temp)
+        train_ranks[ct_name] = temp
+        temp.to_csv(f'{models_output_dir}/{embed_name}_{disease}_{mod}_train_preds_{ct_name}.csv', index=False)  # Save the validation predictions
+    
     return train_ranks, val_ranks
 
 
@@ -167,7 +147,7 @@ def precision_recall_at_k(y: np.ndarray, preds: np.ndarray, k: int = 10, prots: 
 
 
 def get_metrics(y, y_pred, groups, celltype):
-    if celltype in ["global", "esm", "training"]: # keep the data structure consistent between celltype and global
+    if celltype in ["training"]:
         y = {celltype: y}
         groups = {celltype: groups}
             
