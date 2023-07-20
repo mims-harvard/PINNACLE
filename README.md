@@ -63,7 +63,7 @@ We provide the following datasets for training PINNACLE:
 The networks are provided in the appropriate format for PINNACLE. If you would like to use your own set of contextualized networks, please adhere to the format used in the cell type specific protein interaction networks (see [README](https://github.com/mims-harvard/PINNACLE/blob/main/data_prep/README.md) in `data_prep` folder for more details). The file should be structured as a tab-delimited table, where each line contains information for a single context. Each line must contain the following elements (in this order): index, context name (e.g., cell type name), comma-delimited list of nodes. The lists of nodes are used to extract a subgraph from the global reference network (e.g., global reference protein interaction network).
 
 ### :four: (Optional) Download Model Checkpoints
-We also provide checkpoints for PINNACLE after pretraining. The checkpoints for PINNACLE can be found [here](https://figshare.com/articles/software/PINNACLE). Make sure all downloaded files are unzipped. You can use these checkpoints (and/or embeddings) directly with the scripts in the `finetune_pinnacle` folder instead of training the models yourself.
+We also provide checkpoints for PINNACLE after pretraining. The checkpoints for PINNACLE can be found [here](https://figshare.com/articles/software/PINNACLE/22708126). Make sure all downloaded files are unzipped. You can use these checkpoints (and/or embeddings) directly with the scripts in the `finetune_pinnacle` folder instead of training the models yourself.
 
 ## Usage
 
