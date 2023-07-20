@@ -5,9 +5,8 @@ def get_args():
     parser = argparse.ArgumentParser(description="Learning node embeddings.")
 
     # Input
-    parser.add_argument("--G_f", type=str, default="/n/data1/hms/dbmi/zitnik/lab/datasets/2020-12-PPI/processed/ppi_edgelist.txt", help="Directory to global PPI")
-    parser.add_argument("--ppi_f", type=str, default="/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/all/ppi_TabulaSapiens_iteration_maxpval=1.0.csv", help="Directory to PPI layers")
-    parser.add_argument("--mg_f", type=str, default="/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/all/mg_edgelist.txt", help="Directory to CCI-BTO")
+    parser.add_argument("--ppi_dir", type=str, default="./data/networks/ppi_edgelists/", help="Directory to PPI layers")
+    parser.add_argument("--mg_f", type=str, default="./data/networks/mg_edgelist.txt", help="Directory to metagraph")
     parser.add_argument("--epochs", type=int, default=300, help="Number of epochs to train")
     parser.add_argument("--run", type=str, default="", help="Model hyperparameters")
     

@@ -66,7 +66,7 @@ def read_data(G_f, ppi_f, mg_f, feat_mat_dim):
     feat_mat = torch.normal(torch.zeros(len(G.nodes), feat_mat_dim), std=1)
 
     # Read PPI layers
-    orig_ppi_layers, ppi_layers, ppi_train, ppi_val, ppi_test = read_ppi(ppi_f, G)
+    orig_ppi_layers, ppi_layers, ppi_train, ppi_val, ppi_test = read_ppi(ppi_f)
     print("Number of PPI layers:", len(ppi_layers), len(ppi_train), len(ppi_val), len(ppi_test))
 
     # Read CCI-BTO

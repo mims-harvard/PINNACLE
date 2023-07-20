@@ -56,6 +56,7 @@ bash install_pyg.sh
 The data is hosted on [Figshare](https://figshare.com/articles/software/PINNACLE/22708126). To maintain the directory structure while downloading the files, make sure to select all files and download in the original format. Make sure to also unzip all files in the download.
 
 We provide the following datasets for training PINNACLE:
+- Global reference protein interaction network
 - Cell type specific protein interaction networks
 - Metagraph of cell type and tissue relationships
 

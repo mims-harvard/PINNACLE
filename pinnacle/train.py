@@ -66,7 +66,7 @@ wandb.init(config = hparams_raw, project = "pinnacle", entity = "pinnacle")
 hparams = wandb.config
 
 # Read data
-ppi_data, mg_data, edge_attr_dict, celltype_map, tissue_neighbors, ppi_layers, metagraph = read_data(args.G_f, args.ppi_f, args.mg_f, hparams['feat_mat'])
+ppi_data, mg_data, edge_attr_dict, celltype_map, tissue_neighbors, ppi_layers, metagraph = read_data(args.ppi_dir, args.mg_f, hparams['feat_mat'])
 ppi_edgetypes, mg_edgetypes = get_edgetypes()
 center_loss_labels, train_mask, val_mask, test_mask = get_centerloss_labels(args, celltype_map, ppi_layers)
 
