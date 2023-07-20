@@ -102,7 +102,7 @@ cd pinnacle
 python predict.py \
         --task tx_target \
         --disease EFO_0000685 \
-        --embeddings_dir checkpoints/
+        --embeddings_dir ./data/pinnacle_embeds/
 ```
 
 :sparkles: To finetune PINNACLE for nominating therapeutic targets of inflammatory bowel disease:
@@ -112,7 +112,7 @@ cd pinnacle
 python predict.py \
         --task tx_target \
         --disease EFO_0003767 \
-        --embeddings_dir checkpoints/
+        --embeddings_dir ./data/pinnacle_embeds/
 ```
 
 To generate predictions on a different therapeutic area, simply find the disease ID from OpenTargets and change the `---disease` flag.
