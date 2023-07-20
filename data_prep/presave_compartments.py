@@ -1,7 +1,7 @@
 from utils import read_ts_data
 
 TABULA_SAPIENS_DIR = "../data/raw/TabulaSapiens.h5ad"
-OUTPUT_DIR = "../data/networks/"
+OUTPUT_DIR = "../data/single_cell/"
 
 
 ts_data = read_ts_data(TABULA_SAPIENS_DIR)
