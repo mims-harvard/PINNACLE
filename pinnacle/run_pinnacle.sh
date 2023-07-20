@@ -3,10 +3,10 @@
 conda activate pinnacle
 
 python train.py \
-        --G_f ./data/networks/global_ppi_edgelist.txt \
-        --ppi_dir ./data/networks/ppi_edgelists/ \
-        --mg_f ./data/networks/mg_edgelist.txt \
-        --save_prefix ./data/pinnacle_embeds/ \
+        --G_f ../data/networks/global_ppi_edgelist.txt \
+        --ppi_dir ../data/networks/ppi_edgelists/ \
+        --mg_f ../data/networks/mg_edgelist.txt \
+        --save_prefix ../data/pinnacle_embeds/ \
         --batch_size=8 \
         --dropout=0.6 \
         --feat_mat=1024 \
