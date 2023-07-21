@@ -34,6 +34,7 @@ def read_ppi(ppi_dir):
 
         # Parse name of context
         context = f.split(ppi_dir)[1].split(".")[0]
+        context = context.replace("_", " ")
 
         # Read edgelist
         ppi = nx.read_edgelist(f)
@@ -73,10 +74,10 @@ def read_data(G_f, ppi_f, mg_f, feat_mat_dim):
     metagraph = nx.read_edgelist(mg_f, data=False, delimiter = "\t")
     mg_feat_mat = torch.zeros(len(metagraph.nodes), feat_mat_dim)
     
-    print("Number of nodes:", len(metagraph.nodes), "Number of edges:", len(metagraph.edges))
     orig_mg = metagraph
     print("Number of nodes:", len(metagraph.nodes), "Number of edges:", len(metagraph.edges))
     mg_mapping = {n: i for i, n in enumerate(sorted(ppi_layers))}
+    print(mg_mapping)
     mg_mapping.update({n: i + len(ppi_layers) for i, n in enumerate(sorted([n for n in metagraph.nodes if "BTO" in n]))})
     assert len(mg_mapping) == len(metagraph.nodes), set(metagraph.nodes).difference(set(list(mg_mapping.keys())))
 
