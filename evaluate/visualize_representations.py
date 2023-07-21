@@ -33,7 +33,7 @@ def read_embed(ppi_embed_f, mg_embed_f, labels_f):
     embeddings = torch.cat(embeddings)
     print("PPI embeddings", embeddings.shape)
 
-    # Read CCI-BTO embeddings
+    # Read metagraph embeddings
     mg_embed = torch.load(mg_embed_f)
     print("Meta graph embeddings", mg_embed.shape)
 
@@ -46,13 +46,13 @@ def read_embed(ppi_embed_f, mg_embed_f, labels_f):
     return embeddings, mg_embed, labels_dict
 
 
-def plot_AWARE_embeddings(labels_dict, embedding, cci_bto, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir):
+def plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir):
     
     # Plot all embeddings
     protein_labels = dict()
     if do_plot_metagraph:
-        protein_labels["x"] = embedding[len(cci_bto.nodes):, 0]
-        protein_labels["y"] = embedding[len(cci_bto.nodes):, 1]
+        protein_labels["x"] = embedding[len(metagraph.nodes):, 0]
+        protein_labels["y"] = embedding[len(metagraph.nodes):, 1]
     else:
         protein_labels["x"] = embedding[:, 0]
         protein_labels["y"] = embedding[:, 1]
@@ -71,27 +71,27 @@ def plot_AWARE_embeddings(labels_dict, embedding, cci_bto, color_map, n_neighbor
     
     # Plot metagraph embeddings only
     if do_plot_metagraph:
-        cci_bto_labels = dict()
-        cci_bto_labels["x"] = embedding[0:len(cci_bto.nodes), 0]
-        cci_bto_labels["y"] = embedding[0:len(cci_bto.nodes), 1]
+        mg_labels = dict()
+        mg_labels["x"] = embedding[0:len(metagraph.nodes), 0]
+        mg_labels["y"] = embedding[0:len(metagraph.nodes), 1]
         celltype_name = []
         node_type = []
-        for n in (labels_dict["Name"][0:len(cci_bto.nodes)]):
+        for n in (labels_dict["Name"][0:len(metagraph.nodes)]):
             if n.startswith("CCI_"):
                 celltype_name.append(n.split("CCI_")[1])
                 node_type.append("circle_down")
             else:
                 node_type.append("circle_up")
                 celltype_name.append(n)
-        cci_bto_labels["Cell Type"] = celltype_name
-        cci_bto_labels["Node Type"] = node_type
-        plot_metagraph_umap(cci_bto_labels, protein_labels, color_map, output_dir + "umap.ccibto=%s_mindist=%s" % (n_neighbors, min_dist))
+        mg_labels["Cell Type"] = celltype_name
+        mg_labels["Node Type"] = node_type
+        plot_metagraph_umap(mg_labels, protein_labels, color_map, output_dir + "umap.ccibto=%s_mindist=%s" % (n_neighbors, min_dist))
 
 
-def plot_emb(ppi_x, cci_bto_x, labels_dict, ppi_layers, cci_bto, umap_param, do_plot_metagraph, do_sweep, do_sweep_plot, output_dir):
-    color_map = {n: c for n, c in zip(cci_bto.nodes, sns.color_palette("husl", len(cci_bto.nodes)))} # TODO
+def plot_emb(ppi_x, mg_x, labels_dict, ppi_layers, metagraph, umap_param, do_plot_metagraph, do_sweep, do_sweep_plot, output_dir):
+    color_map = {n: c for n, c in zip(metagraph.nodes, sns.color_palette("husl", len(metagraph.nodes)))} # TODO
     if do_plot_metagraph:
-        embed = torch.cat([ppi_x, cci_bto_x])
+        embed = torch.cat([ppi_x, mg_x])
     else:
         embed = ppi_x
     
@@ -108,7 +108,7 @@ def plot_emb(ppi_x, cci_bto_x, labels_dict, ppi_layers, cci_bto, umap_param, do_
                     print("UMAP:", embedding.shape)
 
                 if do_sweep_plot:
-                    plot_AWARE_embeddings(labels_dict, embedding, cci_bto, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir)
+                    plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir)
 
     # Fit and plot desired UMAP parameters
     else:
@@ -121,7 +121,7 @@ def plot_emb(ppi_x, cci_bto_x, labels_dict, ppi_layers, cci_bto, umap_param, do_
             embedding = np.load(outfile)
             print("UMAP:", embedding.shape)
         
-        plot_AWARE_embeddings(labels_dict, embedding, cci_bto, color_map, umap_param["n_neighbors"], umap_param["min_dist"], do_plot_metagraph, output_dir)
+        plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, umap_param["n_neighbors"], umap_param["min_dist"], do_plot_metagraph, output_dir)
 
 
 def fit_umap(embed, n_neighbors=15, min_dist=0.1, n_components=2, metric='euclidean', random_state=3):
