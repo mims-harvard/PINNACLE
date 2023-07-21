@@ -133,7 +133,7 @@ if __name__ == '__main__':
     hparams = get_hparams(args)
     print(hparams)
 
-    wandb.init(config = hparams, project = "tx-target", entity = "michellemli")
+    wandb.init(config = hparams, project = "finetune", entity = "pinnacle")
     hparams = wandb.config
 
     main(args, hparams, wandb)
