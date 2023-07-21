@@ -45,7 +45,7 @@ def evaluate_disease_gene_association(embed, subtype_dict, subtype_protein_dict,
         
         # Training and validation
         X_train, X_test, y_train, y_test, groups_train, cts_train, groups_test = process_and_split_data(embed, disease_positive_proteins, disease_negative_proteins, subtype_protein_dict, celltype_subtype, subtype_dict, disease, data_split_path, random_state=random_state, test_size=1-train_size-val_size)
-        clf, best_epoch, best_val_auprc, train_ranks, val_ranks = run_training(X_train, y_train, mod, random_state, groups_train, cts_train, hparams, train_size, val_size, num_epoch, batch_size, weigh_sample, weigh_loss, False, disease, models_output_dir, embed_name)
+        clf, best_epoch, best_val_auprc, train_ranks, val_ranks = run_training(X_train, y_train, mod, random_state, groups_train, cts_train, hparams, train_size, val_size, num_epoch, batch_size, weigh_sample, weigh_loss, disease, models_output_dir, embed_name)
 
         # Evaluation for each cell celltype separately
         auroc_scores[disease] = {}
