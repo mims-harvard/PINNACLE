@@ -1,3 +1,4 @@
+import glob
 from collections import Counter
 import os
 import numpy as np
@@ -46,7 +47,7 @@ def read_embed(ppi_embed_f, mg_embed_f, labels_f):
     return embeddings, mg_embed, labels_dict
 
 
-def plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir):
+def plot_PINNACLE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir):
     
     # Plot all embeddings
     protein_labels = dict()
@@ -108,7 +109,7 @@ def plot_emb(ppi_x, mg_x, labels_dict, ppi_layers, metagraph, umap_param, do_plo
                     print("UMAP:", embedding.shape)
 
                 if do_sweep_plot:
-                    plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir)
+                    plot_PINNACLE_embeddings(labels_dict, embedding, metagraph, color_map, n_neighbors, min_dist, do_plot_metagraph, output_dir)
 
     # Fit and plot desired UMAP parameters
     else:
@@ -121,7 +122,7 @@ def plot_emb(ppi_x, mg_x, labels_dict, ppi_layers, metagraph, umap_param, do_plo
             embedding = np.load(outfile)
             print("UMAP:", embedding.shape)
         
-        plot_AWARE_embeddings(labels_dict, embedding, metagraph, color_map, umap_param["n_neighbors"], umap_param["min_dist"], do_plot_metagraph, output_dir)
+        plot_PINNACLE_embeddings(labels_dict, embedding, metagraph, color_map, umap_param["n_neighbors"], umap_param["min_dist"], do_plot_metagraph, output_dir)
 
 
 def fit_umap(embed, n_neighbors=15, min_dist=0.1, n_components=2, metric='euclidean', random_state=3):
@@ -211,7 +212,7 @@ def main():
     output_dir = "figures/"
 
     print("Read in data...")
-    ppi_x, mg_x, labels_dict = read_embed(input_f + "pinnacle_protein_embed.pth", input_f + "pinnacle_mg_embed.pth", input_f + "pinnacle_labels_dict.txt")    
+    ppi_x, mg_x, labels_dict = read_embed(input_f + "pinnacle_protein_embed.pth", input_f + "pinnacle_mg_embed.pth", input_f + "pinnacle_labels_dict.txt")
     ppi_layers = read_ppi("../data/networks/ppi_edgelists/")
     metagraph = nx.read_edgelist("../data/networks/mg_edgelist.txt", delimiter = "\t")
     
