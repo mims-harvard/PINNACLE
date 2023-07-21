@@ -44,7 +44,7 @@ save_log = args.save_prefix + "_gnn_train.log"
 save_graph = args.save_prefix + "_graph.pkl"
 save_model = args.save_prefix + "_model_save.pth"
 save_plots = args.save_prefix + "_train_embed_plots.pdf"
-save_ppi_embed = args.save_prefix + "_ppi_embed.pth"
+save_ppi_embed = args.save_prefix + "_protein_embed.pth"
 save_mg_embed = args.save_prefix + "_mg_embed.pth"
 save_labels_dict = args.save_prefix + "_labels_dict.txt"
 

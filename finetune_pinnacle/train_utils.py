@@ -102,7 +102,7 @@ def setup(args):
     if not os.path.exists(models_output_dir): os.makedirs(models_output_dir)
     if not os.path.exists(metrics_output_dir): os.makedirs(metrics_output_dir)
     
-    embed_path = args.embeddings_dir + args.embed + "_ppi_embed.pth"
+    embed_path = args.embeddings_dir + args.embed + "_protein_embed.pth"
     labels_path = args.embeddings_dir + args.embed + "_labels_dict.txt"
     return models_output_dir, metrics_output_dir, random_state, embed_path, labels_path
 
