@@ -9,10 +9,9 @@ def get_args():
     parser.add_argument("--ppi_dir", type=str, default="./data/networks/ppi_edgelists/", help="Directory to PPI layers")
     parser.add_argument("--mg_f", type=str, default="./data/networks/mg_edgelist.txt", help="Directory to metagraph")
     parser.add_argument("--epochs", type=int, default=300, help="Number of epochs to train")
-    parser.add_argument("--run", type=str, default="", help="Model hyperparameters")
+    parser.add_argument("--resume_run", type=str, default="", help="Model hyperparameters")
     
     # Parameters
-    parser.add_argument("--sweep", type=bool, default=True, help="Perform sweep")
     parser.add_argument("--loader", type=str, default="graphsaint", choices=["neighbor", "graphsaint"], help="Loader for minibatching.")
 
     # Hyperparameters
@@ -42,7 +41,6 @@ def get_hparams(args):
     
     hparams = {
                'pc_att_channels': args.pc_att_channels,
-               'use_center_loss': True,
                'feat_mat': args.feat_mat, 
                'output': args.output,
                'hidden': args.hidden,

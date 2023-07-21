@@ -67,7 +67,7 @@ def calc_metrics(mg_pred, mg_data, ppi_preds, ppi_data):
     all_acc = []
     all_f1 = []
 
-    # Compute metrics for CCI-BTO
+    # Compute metrics for metagraph
     if len(mg_pred) > 0:
         roc_score, ap_score, acc, f1 = calc_individual_metrics(mg_pred.cpu().detach().numpy(), mg_data["y"].cpu().detach().numpy())
         all_roc.append(roc_score)
@@ -89,7 +89,7 @@ def metrics_per_rel(mg_pred, mg_data, ppi_preds, ppi_data, edge_attr_dict, cellt
     
     celltype_map = {v: k for k, v in celltype_map.items()}
 
-    # Compute metrics per rel for CCI-BTO
+    # Compute metrics per rel for metagraph
     if len(mg_pred) > 0:
         for attr, idx in edge_attr_dict.items():
             mask = (mg_data["total_edge_type"].cpu().detach().numpy() == idx)
@@ -118,7 +118,7 @@ def metrics_per_rel(mg_pred, mg_data, ppi_preds, ppi_data, edge_attr_dict, cellt
             wandb.log({"%s_%s_%s_roc" % (celltype_map[celltype], attr, split): roc_per_rel, "%s_%s_%s_ap" % (celltype_map[celltype], attr, split): ap_per_rel, "%s_%s_%s_acc" % (celltype_map[celltype], attr, split): acc_per_rel, "%s_%s_%s_f1" % (celltype_map[celltype], attr, split): f1_per_rel})
 
 
-def construct_edgetype(edgetypes, edge_index, edge_type, num_nodes):
+def construct_metapath(metapaths, edge_index, edge_type, num_nodes):
     unique_edge_types = edge_type.unique()
 
     adjs = {}
@@ -128,9 +128,9 @@ def construct_edgetype(edgetypes, edge_index, edge_type, num_nodes):
         adjs[int(et)] = adj
 
     mp_adjs = []
-    for edgetype in edgetypes:
+    for metapath in metapaths:
         mp_adj = None
-        for idx in edgetype:
+        for idx in metapath:
             if idx not in adjs: continue
             if mp_adj:
                 mp_adj @= adjs[idx]
@@ -143,9 +143,9 @@ def construct_edgetype(edgetypes, edge_index, edge_type, num_nodes):
 
 
 @torch.no_grad()
-def get_embeddings(model, ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors):
+def get_embeddings(model, ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors):
     model.eval()
-    ppi_x, mg_x = model(ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors)
+    ppi_x, mg_x = model(ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors)
     return ppi_x, mg_x 
 
 
@@ -173,7 +173,7 @@ def combine_embed(ppi_embed, mg_embed, key, ppi_layers, metagraph, finetune_labe
 
     if len(mg_embed) > 0:
 
-        # Set CCI-BTO labels
+        # Set metagraph labels
         labels_df["Cell Type"] = ["CCI_" + v if "BTO" not in v else v for k, v in key.items()]
         mg_labels["Cell Type"] = [v if "BTO" not in v else v for k, v in key.items()]
         labels_df["Name"] = ["CCI_" + v if "BTO" not in v else v for k, v in key.items()]
@@ -258,5 +258,4 @@ def calc_cluster_metrics(ppi_x: dict) -> tuple:
     if len(np.unique(labels))==1:
         return 0, 0
 
-    # return silhouette_score(X, labels, metric='euclidean'), calinski_harabasz_score(X, labels), davies_bouldin_score(X, labels)
     return calinski_harabasz_score(X, labels), davies_bouldin_score(X, labels)

@@ -60,24 +60,23 @@ def create_data(G, train_mask, val_mask, test_mask, node_type, edge_type, x):
     return new_G
 
 
-def read_data(G_f, ppi_f, mg_f, feat_mat_dim):
+def read_data(G_f, ppi_dir, mg_f, feat_mat_dim):
 
     # Read global PPI 
     G = nx.read_edgelist(G_f)
     feat_mat = torch.normal(torch.zeros(len(G.nodes), feat_mat_dim), std=1)
-
+    
     # Read PPI layers
-    orig_ppi_layers, ppi_layers, ppi_train, ppi_val, ppi_test = read_ppi(ppi_f)
+    orig_ppi_layers, ppi_layers, ppi_train, ppi_val, ppi_test = read_ppi(ppi_dir)
     print("Number of PPI layers:", len(ppi_layers), len(ppi_train), len(ppi_val), len(ppi_test))
 
-    # Read CCI-BTO
+    # Read metagraph
     metagraph = nx.read_edgelist(mg_f, data=False, delimiter = "\t")
     mg_feat_mat = torch.zeros(len(metagraph.nodes), feat_mat_dim)
     
     orig_mg = metagraph
     print("Number of nodes:", len(metagraph.nodes), "Number of edges:", len(metagraph.edges))
     mg_mapping = {n: i for i, n in enumerate(sorted(ppi_layers))}
-    print(mg_mapping)
     mg_mapping.update({n: i + len(ppi_layers) for i, n in enumerate(sorted([n for n in metagraph.nodes if "BTO" in n]))})
     assert len(mg_mapping) == len(metagraph.nodes), set(metagraph.nodes).difference(set(list(mg_mapping.keys())))
 
@@ -137,10 +136,10 @@ def subset_ppi(num_subset, ppi_data, ppi_layers):
     return ppi_data, ppi_layers
 
 
-def get_edgetypes():
-    ppi_edgetypes = [[4]]
-    mg_edgetypes = [[0], [1], [2], [3]]
-    return ppi_edgetypes, mg_edgetypes
+def get_metapaths():
+    ppi_metapaths = [[4]] # Get PPI metapaths
+    mg_metapaths = [[0], [1], [2], [3]]
+    return ppi_metapaths, mg_metapaths
 
 
 def get_centerloss_labels(args, celltype_map, ppi_layers):

@@ -36,20 +36,20 @@ class Pinnacle(nn.Module):
         nn.init.xavier_uniform_(self.mg_relw, gain = nn.init.calculate_gain('leaky_relu'))
 
 
-    def forward(self, ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors):
+    def forward(self, ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors):
         
         ########################################
         # Complete layer #1
         ########################################
 
         # Update Protein-Celltype-Tissue
-        ppi_x, mg_x = self.conv1_up(ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors, init_cci=True)
+        ppi_x, mg_x = self.conv1_up(ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors, init_cci=True)
 
-        # Update PPI and down-pool CCI-BTO
-        ppi_x = self.conv1_down(ppi_x, ppi_edgetypes, mg_x, self.conv1_up.ppi_attn)
+        # Update PPI and down-pool metagraph
+        ppi_x = self.conv1_down(ppi_x, ppi_metapaths, mg_x, self.conv1_up.ppi_attn)
 
         ########################################
-        # Apply Leaky ReLU, dropout, normalize
+        # Apply Leaky ReLU, dropout, and normalize
         ########################################
         for celltype, x in ppi_x.items():
             ppi_x[celltype] = self.layer_norm1(x)
@@ -66,9 +66,9 @@ class Pinnacle(nn.Module):
         ########################################
 
         # Update Protein-Celltype-Tissue
-        ppi_x, mg_x = self.conv2_up(ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors)
+        ppi_x, mg_x = self.conv2_up(ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors)
 
-        # Update PPI and down-pool CCI-BTO
-        ppi_x = self.conv2_down(ppi_x, ppi_edgetypes, mg_x, self.conv2_up.ppi_attn)
+        # Update PPI and down-pool metagraph
+        ppi_x = self.conv2_down(ppi_x, ppi_metapaths, mg_x, self.conv2_up.ppi_attn)
 
         return ppi_x, mg_x

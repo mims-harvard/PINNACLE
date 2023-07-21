@@ -71,16 +71,16 @@ class PCTConv(nn.Module):
         z = torch.sum(out * beta.unsqueeze(-1), dim=1)
         return z
 
-    def forward(self, ppi_x, mg_x, ppi_edgetypes, mg_edgetypes, ppi_edge_index, mg_edge_index, tissue_neighbors, init_cci=False):
+    def forward(self, ppi_x, mg_x, ppi_metapaths, mg_metapaths, ppi_edge_index, mg_edge_index, tissue_neighbors, init_cci=False):
         
         if init_cci: mg_x_list = []
         else: # Project metagraph embeddings to the same dimension as PPI
-            mg_x = self._per_data_forward(mg_x, mg_edgetypes, self.mg_conv_in)
+            mg_x = self._per_data_forward(mg_x, mg_metapaths, self.mg_conv_in)
         
         for celltype, x in ppi_x.items(): # Iterate through cell-type specific PPI layers
-            if len(ppi_edgetypes[celltype]) == 0: ppi_x[celltype] = []
+            if len(ppi_metapaths[celltype]) == 0: ppi_x[celltype] = []
             else:
-                ppi_x[celltype] = self._per_data_forward(x, ppi_edgetypes[celltype], self.ppi_w[celltype])
+                ppi_x[celltype] = self._per_data_forward(x, ppi_metapaths[celltype], self.ppi_w[celltype])
 
             # Attention on PPI nodes per cell type
             w = torch.sum(self.pc_W * ppi_x[celltype].unsqueeze(-1), dim=-2) + self.pc_b
@@ -103,8 +103,8 @@ class PCTConv(nn.Module):
         for i in range(self.tissue_update): # Initialize tissue embeddings in a more meaningful way
             for t in sorted(tissue_neighbors):
                 mg_x[t, :] = torch.mean(mg_x[tissue_neighbors[t]], 0)
-            
-            mg_x = self._per_data_forward(mg_x, mg_edgetypes, self.mg_conv_out)
+        
+        mg_x = self._per_data_forward(mg_x, mg_metapaths, self.mg_conv_out)
         
         return ppi_x, mg_x
 
@@ -137,10 +137,10 @@ class PPIConv(nn.Module):
         zeros(self.b)
         glorot(self.q)
 
-    def _per_data_forward(self, x, edgetypes, node_conv):
+    def _per_data_forward(self, x, metapaths, node_conv):
 
         # Calculate node-level attention representations
-        out = [node_conv(x, edgetype) for edgetype in edgetypes if edgetype.shape[1] > 0]
+        out = [node_conv(x, metapath) for metapath in metapaths if metapath.shape[1] > 0]
         out = torch.stack(out, dim=1).to(x.device)
         
         # Apply non-linearity
@@ -155,13 +155,13 @@ class PPIConv(nn.Module):
 
         return z
 
-    def forward(self, ppi_x, ppi_edgetypes, mg_x, ppi_attn):
+    def forward(self, ppi_x, ppi_metapaths, mg_x, ppi_attn):
         
         for celltype, x in ppi_x.items(): # Iterate through cell-type specific PPI layers
 
-            if len(ppi_edgetypes[celltype]) == 0: ppi_x[celltype] = []
+            if len(ppi_metapaths[celltype]) == 0: ppi_x[celltype] = []
             else: # Update using meta-path attention
-                ppi_x[celltype] = self._per_data_forward(x, ppi_edgetypes[celltype], self.ppi_w[celltype])
+                ppi_x[celltype] = self._per_data_forward(x, ppi_metapaths[celltype], self.ppi_w[celltype])
 
             # Downpool using cell-type embedding
             gamma = ppi_attn[celltype] # (n,) where n = number of proteins in the cell type (in the batch)
