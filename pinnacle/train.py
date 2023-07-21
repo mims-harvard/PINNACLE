@@ -215,8 +215,10 @@ def main():
     _, ppi_data_all, ppi_metapaths_adjs, ppi_x = mb_utils.generate_batch(ppi_data, ppi_metapaths, edge_attr_dict, "all", args.batch_size, device, ppi = False, loader_type=args.loader)
     _, mg_data_all, mg_metapaths_adjs, mg_x = mb_utils.generate_batch({0: mg_data}, mg_metapaths, edge_attr_dict, "all", args.batch_size, device, ppi = False, loader_type=args.loader)
     
+    # Generate final embeddings
     best_ppi_x, best_mg_x = utils.get_embeddings(best_model, ppi_x, mg_x[0], ppi_metapaths_adjs, mg_metapaths_adjs[0], ppi_data_all, mg_data_all[0]["total_edge_index"], tissue_neighbors)
 
+    # Save outputs
     for celltype, x in best_ppi_x.items():
         best_ppi_x[celltype] = x.to(device)
     best_mg_x = best_mg_x.to(device)
@@ -224,7 +226,9 @@ def main():
     torch.save(best_mg_x, save_mg_embed)
 
     # Generate plots
-    labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
+    if hparams['plot']: labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
+    
+    # Save labels
     labels_fout = open(save_labels_dict, "w")
     labels_fout.write(str(labels_dict))
     labels_fout.close()
