@@ -179,16 +179,27 @@ def process_and_split_data(embed, positive_proteins, negative_proteins, celltype
 
 def main():
     parser = argparse.ArgumentParser()
+    
+    # PINNACLE pretrained representations
     parser.add_argument("--embeddings_dir", type=str, default="../data/pinnacle_embeds/")
     parser.add_argument("--embed", type=str, default="pinnacle")
+    
+    # Cell type specific PPI networks
     parser.add_argument("--celltype_ppi", type=str, help="Filename (prefix) of cell type PPI.")
+    
+    # Fine-tuning data
     parser.add_argument('--positive_proteins_prefix', type=str, default="../data/therapeutic_target_task/positive_proteins")
     parser.add_argument('--negative_proteins_prefix', type=str, default="../data/therapeutic_target_task/negative_proteins")
     parser.add_argument('--raw_data_prefix', type=str, default="../data/therapeutic_target_task/raw_targets")
-    parser.add_argument('--data_split_path', type=str, default="../data/therapeutic_target_task/data_split")
-    parser.add_argument("--random_state", type=int, default=1)
+
+    # Parameters for data split size
     parser.add_argument("--train_size", type=float, default=0.6)
     parser.add_argument("--val_size", type=float, default=0.2)
+
+    # Output
+    parser.add_argument('--data_split_path', type=str, default="../data/therapeutic_target_task/data_split")
+
+    parser.add_argument("--random_state", type=int, default=1)
     args = parser.parse_args()
 
     # PINNACLE pretrained representations
