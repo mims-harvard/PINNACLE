@@ -69,7 +69,7 @@ We also provide checkpoints for PINNACLE after pretraining. The checkpoints for 
 
 ### Finetune PINNACLE on Your Own Datasets
 
-You can finetune PINNACLE on your own datasets by using our provided model checkpoints or contextualized representations (i.e., no re-training needed). Please review this [README](https://github.com/mims-harvard/PINNACLE/blob/main/Finetune-README.md) to learn how to preprocess and finetune PINNACLE on your own datasets.
+You can finetune PINNACLE on your own datasets by using our provided model checkpoints or contextualized representations (i.e., no re-training needed). Please review this [README](https://github.com/mims-harvard/PINNACLE/blob/main/finetune_pinnacle/README.md) to learn how to preprocess and finetune PINNACLE on your own datasets.
 
 ### Train PINNACLE
 
