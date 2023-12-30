@@ -15,6 +15,34 @@ MAX_RETRY = 10  # To mitigate the effect of random state, we will redo data spli
 TEST_CELLTYPE_POS_NUM_MIN = 5 # For each cell type, the number of positive samples in test set must be greater than 5, or else the disease won't be evlauated
 
 
+def read_args():
+    parser = argparse.ArgumentParser()
+
+    # PINNACLE pretrained representations
+    parser.add_argument("--embeddings_dir", type=str, default="../data/pinnacle_embeds/")
+    parser.add_argument("--embed", type=str, default="pinnacle")
+    
+    # Cell type specific PPI networks
+    parser.add_argument("--celltype_ppi", type=str, help="Filename (prefix) of cell type PPI.")
+    
+    # Fine-tuning data
+    parser.add_argument('--positive_proteins_prefix', type=str, default="../data/therapeutic_target_task/positive_proteins")
+    parser.add_argument('--negative_proteins_prefix', type=str, default="../data/therapeutic_target_task/negative_proteins")
+    parser.add_argument('--raw_data_prefix', type=str, default="../data/therapeutic_target_task/raw_targets")
+
+    # Parameters for data split size
+    parser.add_argument("--train_size", type=float, default=0.6)
+    parser.add_argument("--val_size", type=float, default=0.2)
+
+    # Output
+    parser.add_argument('--data_split_path', type=str, default="../data/therapeutic_target_task/data_split")
+
+    parser.add_argument("--random_state", type=int, default=1)
+    args = parser.parse_args()
+
+    return args
+
+
 def process_and_split_data(embed, positive_proteins, negative_proteins, celltype_protein_dict, celltype_dict, data_split_path, random_state, test_size):
     """
     First generate data (averaging same protein embeddings in different celltypes for the downstream task.  Then split the data into train/test sets while grouping by protein and stratified by cell types.
@@ -178,29 +206,21 @@ def process_and_split_data(embed, positive_proteins, negative_proteins, celltype
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    
-    # PINNACLE pretrained representations
-    parser.add_argument("--embeddings_dir", type=str, default="../data/pinnacle_embeds/")
-    parser.add_argument("--embed", type=str, default="pinnacle")
-    
-    # Cell type specific PPI networks
-    parser.add_argument("--celltype_ppi", type=str, help="Filename (prefix) of cell type PPI.")
-    
-    # Fine-tuning data
-    parser.add_argument('--positive_proteins_prefix', type=str, default="../data/therapeutic_target_task/positive_proteins")
-    parser.add_argument('--negative_proteins_prefix', type=str, default="../data/therapeutic_target_task/negative_proteins")
-    parser.add_argument('--raw_data_prefix', type=str, default="../data/therapeutic_target_task/raw_targets")
 
-    # Parameters for data split size
-    parser.add_argument("--train_size", type=float, default=0.6)
-    parser.add_argument("--val_size", type=float, default=0.2)
+    """
+    
+    Requirements for running this script
+        - Json file of positive proteins (dict)     {"<celltype name>": ["<protein name>"]}
+        - Json file of negative proteins (dict)     {"<celltype name>": ["<protein name>"]}
+        - Json file of raw data (list)              ["<protein name>"]
 
-    # Output
-    parser.add_argument('--data_split_path', type=str, default="../data/therapeutic_target_task/data_split")
+    Output of this script
+        - Json file of data split indices (dict)    {"pos_train_indices": [...], "neg_train_indices": [...], "pos_test_indices": [...], "neg_test_indices": [...]}
+        - Json file of data split names (dict)      {"pos_train_names": [...], "neg_train_names": [...], "pos_test_names": [...], "neg_test_names": [...]}
+    
+    """
 
-    parser.add_argument("--random_state", type=int, default=1)
-    args = parser.parse_args()
+    args = read_args()
 
     # PINNACLE pretrained representations
     embed_path = args.embeddings_dir + args.embed + "_protein_embed.pth"
