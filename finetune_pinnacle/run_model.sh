@@ -4,8 +4,11 @@ conda activate pinnacle
 
 # Rheumatoid Arthritis (EFO_0000685)
 python train.py \
-    --disease=EFO_0000685 \
+    --task_name=EFO_0000685 \
     --embeddings_dir=../data/pinnacle_embeds/ \
+    --positive_proteins_prefix ../data/therapeutic_target_task/positive_proteins_EFO_0000685 \
+    --negative_proteins_prefix ../data/therapeutic_target_task/negative_proteins_EFO_0000685 \
+    --data_split_path ../data/therapeutic_target_task/data_split_EFO_0000685 \
     --actn=relu \
     --dropout=0.2 \
     --hidden_dim_1=32 \
@@ -19,8 +22,11 @@ python train.py \
 
 # Inflammatory bowel disease (EFO_0003767)
 python train.py \
-    --disease=EFO_0003767 \
+    --task_name=EFO_0003767 \
     --embeddings_dir=../data/pinnacle_embeds/ \
+    --positive_proteins_prefix ../data/therapeutic_target_task/positive_proteins_EFO_0003767 \
+    --negative_proteins_prefix ../data/therapeutic_target_task/negative_proteins_EFO_0003767 \
+    --data_split_path ../data/therapeutic_target_task/data_split_EFO_0003767 \
     --actn=relu \
     --dropout=0.4 \
     --hidden_dim_1=32 \
@@ -31,3 +37,4 @@ python train.py \
     --wd=0.0001 \
     --random_state 1 \
     --num_epoch=2000
+    
