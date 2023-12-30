@@ -11,9 +11,8 @@ from read_data import read_labels_from_evidence
 
 def create_parser():
     parser = argparse.ArgumentParser()
-    
-    parser.add_argument("--model", type=str, default="torch_mlp")
 
+    # Model hyperparameters
     parser.add_argument("--hidden_dim_1", type=int, default=64, help="1st hidden dim size")
     parser.add_argument("--hidden_dim_2", type=int, default=32, help="2nd hidden dim size, discard if 0")
     parser.add_argument("--hidden_dim_3", type=int, default=0, help="3rd hidden dim size, discard if 0")
