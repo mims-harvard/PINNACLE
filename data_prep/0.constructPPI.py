@@ -122,6 +122,37 @@ def aggregate_celltype_ppi_list(celltypes, celltype_ppi_list, ppi, cells_per_cel
     print("Number of cell types:", len(aggregated))
 
 
+def read_ppi(f):
+    G = nx.read_edgelist(PPI_DIR)
+    ppi_layers = dict()
+    with open(f) as fin:
+        for lin in fin:
+            cluster = lin.split("\t")[1]
+            ppi = lin.strip().split("\t")[2].split(",")
+            ppi_layers[cluster] = G.subgraph(ppi)
+            assert nx.is_connected(ppi_layers[cluster])
+    return ppi_layers
+
+
+def write_ppi_edgelists(ppi_layers, output_f):
+    saved_edgelists = []
+    for celltype, ppi in ppi_layers.items():
+        output_edgelist_f = output_f + "_".join(celltype.split(" ")) + ".txt"
+        assert " " not in output_edgelist_f
+        assert output_edgelist_f not in saved_edgelists
+        print("Writing to...", output_edgelist_f)
+        nx.write_edgelist(ppi, output_edgelist_f, data = False)
+        saved_edgelists.append(output_edgelist_f)
+    print("Finished writing %d edgelists." % len(saved_edgelists))
+
+    # Create a single file containing the list of edgelists in the folder
+    inventory_f = output_f + "inventory.txt"
+    output_list_of_files = open(inventory_f, "w")
+    for l in saved_edgelists:
+        output_list_of_files.write(l + "\n")
+    print("Saved inventory at %s" % inventory_f)
+
+
 def main():
 
     parser = argparse.ArgumentParser(description="Constructing cell type specific PPI networks.")
@@ -181,7 +212,10 @@ def main():
             aggregate_celltype_ppi_list(celltypes, celltype_ppi_list, ppi, cells_per_celltype, args.celltype_ppi_filename + ("_maxpval=%s.csv" % str(args.max_pval)))
         else:
             extract_celltype_ppi(args.rank_pval_filename + ".csv", args.celltype_ppi_filename + "_maxpval", ppi, lcc = True, max_pval = args.max_pval, max_number_of_genes = args.max_num_genes)
-    
+
+        ppi_layers = read_ppi(args.celltype_ppi_filename + ("_maxpval=%s.csv" % str(args.max_pval)))
+        write_ppi_edgelists(ppi_layers, OUTPUT_DIR)
+
     print("All finished!")
     
 
