@@ -5,7 +5,8 @@ from torch_geometric.data import Data
 from torch_geometric.loader import NeighborLoader, GraphSAINTRandomWalkSampler, GraphSAINTEdgeSampler
 from torch_geometric.utils import structured_negative_sampling
 
-from utils import construct_metapath, el_dot, calc_link_pred_loss, calc_center_loss, get_embeddings
+from utils import construct_metapath, get_embeddings
+from loss import el_dot, calc_link_pred_loss, calc_center_loss
 
 
 def pred_batch2dict(packed_batch: object, mg_x_ori: dict, ppi_x_ori: dict, cell_type_order: list, device: str) -> dict:
@@ -76,7 +77,7 @@ def iterate_train_batch(ppi_train_loader_dict: dict, ppi_x_ori: dict, ppi_metapa
 
         # Compute train loss
         ppi_loss, mg_loss = calc_link_pred_loss(mg_pred, mg_data_train, ppi_preds, ppi_data_batch, hparams['loss_type'])
-        loss = hparams['theta'] * ppi_loss + (1 - hparams['theta']) * mg_loss
+        link_loss = hparams['theta'] * ppi_loss + (1 - hparams['theta']) * mg_loss
 
         # Get embeddings
         embed = torch.cat(list(ppi_x.values())) # Protein
@@ -90,10 +91,10 @@ def iterate_train_batch(ppi_train_loader_dict: dict, ppi_x_ori: dict, ppi_metapa
         
         # Center loss
         cent_loss = calc_center_loss(center_loss, embed, centers, center_loss_labels, train_mask)
-        print("Link Prediction: ", loss, "Center Loss: ", cent_loss)
-        wandb.log({"Link Prediction Loss": loss, "Center Loss": cent_loss})
-        loss += cent_loss * hparams["lambda"]
-        loss.backward()
+        print("Link Prediction: ", link_loss, "Center Loss: ", cent_loss)
+        wandb.log({"Link Prediction Loss": link_loss, "Center Loss": cent_loss})
+        combined_loss = link_loss + (cent_loss * hparams["lambda"])
+        combined_loss.backward()
         
         # Update
         for param in center_loss.parameters():
@@ -104,7 +105,7 @@ def iterate_train_batch(ppi_train_loader_dict: dict, ppi_x_ori: dict, ppi_metapa
         
         # Calculate loss
         total_samples += batch_size
-        total_loss += float(loss) * batch_size
+        total_loss += float(combined_loss) * batch_size
         # Note that here for simplicity the total loss rather than only the link prediction BCEloss is weighted by edge batch size. 
 
     total_loss = total_loss/total_samples  # Weighted total train loss
