@@ -194,12 +194,12 @@ def main():
     
     # Extract cell type specific PPI
     else:
-        
-        cells_per_celltype = count_cells_per_celltype(OUTPUT_DIR + "ts_data_tissue.csv")
-        print(cells_per_celltype)
 
         print("Extracting cell type specific PPI...")
         if args.subsample:
+
+            cells_per_celltype = count_cells_per_celltype(OUTPUT_DIR + "ts_data_tissue.csv")
+            print(cells_per_celltype)
             
             celltypes = set()
             celltype_ppi_list = []
