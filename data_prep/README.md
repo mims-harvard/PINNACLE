@@ -1,5 +1,14 @@
 # Constructing cell type PPI from Tabula Sapiens
 
+## Step 0: Set up environment
+
+This codebase leverages Python, NetworkX, Scanpy, etc. To create an environment with all of the required packages, please ensure that [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) is installed and then execute the commands:
+
+```
+conda env create -f scRNA_env.yml
+conda activate scRNA_env
+```
+
 ## Step 1: Rank and extract genes
 
 Required environment for each script used:
