@@ -13,6 +13,7 @@ from utils import jaccard_similarity, ontology_distance, calculate_correlation, 
 
 
 PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
+CELL_ONTOLOGY_DIR = "../data/cell-ontology/cl-full.obo"
 
 
 def evaluate(ppi_layers, ppi, cell_ontology, cell_ontology_names):
