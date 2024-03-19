@@ -20,6 +20,9 @@ def overlapping_celltypes(celltype_ppi_1, celltype_ppi_2, cells_per_celltype):
 
     print("Overlapping cell types:", len(overlap), overlap)
     print("Cell types in 1 but not 2:", len(only_in_1), only_in_1)
+
+    # Question: If there are cell types that are not overlapping, is itm because
+    #           of "rare" cell types? (e.g., small number of cells)
     print(">=10K cells", [c for c in only_in_1 if cells_per_celltype[c] >= 10000])
     print(">=5K cells", [c for c in only_in_1 if cells_per_celltype[c] >= 5000])
     print("<1K cells", [c for c in only_in_1 if cells_per_celltype[c] < 1000])
