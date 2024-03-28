@@ -40,20 +40,27 @@ def load_global_PPI(f):
     return G
 
 
-def load_celltype_ppi(ppi_dir):
+#def load_celltype_ppi(ppi_dir):
+#    ppi_layers = dict()
+#
+#    for f in glob.glob(ppi_dir + "*"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
+#
+#        # Parse name of context
+#        context = f.split(ppi_dir)[1].split(".")[0]
+#        context = context.replace("_", " ")
+#
+#        # Read edgelist
+#        ppi = nx.read_edgelist(f)
+#        ppi_layers[context] = ppi
+#        assert nx.is_connected(ppi_layers[context])
+
+
+def load_celltype_ppi(f):
     ppi_layers = dict()
-
-    for f in glob.glob(ppi_dir + "*"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
-
-        # Parse name of context
-        context = f.split(ppi_dir)[1].split(".")[0]
-        context = context.replace("_", " ")
-
-        # Read edgelist
-        ppi = nx.read_edgelist(f)
-        ppi_layers[context] = ppi
-        assert nx.is_connected(ppi_layers[context])
-
+    with open(f) as fin:
+        for lin in fin:
+            cluster = (lin.split("\t")[0], lin.split("\t")[1])
+            ppi_layers[cluster] = lin.strip().split("\t")[2].split(",")
     print(ppi_layers.keys())
     return ppi_layers
 

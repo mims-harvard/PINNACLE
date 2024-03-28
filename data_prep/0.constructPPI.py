@@ -58,13 +58,13 @@ def extract_celltype_ppi(input_f, output_f, ppi, lcc = True, max_pval = 1, max_n
         out = open(output_f + "=%s.csv" % str(max_pval), "w")
 
     for i, c in enumerate(sorted(celltype_ppi)):
-        c_df = rank_pval[[c + "_n", c + "_p"]]
-        c_df_sig = c_df[c_df[c + "_p"] <= max_pval]
-        c_df_sig = c_df_sig.iloc[0:max_number_of_genes]
-        if len(c_df_sig) == 0: continue
+        c_df = rank_pval[[c + "_n", c + "_p"]] # Extract subset of table corresponding to the cell type c
+        c_df_sig = c_df[c_df[c + "_p"] <= max_pval] # Extract subset of genes that satisfy p-value criteria
+        c_df_sig = c_df_sig.iloc[0:max_number_of_genes] # Extract subset of genes above a certain threshold
+        if len(c_df_sig) == 0: continue # If the list is empty, skip to the next cell type
 
-        c_df_sig_genes = c_df_sig[c + "_n"].tolist()
-        c_subgraph = ppi.subgraph(c_df_sig_genes)
+        c_df_sig_genes = c_df_sig[c + "_n"].tolist() # Create list object of significant genes
+        c_subgraph = ppi.subgraph(c_df_sig_genes) # Extract the subgraph from the global network corresponding to the significant genes
         if lcc:
             c_lcc = max(nx.connected_components(c_subgraph), key=len)
             print("Size of LCC for %s:" % c, len(c_lcc), "(%.2f of sig genes in PPI)" % (len(c_lcc) / len(c_subgraph)))
