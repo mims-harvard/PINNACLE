@@ -5,9 +5,7 @@ import numpy as np
 from utils import load_global_PPI, load_celltype_ppi, count_cells_per_celltype
 from utils import jaccard_similarity
 
-
-PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
-OUTPUT_DIR = "../data/networks/"
+from data_config import PPI_DIR, OUTPUT_DIR
 
 
 def overlapping_celltypes(celltype_ppi_1, celltype_ppi_2, cells_per_celltype):

@@ -11,9 +11,7 @@ import networkx as nx
 from utils import read_ts_data, load_global_PPI, read_obo, load_celltype_ppi
 from utils import jaccard_similarity, ontology_distance, calculate_correlation, plot_box
 
-
-PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
-CELL_ONTOLOGY_DIR = "../data/cell-ontology/cl-full.obo"
+from data_config import PPI_DIR, CELL_ONTOLOGY_DIR
 
 
 def evaluate(ppi_layers, ppi, cell_ontology, cell_ontology_names):

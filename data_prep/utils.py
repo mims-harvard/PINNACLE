@@ -12,6 +12,7 @@ import scanpy as sc
 import networkx as nx
 import obonet
 
+
 def read_ts_data(f):
     ts_data = sc.read_h5ad(f)
     print(ts_data)

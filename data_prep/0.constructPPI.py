@@ -13,10 +13,7 @@ import networkx as nx
 from utils import load_global_PPI, read_ts_data, count_cells_per_celltype
 from utils import calculate_correlation
 
-
-TABULA_SAPIENS_DIR = "../data/raw/TabulaSapiens.h5ad"
-PPI_DIR = "../data/networks/global_ppi_edgelist.txt"
-OUTPUT_DIR = "../data/networks/"
+from data_config import TABULA_SAPIENS_DIR, PPI_DIR, OUTPUT_DIR
 
 
 def subsample_cells(ts_data, groupby, num_cells_cutoff):
