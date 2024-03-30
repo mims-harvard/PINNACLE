@@ -120,7 +120,7 @@ def aggregate_celltype_ppi_list(celltypes, celltype_ppi_list, ppi, cells_per_cel
 
 
 def read_ppi(f):
-    G = nx.read_edgelist(PPI_DIR)
+    G = load_global_PPI(PPI_DIR)
     ppi_layers = dict()
     with open(f) as fin:
         for lin in fin:
