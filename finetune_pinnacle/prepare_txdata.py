@@ -108,7 +108,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--celltype_ppi", type=str, help="Filename (prefix) of cell type PPI.")
     parser.add_argument('--disease', type=str)
-    parser.add_argument('--evidence_dir', type=str)
+    parser.add_argument('--evidence_dir', type=str) # Download OpenTargets ChEMBL evidence
     parser.add_argument('--all_drug_targets_path', type=str, default="../data/therapeutic_target_task/all_approved.csv")
     parser.add_argument('--curated_disease_dir', type=str)
     parser.add_argument('--chembl2db_path', type=str)  # Download mapping from ChEMBL id to DrugBank id from https://ftp.ebi.ac.uk/pub/databases/chembl/UniChem/data/wholeSourceMapping/src_id1/src1src2.txt (version: 13-Apr-2022)
