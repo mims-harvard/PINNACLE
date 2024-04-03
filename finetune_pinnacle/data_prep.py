@@ -23,7 +23,7 @@ def read_args():
     parser.add_argument("--embed", type=str, default="pinnacle")
     
     # Cell type specific PPI networks
-    parser.add_argument("--celltype_ppi", type=str, help="Filename (prefix) of cell type PPI.")
+    # parser.add_argument("--celltype_ppi", type=str, default="../data/networks/ppi_edgelists/", help="Filename (prefix) of cell type PPI.")
     
     # Fine-tuning data
     parser.add_argument('--positive_proteins_prefix', type=str, default="../data/therapeutic_target_task/positive_proteins")
