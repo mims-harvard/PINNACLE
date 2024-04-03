@@ -8,7 +8,7 @@ import torch
 from sklearn.model_selection import StratifiedGroupKFold
 import networkx as nx
 
-from read_data import load_PPI_data, load_data
+from read_data import load_data # load_PPI_data
 from extract_txdata_utils import *
 
 MAX_RETRY = 10  # To mitigate the effect of random state, we will redo data splitting for MAX_RETRY times if the number of positive samples in test set is less than TEST_CELLTYPE_POS_NUM_MIN
