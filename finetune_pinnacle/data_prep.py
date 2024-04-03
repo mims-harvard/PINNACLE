@@ -227,7 +227,7 @@ def main():
     labels_path = args.embeddings_dir + args.embed + "_labels_dict.txt"
 
     # Cell type specific PPI networks
-    celltype_protein_dict = load_PPI_data(args.celltype_ppi)
+    # celltype_protein_dict = load_PPI_data(args.celltype_ppi)
     data_split_path = args.data_split_path + ".json"
 
     # Load data
