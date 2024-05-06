@@ -231,7 +231,7 @@ def main():
     data_split_path = args.data_split_path + ".json"
 
     # Load data
-    embed, celltype_dict, celltype_protein_dict, positive_proteins, negative_proteins, all_relevant_proteins = load_data(embed_path, labels_path, args.positive_proteins_prefix, args.negative_proteins_prefix, args.raw_data_prefix)
+    embed, celltype_dict, celltype_protein_dict, positive_proteins, negative_proteins, all_relevant_proteins = load_data(embed_path, labels_path, args.positive_proteins_prefix, args.negative_proteins_prefix, args.raw_data_prefix, None)
     for c, v in positive_proteins.items():
         assert len(v) == len(set(v).intersection(set(all_relevant_proteins)))
 

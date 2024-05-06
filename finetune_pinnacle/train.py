@@ -92,7 +92,7 @@ def main(args, hparams, wandb):
     models_output_dir, metrics_output_dir, random_state, embed_path, labels_path = setup_paths(args)
     
     # Load data
-    embed, celltype_dict, celltype_protein_dict, positive_proteins, negative_proteins, _ = load_data(embed_path, labels_path, args.positive_proteins_prefix, args.negative_proteins_prefix, None)
+    embed, celltype_dict, celltype_protein_dict, positive_proteins, negative_proteins, _ = load_data(embed_path, labels_path, args.positive_proteins_prefix, args.negative_proteins_prefix, None, args.task_name)
     print("Finished reading data, evaluating...\n")
 
     # Run model

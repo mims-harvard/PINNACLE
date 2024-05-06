@@ -36,7 +36,7 @@ def read_labels_from_evidence(positive_protein_prefix, negative_protein_prefix, 
         return {}, {}, {}
 
 
-def load_data(embed_path: str, labels_path: str, positive_proteins_prefix: str, negative_proteins_prefix: str, raw_data_prefix: str):
+def load_data(embed_path: str, labels_path: str, positive_proteins_prefix: str, negative_proteins_prefix: str, raw_data_prefix: str, task_name: str):
     
     embed = torch.load(embed_path)
     with open(labels_path, "r") as f:
@@ -60,6 +60,9 @@ def load_data(embed_path: str, labels_path: str, positive_proteins_prefix: str, 
 
     positive_proteins, negative_proteins, all_relevant_proteins = read_labels_from_evidence(positive_proteins_prefix, negative_proteins_prefix, raw_data_prefix)
     assert len(positive_proteins) > 0
+    if task_name != None and len(positive_proteins) == 1:
+        positive_proteins = positive_proteins[task_name]
+        negative_proteins = negative_proteins[task_name]
 
     return embed, celltype_dict, celltype_protein_dict, positive_proteins, negative_proteins, all_relevant_proteins
 
