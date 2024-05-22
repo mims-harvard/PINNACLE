@@ -208,6 +208,13 @@ def plot_metagraph_umap(labels, protein_labels, color_map, output):
 
 
 def main():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--do_sweep', type=bool, default=False)
+    parser.add_argument('--do_sweep_plot', type=bool, default=False)
+    parser.add_argument('--do_plot_metagraph', type=bool, default=False)
+    args = parser.parse_args()
+
     input_f = "../data/pinnacle_embeds/"
     output_dir = "figures/"
 
@@ -223,14 +230,11 @@ def main():
         new_labels_dict[k] = np.array(v)[sanity_idx]
 
     print("Plot embeddings...")
-    do_sweep = False
-    do_sweep_plot = False
-    do_plot_metagraph = False
-    if do_sweep:
+    if args.do_sweep:
         umap_param = {"n_neighbors": [10, 20, 30, 40, 50, 100], "min_dist": [0.1, 0.15, 0.2, 0.25, 0.5, 0.75, 0.8, 0.9]}
     else:
         umap_param = {"n_neighbors": 10, "min_dist": 0.9}
-    plot_emb(ppi_x, mg_x, new_labels_dict, ppi_layers, metagraph, umap_param, do_plot_metagraph, do_sweep, do_sweep_plot, output_dir)
+    plot_emb(ppi_x, mg_x, new_labels_dict, ppi_layers, metagraph, umap_param, args.do_plot_metagraph, args.do_sweep, args.do_sweep_plot, output_dir)
 
 
 if __name__ == "__main__":

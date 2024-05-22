@@ -5,6 +5,8 @@ import numpy as np
 from utils import load_global_PPI, load_celltype_ppi, count_cells_per_celltype
 from utils import jaccard_similarity
 
+import sys
+sys.path.insert(0, '..') # add data_config to path
 from data_config import PPI_DIR, OUTPUT_DIR
 
 

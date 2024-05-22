@@ -13,6 +13,8 @@ import networkx as nx
 from utils import load_global_PPI, read_ts_data, count_cells_per_celltype
 from utils import calculate_correlation
 
+import sys
+sys.path.insert(0, '..') # add data_config to path
 from data_config import TABULA_SAPIENS_DIR, PPI_DIR, OUTPUT_DIR
 
 

@@ -1,5 +1,7 @@
 from utils import read_ts_data
 
+import sys
+sys.path.insert(0, '..') # add data_config to path
 from data_config import TABULA_SAPIENS_DIR, OUTPUT_DIR
 
 

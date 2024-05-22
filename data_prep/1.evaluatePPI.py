@@ -11,6 +11,8 @@ import networkx as nx
 from utils import read_ts_data, load_global_PPI, read_obo, load_celltype_ppi
 from utils import jaccard_similarity, ontology_distance, calculate_correlation, plot_box
 
+import sys
+sys.path.insert(0, '..') # add data_config to path
 from data_config import PPI_DIR, CELL_ONTOLOGY_DIR
 
 

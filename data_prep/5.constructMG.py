@@ -6,6 +6,8 @@ import obonet
 
 from utils import load_celltype_ppi
 
+import sys
+sys.path.insert(0, '..') # add data_config to path
 from data_config import BTO_DIR, OUTPUT_DIR
 
 
