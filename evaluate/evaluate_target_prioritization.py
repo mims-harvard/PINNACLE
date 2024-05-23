@@ -14,7 +14,7 @@ from metrics import calculate_metrics, calculate_celltype_percentiles
 
 import sys
 sys.path.insert(0, '..') # add data_config to path
-from data_config import DATA_DIR, BTO_DIR
+from data_config import DATA_DIR, TS_TISSUE_DATA_DIR, METAGRAPH_DIR
 
 
 def read_model_data(model_outputs_dir, disease, test_only):
@@ -144,11 +144,7 @@ def main():
     print(seeds)
 
     # Read meta graph
-    bto = obonet.read_obo(BTO_DIR)
-    bto_names = {id_: str(data.get('name')).lower() for id_, data in bto.nodes(data=True)}
-    print(bto_names)
-    metagraph = nx.read_edgelist("/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/all/mg_edgelist.txt", delimiter = "\t")
-    celltype2tissue = utils.get_celltype2tissue(metagraph, bto_names)
+    metagraph = nx.read_edgelist(METAGRAPH_DIR, delimiter = "\t")
     
     # Read disease-drug evidence
     evidence = pd.read_csv(args.evidence + "tx_target/targets/disease_drug_evidence_%s.csv" % args.disease, sep = "\t")
@@ -166,8 +162,8 @@ def main():
         save_prefix = "seed=%s" % str(s)
 
         model_outputs_df, test_proteins = read_model_data(model_outputs_dir, args.disease, args.test_only)
-        utils.check_available_celltypes(list(celltype2tissue.keys()), model_outputs_df)
-        celltype2compartment, compartments, _, _ = utils.read_tissue_metadata("/n/data1/hms/dbmi/zitnik/lab/datasets/2022-09-TabulaSapiens/processed/ts_data_tissue.csv", "cell_ontology_class")
+        utils.check_available_celltypes(metagraph, model_outputs_df)
+        celltype2compartment, compartments, _, _ = utils.read_tissue_metadata(TS_TISSUE_DATA_DIR, "cell_ontology_class")
 
         # Calculate AP and ROC
         ap, roc, recall_k, precision_k, accuracy_k, ap_k = calculate_metrics(args.k, "celltype", test_proteins, model_outputs_df)
