@@ -226,7 +226,7 @@ def main():
     torch.save(best_mg_x, save_mg_embed)
 
     # Generate plots
-    if hparams['plot']: labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
+    labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
     
     # Save labels
     labels_fout = open(save_labels_dict, "w")
