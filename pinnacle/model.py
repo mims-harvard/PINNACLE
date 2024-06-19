@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import BatchNorm, LayerNorm
 
-from .conv import PCTConv, PPIConv
+from conv import PCTConv, PPIConv
 
 
 class Pinnacle(nn.Module):
