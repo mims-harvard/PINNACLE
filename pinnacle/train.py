@@ -233,6 +233,32 @@ def main():
     labels_fout.write(str(labels_dict))
     labels_fout.close()
 
+    # Save only protein/metagraph labels
+    protein_celltype_labels = []
+    protein_name_labels = []
+    metagraph_celltype_labels = []
+    metagraph_name_labels = []
+    for c, p in zip(labels_dict["Cell Type"], labels_dict["Name"]):
+        if c.startswith("Sanity"): continue
+        if c.startswith("BTO") or c.startswith("CCI"):
+            metagraph_celltype_labels.append(c)
+            metagraph_name_labels.append(p)
+        else:
+            protein_celltype_labels.append(c)
+            protein_name_labels.append(p)
+
+    protein_labels_dict = {"Cell Type": protein_celltype_labels, "Name": protein_name_labels}
+    labels_fout = open(args.save_prefix + "_protein_labels_dict.txt", "w")
+    labels_fout.write(str(protein_labels_dict))
+    labels_fout.close()
+
+    mg_labels_dict = {"Cell Type": metagraph_celltype_labels, "Name": metagraph_name_labels}
+    labels_fout = open(args.save_prefix + "_mg_labels_dict.txt", "w")
+    labels_fout.write(str(mg_labels_dict))
+    labels_fout.close()
+
+
+
 
 if __name__ == "__main__":
     main()
