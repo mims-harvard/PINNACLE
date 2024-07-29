@@ -1,4 +1,4 @@
-# PINNACLE: Contextualizing protein representations using deep learning on protein networks and single-cell data
+# PINNACLE: Contextual AI models for single-cell protein biology
 
 **Authors**:
 - [Michelle M. Li](http://michellemli.com)

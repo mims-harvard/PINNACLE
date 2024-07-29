@@ -54,7 +54,7 @@ def rank_by_stattest(ts_data, ppi, method, groupby, out_f):
 def extract_celltype_ppi(input_f, output_f, ppi, lcc = True, max_pval = 1, max_number_of_genes = 4000):
     rank_pval = pd.read_csv(input_f, sep = "\t").drop("Unnamed: 0", axis = 1)
 
-    celltype_ppi = dict.fromkeys([c.split("_")[0] for c in rank_pval.columns])
+    celltype_ppi = dict.fromkeys([c.rsplit("_", 1)[0] for c in rank_pval.columns])
     
     if output_f != "":
         out = open(output_f + "=%s.csv" % str(max_pval), "w")

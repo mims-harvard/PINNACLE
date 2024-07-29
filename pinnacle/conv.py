@@ -99,9 +99,9 @@ class PCTConv(nn.Module):
             mg_x = torch.stack(mg_x_list)
             bto = torch.zeros(len(tissue_neighbors), mg_x.shape[1])
             mg_x = torch.cat((mg_x, torch.normal(bto, std=1).to(mg_x.device)))
-            mg_x = torch.nan_to_num(mg_x, nan=1)
         for i in range(self.tissue_update): # Initialize tissue embeddings in a more meaningful way
             for t in sorted(tissue_neighbors):
+                assert len(tissue_neighbors[t]) != 0
                 mg_x[t, :] = torch.mean(mg_x[tissue_neighbors[t]], 0)
         
         mg_x = self._per_data_forward(mg_x, mg_metapaths, self.mg_conv_out)

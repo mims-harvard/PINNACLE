@@ -61,7 +61,7 @@ best_val_acc = -1
 best_model = None
 eps = 10e-4
 
-wandb.init(config = hparams_raw, project = "pinnacle", entity = "pinnacle")
+wandb.init(config = hparams_raw, project = "pinnacle", entity = "user")
 
 hparams = wandb.config
 
@@ -130,7 +130,7 @@ def train(epoch, model, optimizer, center_loss):
     if best_val_acc <= np.mean(val_acc) + eps:
         best_val_acc = np.mean(val_acc)
         with open(save_model, 'wb') as f:
-            torch.save(model.state_dict(), f)
+            torch.save({"epoch": epoch, "model": model, "optimizer": optimizer}, f)
         best_model = copy.deepcopy(model)
     
     for i, val in enumerate(mg_metapaths_train):
@@ -177,15 +177,19 @@ def main():
     global args, ppi_data, mg_data, best_model, hparams, device
     
     # Set up
-    model = mdl.Pinnacle(mg_data.x.shape[1], hparams['hidden'], hparams['output'], len(ppi_metapaths), len(mg_metapaths), ppi_data, hparams['n_heads'], hparams['pc_att_channels'], hparams['dropout']).to(device)
     if args.resume_run != "":
         save_model = "%s_model_save.pth" % args.resume_run
         print("Resuming", save_model)
-        model.load_state_dict(torch.load(save_model))
-    params = list(model.parameters())
+        checkpoint = torch.load(save_model)
+        model = checkpoint["model"]
+        optimizer = checkpoint["optimizer"]
+        params = list(model.parameters())
+    else:
+        model = mdl.Pinnacle(mg_data.x.shape[1], hparams['hidden'], hparams['output'], len(ppi_metapaths), len(mg_metapaths), ppi_data, hparams['n_heads'], hparams['pc_att_channels'], hparams['dropout']).to(device)
+        params = list(model.parameters())
+        optimizer = torch.optim.Adam(params, lr = hparams['lr'], weight_decay = hparams['wd'])
     center_loss = CenterLoss(num_classes=len(set(center_loss_labels)), feat_dim=hparams['output'] * hparams['n_heads'], use_gpu=torch.cuda.is_available())
     params += list(center_loss.parameters())
-    optimizer = torch.optim.Adam(params, lr = hparams['lr'], weight_decay = hparams['wd'])
     wandb.watch(model)
     print(model)
 
@@ -226,7 +230,7 @@ def main():
     torch.save(best_mg_x, save_mg_embed)
 
     # Generate plots
-    if hparams['plot']: labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
+    labels_dict = utils.plot_emb(best_ppi_x, best_mg_x, celltype_map, ppi_layers, metagraph, wandb, center_loss_labels, hparams['plot'])
     
     # Save labels
     labels_fout = open(save_labels_dict, "w")
