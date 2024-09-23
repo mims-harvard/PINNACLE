@@ -10,7 +10,6 @@ from requests.adapters import HTTPAdapter, Retry
 from xml.etree import ElementTree
 
 
-LEGACY_UNIPROT_API_URL = 'https://legacy.uniprot.org/uploadlists/'
 UNIPROT_API_URL = 'https://rest.uniprot.org/idmapping/'
 OT_URL = "https://api.platform.opentargets.org/api/v4/graphql"
 TOTAL_MAX = 20000
@@ -211,7 +210,7 @@ def evidence2genename(drug_evidence_data: pd.DataFrame, ensg2otgenename: dict):
 
         data = parse.urlencode(params)
         data = data.encode('utf-8')
-        req = request.Request(LEGACY_UNIPROT_API_URL, data)
+        req = request.Request(UNIPROT_API_URL, data)
         with request.urlopen(req) as f:
             response = f.read()
         res = response.decode('utf-8')
@@ -219,6 +218,7 @@ def evidence2genename(drug_evidence_data: pd.DataFrame, ensg2otgenename: dict):
 
     except:
         # Adapted from https://www.uniprot.org/help/id_mapping
+        print("Retrying for Uniprot...")
         retries = Retry(total=5, backoff_factor=0.25, status_forcelist=[500, 502, 503, 504])
         session = requests.Session()
         session.mount("https://", HTTPAdapter(max_retries=retries))
@@ -379,13 +379,30 @@ def evidence2genename(drug_evidence_data: pd.DataFrame, ensg2otgenename: dict):
     for o in out:
         ensg2name[o['query']] = o['symbol']
 
+    print("ensg2otgenename", len(ensg2otgenename)) 
+
     # Not sure why these didn't get added
     if "ENSG00000187733" not in ensg2otgenename: ensg2otgenename["ENSG00000187733"] = "AMY1C"
+    if "ENSG00000014138" not in ensg2otgenename: ensg2otgenename["ENSG00000014138"] = "POLA2"
+    if "ENSG00000062822" not in ensg2otgenename: ensg2otgenename["ENSG00000062822"] = "POLD1"
+    if "ENSG00000077514" not in ensg2otgenename: ensg2otgenename["ENSG00000077514"] = "POLD3"
+    if "ENSG00000100479" not in ensg2otgenename: ensg2otgenename["ENSG00000100479"] = "POLE2"
+    if "ENSG00000101868" not in ensg2otgenename: ensg2otgenename["ENSG00000101868"] = "POLA1"
+    if "ENSG00000106628" not in ensg2otgenename: ensg2otgenename["ENSG00000106628"] = "POLD2"
+    if "ENSG00000198056" not in ensg2otgenename: ensg2otgenename["ENSG00000198056"] = "PRIM1"
+    if "ENSG00000146143" not in ensg2otgenename: ensg2otgenename["ENSG00000146143"] = "PRIM2"
+    if "ENSG00000148229" not in ensg2otgenename: ensg2otgenename["ENSG00000148229"] = "POLE3"
+    if "ENSG00000167325" not in ensg2otgenename: ensg2otgenename["ENSG00000167325"] = "RRM1"
+    if "ENSG00000175482" not in ensg2otgenename: ensg2otgenename["ENSG00000175482"] = "POLD4"
+    if "ENSG00000177084" not in ensg2otgenename: ensg2otgenename["ENSG00000177084"] = "POLE"
+    if "ENSG00000142319" not in ensg2otgenename: ensg2otgenename["ENSG00000142319"] = "SLC6A3"
 
     disease_drug_targets = set(uniprot2name.values())
     disease_drug_targets.update(ensg2name.values())
 
     # ENSG --> gene name through OT
+    missing_mappings = [ensg for ensg in drug_evidence_data.targetId if ensg not in ensg2otgenename]
+    if len(missing_mappings) > 0: print("MISSING MAPPINGS:", missing_mappings)
     disease_drug_targets.update([ensg2otgenename[ensg] for ensg in drug_evidence_data.targetId])
 
     print(f'Found {len(disease_drug_targets)} targets with clinically relevant evidence.')
