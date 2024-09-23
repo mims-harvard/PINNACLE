@@ -52,12 +52,14 @@ def main():
     parser = argparse.ArgumentParser(description="Extracting cell-cell interactions.")
     parser.add_argument("-cpdb_output", type=str, help="Directory of output files from CellPhoneDB.")
     parser.add_argument("-cci_edgelist", type=str, help="Filename of cell-cell interaction network.")
-    parser.add_argument("-threshold", type=float, help="Minimum number of iterations for a cell-cell interaction to be significant.")
+    parser.add_argument("-threshold", type=float, default=0.9, help="Minimum number of iterations for a cell-cell interaction to be significant.")
+    parser.add_argument("-pval", type=float, default=0.001, help="P-value for a cell-cell interaction to be significant.")
+    parser.add_argument("-cutoff", type=int, default=1, help="Minimum number of significant LR interactions for a pair of cell types to have an edge.")
     args = parser.parse_args()
 
     cpdb_files = glob.glob(args.cpdb_output + "*/pvalues.txt")
     print("Number of output files to parse:", len(cpdb_files))
-    cci = generate_cci(cpdb_files)
+    cci = generate_cci(cpdb_files, args.pval, args.cutoff)
     G = count_majority(cci, len(cpdb_files), args.threshold)
 
     nx.write_edgelist(G, args.cci_edgelist, data = False, delimiter = "\t")
