@@ -79,8 +79,8 @@ def read_global_ppi(f):
 def read_data(G_f, ppi_dir, mg_f, feat_mat_dim):
 
     # Read global PPI 
-    #G = nx.read_edgelist(G_f)
-    G = read_global_ppi(G_f)
+    G = nx.read_edgelist(G_f)
+    #G = read_global_ppi(G_f)
 
     feat_mat = torch.normal(torch.zeros(len(G.nodes), feat_mat_dim), std=1)
     
@@ -112,7 +112,7 @@ def read_data(G_f, ppi_dir, mg_f, feat_mat_dim):
         else:
             print(edges)
             raise NotImplementedError
-    tissue_neighbors = {mg_mapping[t]: [mg_mapping[n] for n in metagraph.neighbors(t)] for t in metagraph.to_undirected().nodes if "BTO" in t}
+    tissue_neighbors = {mg_mapping[t]: [mg_mapping[n] for n in metagraph.to_undirected().neighbors(t)] for t in metagraph.to_undirected().nodes if "BTO" in t}
     metagraph = nx.relabel_nodes(metagraph, mg_mapping)
     mg_mask = torch.ones(len(metagraph.edges), dtype = torch.bool) # Pass in all meta graph edges during training, validation, and test
     mg_data = create_data(metagraph, mg_mask, mg_mask, mg_mask, mg_nodetype, mg_edgetype, mg_feat_mat)
