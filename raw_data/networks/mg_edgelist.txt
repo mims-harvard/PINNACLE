@@ -1,0 +1,4018 @@
+acinar cell of salivary gland	sperm
+acinar cell of salivary gland	stromal cell
+acinar cell of salivary gland	t follicular helper cell
+acinar cell of salivary gland	tendon cell
+acinar cell of salivary gland	tongue muscle cell
+acinar cell of salivary gland	tracheal goblet cell
+acinar cell of salivary gland	transit amplifying cell of large intestine
+acinar cell of salivary gland	transit amplifying cell of small intestine
+acinar cell of salivary gland	type i nk t cell
+acinar cell of salivary gland	type i pneumocyte
+acinar cell of salivary gland	type ii pneumocyte
+acinar cell of salivary gland	vascular associated smooth muscle cell
+acinar cell of salivary gland	vein endothelial cell
+acinar cell of salivary gland	artery endothelial cell
+acinar cell of salivary gland	bronchial vessel endothelial cell
+acinar cell of salivary gland	capillary endothelial cell
+acinar cell of salivary gland	classical monocyte
+acinar cell of salivary gland	endothelial cell
+acinar cell of salivary gland	endothelial cell of artery
+acinar cell of salivary gland	langerhans cell
+acinar cell of salivary gland	limbal stem cell
+acinar cell of salivary gland	lung microvascular endothelial cell
+acinar cell of salivary gland	retinal blood vessel endothelial cell
+acinar cell of salivary gland	BTO:0001203
+sperm	adipocyte
+sperm	adventitial cell
+sperm	alveolar fibroblast
+sperm	artery endothelial cell
+sperm	b cell
+sperm	basal cell
+sperm	basal cell of prostate epithelium
+sperm	bladder urothelial cell
+sperm	bronchial smooth muscle cell
+sperm	bronchial vessel endothelial cell
+sperm	capillary endothelial cell
+sperm	cardiac endothelial cell
+sperm	cardiac muscle cell
+sperm	cd141-positive myeloid dendritic cell
+sperm	cd1c-positive myeloid dendritic cell
+sperm	cd24 neutrophil
+sperm	cd4-positive helper t cell
+sperm	cd4-positive, alpha-beta memory t cell
+sperm	cd8-positive, alpha-beta cytokine secreting effector t cell
+sperm	cd8-positive, alpha-beta cytotoxic t cell
+sperm	cell of skeletal muscle
+sperm	ciliary body
+sperm	ciliated cell
+sperm	ciliated epithelial cell
+sperm	classical monocyte
+sperm	club cell
+sperm	club cell of prostate epithelium
+sperm	conjunctival epithelial cell
+sperm	connective tissue cell
+sperm	corneal epithelial cell
+sperm	corneal keratocyte
+sperm	dendritic cell
+sperm	dn1 thymic pro-t cell
+sperm	dn3 thymocyte
+sperm	dn4 thymocyte
+sperm	duct epithelial cell
+sperm	duodenum glandular cell
+sperm	endothelial cell
+sperm	endothelial cell of artery
+sperm	endothelial cell of hepatic sinusoid
+sperm	endothelial cell of lymphatic vessel
+sperm	endothelial cell of vascular tree
+sperm	enterocyte of epithelium of large intestine
+sperm	enterocyte of epithelium of small intestine
+sperm	epithelial cell of lacrimal sac
+sperm	epithelial cell of uterus
+sperm	erythroid progenitor
+sperm	eye photoreceptor cell
+sperm	fibroblast
+sperm	fibroblast of breast
+sperm	fibroblast of cardiac tissue
+sperm	goblet cell
+sperm	granulocyte
+sperm	gut endothelial cell
+sperm	hematopoietic stem cell
+sperm	hepatocyte
+sperm	hillock cell of prostate epithelium
+sperm	hillock-club cell of prostate epithelium
+sperm	immature enterocyte
+sperm	immature natural killer cell
+sperm	immune cell
+sperm	intermediate monocyte
+sperm	intestinal crypt stem cell
+sperm	intestinal crypt stem cell of large intestine
+sperm	intestinal crypt stem cell of small intestine
+sperm	intestinal enteroendocrine cell
+sperm	intestinal tuft cell
+sperm	intrahepatic cholangiocyte
+sperm	ionocyte
+sperm	keratinocyte
+sperm	kidney epithelial cell
+sperm	lacrimal gland functional unit cell
+sperm	langerhans cell
+sperm	large intestine goblet cell
+sperm	limbal stem cell
+sperm	limbal stromal cell
+sperm	liver dendritic cell
+sperm	luminal cell of prostate epithelium
+sperm	luminal epithelial cell of mammary gland
+sperm	lung ciliated cell
+sperm	lung microvascular endothelial cell
+sperm	lymphatic endothelial cell
+sperm	macrophage
+sperm	mature conventional dendritic cell
+sperm	mature enterocyte
+sperm	mature nk t cell
+sperm	medullary thymic epithelial cell
+sperm	melanocyte
+sperm	memory b cell
+sperm	mesenchymal stem cell
+sperm	mesothelial cell
+sperm	microglial cell
+sperm	monocyte
+sperm	mucus secreting cell
+sperm	muller cell
+sperm	muscle cell
+sperm	myeloid cell
+sperm	myeloid progenitor
+sperm	myoepithelial cell
+sperm	myofibroblast cell
+sperm	myometrial cell
+sperm	naive regulatory t cell
+sperm	naive thymus-derived cd4-positive, alpha-beta t cell
+sperm	nampt neutrophil
+sperm	nk cell
+sperm	non-classical monocyte
+sperm	ocular surface cell
+sperm	pancreatic alpha cell
+sperm	pancreatic beta cell
+sperm	pancreatic delta cell
+sperm	pancreatic ductal cell
+sperm	pancreatic pp cell
+sperm	pancreatic stellate cell
+sperm	paneth cell of epithelium of large intestine
+sperm	paneth cell of epithelium of small intestine
+sperm	pericyte cell
+sperm	plasma cell
+sperm	plasmacytoid dendritic cell
+sperm	pulmonary ionocyte
+sperm	radial glial cell
+sperm	regulatory t cell
+sperm	respiratory goblet cell
+sperm	retina horizontal cell
+sperm	retinal bipolar neuron
+sperm	retinal blood vessel endothelial cell
+sperm	retinal pigment epithelial cell
+sperm	salivary gland cell
+sperm	secretory cell
+sperm	serous cell of epithelium of trachea
+sperm	skeletal muscle satellite stem cell
+sperm	small intestine goblet cell
+sperm	smooth muscle cell
+sperm	stromal cell
+sperm	t follicular helper cell
+sperm	tendon cell
+sperm	tongue muscle cell
+sperm	tracheal goblet cell
+sperm	transit amplifying cell of large intestine
+sperm	transit amplifying cell of small intestine
+sperm	type i nk t cell
+sperm	type i pneumocyte
+sperm	type ii pneumocyte
+sperm	vascular associated smooth muscle cell
+sperm	vein endothelial cell
+sperm	BTO:0001129
+stromal cell	adipocyte
+stromal cell	adventitial cell
+stromal cell	alveolar fibroblast
+stromal cell	artery endothelial cell
+stromal cell	b cell
+stromal cell	basal cell
+stromal cell	basal cell of prostate epithelium
+stromal cell	bladder urothelial cell
+stromal cell	bronchial smooth muscle cell
+stromal cell	bronchial vessel endothelial cell
+stromal cell	capillary endothelial cell
+stromal cell	cardiac endothelial cell
+stromal cell	cardiac muscle cell
+stromal cell	cd141-positive myeloid dendritic cell
+stromal cell	cd1c-positive myeloid dendritic cell
+stromal cell	cd24 neutrophil
+stromal cell	cd4-positive helper t cell
+stromal cell	cd4-positive, alpha-beta memory t cell
+stromal cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+stromal cell	cd8-positive, alpha-beta cytotoxic t cell
+stromal cell	cell of skeletal muscle
+stromal cell	ciliary body
+stromal cell	ciliated cell
+stromal cell	ciliated epithelial cell
+stromal cell	classical monocyte
+stromal cell	club cell
+stromal cell	club cell of prostate epithelium
+stromal cell	conjunctival epithelial cell
+stromal cell	connective tissue cell
+stromal cell	corneal epithelial cell
+stromal cell	corneal keratocyte
+stromal cell	dendritic cell
+stromal cell	dn1 thymic pro-t cell
+stromal cell	dn3 thymocyte
+stromal cell	dn4 thymocyte
+stromal cell	duct epithelial cell
+stromal cell	duodenum glandular cell
+stromal cell	endothelial cell
+stromal cell	endothelial cell of artery
+stromal cell	endothelial cell of hepatic sinusoid
+stromal cell	endothelial cell of lymphatic vessel
+stromal cell	endothelial cell of vascular tree
+stromal cell	enterocyte of epithelium of large intestine
+stromal cell	enterocyte of epithelium of small intestine
+stromal cell	epithelial cell of lacrimal sac
+stromal cell	epithelial cell of uterus
+stromal cell	erythroid progenitor
+stromal cell	eye photoreceptor cell
+stromal cell	fibroblast
+stromal cell	fibroblast of breast
+stromal cell	fibroblast of cardiac tissue
+stromal cell	goblet cell
+stromal cell	granulocyte
+stromal cell	gut endothelial cell
+stromal cell	hematopoietic stem cell
+stromal cell	hepatocyte
+stromal cell	hillock cell of prostate epithelium
+stromal cell	hillock-club cell of prostate epithelium
+stromal cell	immature enterocyte
+stromal cell	immature natural killer cell
+stromal cell	immune cell
+stromal cell	intermediate monocyte
+stromal cell	intestinal crypt stem cell
+stromal cell	intestinal crypt stem cell of large intestine
+stromal cell	intestinal crypt stem cell of small intestine
+stromal cell	intestinal enteroendocrine cell
+stromal cell	intestinal tuft cell
+stromal cell	intrahepatic cholangiocyte
+stromal cell	ionocyte
+stromal cell	keratinocyte
+stromal cell	kidney epithelial cell
+stromal cell	lacrimal gland functional unit cell
+stromal cell	langerhans cell
+stromal cell	large intestine goblet cell
+stromal cell	limbal stem cell
+stromal cell	limbal stromal cell
+stromal cell	liver dendritic cell
+stromal cell	luminal cell of prostate epithelium
+stromal cell	luminal epithelial cell of mammary gland
+stromal cell	lung ciliated cell
+stromal cell	lung microvascular endothelial cell
+stromal cell	lymphatic endothelial cell
+stromal cell	macrophage
+stromal cell	mature conventional dendritic cell
+stromal cell	mature enterocyte
+stromal cell	mature nk t cell
+stromal cell	medullary thymic epithelial cell
+stromal cell	melanocyte
+stromal cell	memory b cell
+stromal cell	mesenchymal stem cell
+stromal cell	mesothelial cell
+stromal cell	microglial cell
+stromal cell	monocyte
+stromal cell	mucus secreting cell
+stromal cell	muller cell
+stromal cell	muscle cell
+stromal cell	myeloid cell
+stromal cell	myeloid progenitor
+stromal cell	myoepithelial cell
+stromal cell	myofibroblast cell
+stromal cell	myometrial cell
+stromal cell	naive regulatory t cell
+stromal cell	naive thymus-derived cd4-positive, alpha-beta t cell
+stromal cell	nampt neutrophil
+stromal cell	nk cell
+stromal cell	non-classical monocyte
+stromal cell	ocular surface cell
+stromal cell	pancreatic alpha cell
+stromal cell	pancreatic beta cell
+stromal cell	pancreatic delta cell
+stromal cell	pancreatic ductal cell
+stromal cell	pancreatic pp cell
+stromal cell	pancreatic stellate cell
+stromal cell	paneth cell of epithelium of large intestine
+stromal cell	paneth cell of epithelium of small intestine
+stromal cell	pericyte cell
+stromal cell	plasma cell
+stromal cell	plasmacytoid dendritic cell
+stromal cell	pulmonary ionocyte
+stromal cell	radial glial cell
+stromal cell	regulatory t cell
+stromal cell	respiratory goblet cell
+stromal cell	retina horizontal cell
+stromal cell	retinal bipolar neuron
+stromal cell	retinal blood vessel endothelial cell
+stromal cell	retinal pigment epithelial cell
+stromal cell	salivary gland cell
+stromal cell	secretory cell
+stromal cell	serous cell of epithelium of trachea
+stromal cell	skeletal muscle satellite stem cell
+stromal cell	small intestine goblet cell
+stromal cell	smooth muscle cell
+stromal cell	stromal cell
+stromal cell	t follicular helper cell
+stromal cell	tendon cell
+stromal cell	tongue muscle cell
+stromal cell	tracheal goblet cell
+stromal cell	transit amplifying cell of large intestine
+stromal cell	transit amplifying cell of small intestine
+stromal cell	type i nk t cell
+stromal cell	type i pneumocyte
+stromal cell	type ii pneumocyte
+stromal cell	vascular associated smooth muscle cell
+stromal cell	vein endothelial cell
+stromal cell	BTO:0000784
+stromal cell	BTO:0001253
+stromal cell	BTO:0001129
+t follicular helper cell	adipocyte
+t follicular helper cell	adventitial cell
+t follicular helper cell	alveolar fibroblast
+t follicular helper cell	artery endothelial cell
+t follicular helper cell	b cell
+t follicular helper cell	basal cell
+t follicular helper cell	basal cell of prostate epithelium
+t follicular helper cell	bladder urothelial cell
+t follicular helper cell	bronchial smooth muscle cell
+t follicular helper cell	bronchial vessel endothelial cell
+t follicular helper cell	capillary endothelial cell
+t follicular helper cell	cardiac endothelial cell
+t follicular helper cell	cardiac muscle cell
+t follicular helper cell	cd141-positive myeloid dendritic cell
+t follicular helper cell	cd1c-positive myeloid dendritic cell
+t follicular helper cell	cd24 neutrophil
+t follicular helper cell	cd4-positive helper t cell
+t follicular helper cell	cd4-positive, alpha-beta memory t cell
+t follicular helper cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+t follicular helper cell	cd8-positive, alpha-beta cytotoxic t cell
+t follicular helper cell	cell of skeletal muscle
+t follicular helper cell	ciliary body
+t follicular helper cell	ciliated cell
+t follicular helper cell	ciliated epithelial cell
+t follicular helper cell	classical monocyte
+t follicular helper cell	club cell
+t follicular helper cell	club cell of prostate epithelium
+t follicular helper cell	conjunctival epithelial cell
+t follicular helper cell	connective tissue cell
+t follicular helper cell	corneal epithelial cell
+t follicular helper cell	corneal keratocyte
+t follicular helper cell	dendritic cell
+t follicular helper cell	dn1 thymic pro-t cell
+t follicular helper cell	dn3 thymocyte
+t follicular helper cell	dn4 thymocyte
+t follicular helper cell	duct epithelial cell
+t follicular helper cell	duodenum glandular cell
+t follicular helper cell	endothelial cell
+t follicular helper cell	endothelial cell of artery
+t follicular helper cell	endothelial cell of hepatic sinusoid
+t follicular helper cell	endothelial cell of lymphatic vessel
+t follicular helper cell	endothelial cell of vascular tree
+t follicular helper cell	enterocyte of epithelium of large intestine
+t follicular helper cell	enterocyte of epithelium of small intestine
+t follicular helper cell	epithelial cell of lacrimal sac
+t follicular helper cell	epithelial cell of uterus
+t follicular helper cell	erythroid progenitor
+t follicular helper cell	eye photoreceptor cell
+t follicular helper cell	fibroblast
+t follicular helper cell	fibroblast of breast
+t follicular helper cell	fibroblast of cardiac tissue
+t follicular helper cell	goblet cell
+t follicular helper cell	granulocyte
+t follicular helper cell	gut endothelial cell
+t follicular helper cell	hematopoietic stem cell
+t follicular helper cell	hepatocyte
+t follicular helper cell	hillock cell of prostate epithelium
+t follicular helper cell	hillock-club cell of prostate epithelium
+t follicular helper cell	immature enterocyte
+t follicular helper cell	immature natural killer cell
+t follicular helper cell	immune cell
+t follicular helper cell	intermediate monocyte
+t follicular helper cell	intestinal crypt stem cell
+t follicular helper cell	intestinal crypt stem cell of large intestine
+t follicular helper cell	intestinal crypt stem cell of small intestine
+t follicular helper cell	intestinal enteroendocrine cell
+t follicular helper cell	intestinal tuft cell
+t follicular helper cell	intrahepatic cholangiocyte
+t follicular helper cell	ionocyte
+t follicular helper cell	keratinocyte
+t follicular helper cell	kidney epithelial cell
+t follicular helper cell	lacrimal gland functional unit cell
+t follicular helper cell	langerhans cell
+t follicular helper cell	large intestine goblet cell
+t follicular helper cell	limbal stem cell
+t follicular helper cell	limbal stromal cell
+t follicular helper cell	liver dendritic cell
+t follicular helper cell	luminal cell of prostate epithelium
+t follicular helper cell	luminal epithelial cell of mammary gland
+t follicular helper cell	lung ciliated cell
+t follicular helper cell	lung microvascular endothelial cell
+t follicular helper cell	lymphatic endothelial cell
+t follicular helper cell	macrophage
+t follicular helper cell	mature conventional dendritic cell
+t follicular helper cell	mature enterocyte
+t follicular helper cell	mature nk t cell
+t follicular helper cell	medullary thymic epithelial cell
+t follicular helper cell	melanocyte
+t follicular helper cell	memory b cell
+t follicular helper cell	mesenchymal stem cell
+t follicular helper cell	mesothelial cell
+t follicular helper cell	microglial cell
+t follicular helper cell	monocyte
+t follicular helper cell	mucus secreting cell
+t follicular helper cell	muller cell
+t follicular helper cell	muscle cell
+t follicular helper cell	myeloid cell
+t follicular helper cell	myeloid progenitor
+t follicular helper cell	myoepithelial cell
+t follicular helper cell	myofibroblast cell
+t follicular helper cell	myometrial cell
+t follicular helper cell	naive regulatory t cell
+t follicular helper cell	naive thymus-derived cd4-positive, alpha-beta t cell
+t follicular helper cell	nampt neutrophil
+t follicular helper cell	nk cell
+t follicular helper cell	non-classical monocyte
+t follicular helper cell	ocular surface cell
+t follicular helper cell	pancreatic alpha cell
+t follicular helper cell	pancreatic beta cell
+t follicular helper cell	pancreatic delta cell
+t follicular helper cell	pancreatic ductal cell
+t follicular helper cell	pancreatic pp cell
+t follicular helper cell	pancreatic stellate cell
+t follicular helper cell	paneth cell of epithelium of large intestine
+t follicular helper cell	paneth cell of epithelium of small intestine
+t follicular helper cell	pericyte cell
+t follicular helper cell	plasma cell
+t follicular helper cell	plasmacytoid dendritic cell
+t follicular helper cell	pulmonary ionocyte
+t follicular helper cell	radial glial cell
+t follicular helper cell	regulatory t cell
+t follicular helper cell	respiratory goblet cell
+t follicular helper cell	retina horizontal cell
+t follicular helper cell	retinal bipolar neuron
+t follicular helper cell	retinal blood vessel endothelial cell
+t follicular helper cell	retinal pigment epithelial cell
+t follicular helper cell	salivary gland cell
+t follicular helper cell	secretory cell
+t follicular helper cell	serous cell of epithelium of trachea
+t follicular helper cell	skeletal muscle satellite stem cell
+t follicular helper cell	small intestine goblet cell
+t follicular helper cell	smooth muscle cell
+t follicular helper cell	t follicular helper cell
+t follicular helper cell	tendon cell
+t follicular helper cell	tongue muscle cell
+t follicular helper cell	tracheal goblet cell
+t follicular helper cell	transit amplifying cell of large intestine
+t follicular helper cell	transit amplifying cell of small intestine
+t follicular helper cell	type i nk t cell
+t follicular helper cell	type i pneumocyte
+t follicular helper cell	type ii pneumocyte
+t follicular helper cell	vascular associated smooth muscle cell
+t follicular helper cell	vein endothelial cell
+t follicular helper cell	BTO:0001374
+tendon cell	adipocyte
+tendon cell	adventitial cell
+tendon cell	alveolar fibroblast
+tendon cell	artery endothelial cell
+tendon cell	b cell
+tendon cell	basal cell
+tendon cell	basal cell of prostate epithelium
+tendon cell	bladder urothelial cell
+tendon cell	bronchial smooth muscle cell
+tendon cell	bronchial vessel endothelial cell
+tendon cell	capillary endothelial cell
+tendon cell	cardiac endothelial cell
+tendon cell	cardiac muscle cell
+tendon cell	cd141-positive myeloid dendritic cell
+tendon cell	cd1c-positive myeloid dendritic cell
+tendon cell	cd24 neutrophil
+tendon cell	cd4-positive helper t cell
+tendon cell	cd4-positive, alpha-beta memory t cell
+tendon cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+tendon cell	cd8-positive, alpha-beta cytotoxic t cell
+tendon cell	cell of skeletal muscle
+tendon cell	ciliary body
+tendon cell	ciliated cell
+tendon cell	ciliated epithelial cell
+tendon cell	classical monocyte
+tendon cell	club cell
+tendon cell	club cell of prostate epithelium
+tendon cell	conjunctival epithelial cell
+tendon cell	connective tissue cell
+tendon cell	corneal epithelial cell
+tendon cell	corneal keratocyte
+tendon cell	dendritic cell
+tendon cell	dn1 thymic pro-t cell
+tendon cell	dn3 thymocyte
+tendon cell	dn4 thymocyte
+tendon cell	duct epithelial cell
+tendon cell	duodenum glandular cell
+tendon cell	endothelial cell
+tendon cell	endothelial cell of artery
+tendon cell	endothelial cell of hepatic sinusoid
+tendon cell	endothelial cell of lymphatic vessel
+tendon cell	endothelial cell of vascular tree
+tendon cell	enterocyte of epithelium of large intestine
+tendon cell	enterocyte of epithelium of small intestine
+tendon cell	epithelial cell of lacrimal sac
+tendon cell	epithelial cell of uterus
+tendon cell	erythroid progenitor
+tendon cell	eye photoreceptor cell
+tendon cell	fibroblast
+tendon cell	fibroblast of breast
+tendon cell	fibroblast of cardiac tissue
+tendon cell	goblet cell
+tendon cell	granulocyte
+tendon cell	gut endothelial cell
+tendon cell	hematopoietic stem cell
+tendon cell	hepatocyte
+tendon cell	hillock cell of prostate epithelium
+tendon cell	hillock-club cell of prostate epithelium
+tendon cell	immature enterocyte
+tendon cell	immature natural killer cell
+tendon cell	immune cell
+tendon cell	intermediate monocyte
+tendon cell	intestinal crypt stem cell
+tendon cell	intestinal crypt stem cell of large intestine
+tendon cell	intestinal crypt stem cell of small intestine
+tendon cell	intestinal enteroendocrine cell
+tendon cell	intestinal tuft cell
+tendon cell	intrahepatic cholangiocyte
+tendon cell	ionocyte
+tendon cell	keratinocyte
+tendon cell	kidney epithelial cell
+tendon cell	lacrimal gland functional unit cell
+tendon cell	langerhans cell
+tendon cell	large intestine goblet cell
+tendon cell	limbal stem cell
+tendon cell	limbal stromal cell
+tendon cell	liver dendritic cell
+tendon cell	luminal cell of prostate epithelium
+tendon cell	luminal epithelial cell of mammary gland
+tendon cell	lung ciliated cell
+tendon cell	lung microvascular endothelial cell
+tendon cell	lymphatic endothelial cell
+tendon cell	macrophage
+tendon cell	mature conventional dendritic cell
+tendon cell	mature enterocyte
+tendon cell	mature nk t cell
+tendon cell	medullary thymic epithelial cell
+tendon cell	melanocyte
+tendon cell	memory b cell
+tendon cell	mesenchymal stem cell
+tendon cell	mesothelial cell
+tendon cell	microglial cell
+tendon cell	monocyte
+tendon cell	mucus secreting cell
+tendon cell	muller cell
+tendon cell	muscle cell
+tendon cell	myeloid cell
+tendon cell	myeloid progenitor
+tendon cell	myoepithelial cell
+tendon cell	myofibroblast cell
+tendon cell	myometrial cell
+tendon cell	naive regulatory t cell
+tendon cell	naive thymus-derived cd4-positive, alpha-beta t cell
+tendon cell	nampt neutrophil
+tendon cell	nk cell
+tendon cell	non-classical monocyte
+tendon cell	ocular surface cell
+tendon cell	pancreatic alpha cell
+tendon cell	pancreatic beta cell
+tendon cell	pancreatic delta cell
+tendon cell	pancreatic ductal cell
+tendon cell	pancreatic pp cell
+tendon cell	pancreatic stellate cell
+tendon cell	paneth cell of epithelium of large intestine
+tendon cell	paneth cell of epithelium of small intestine
+tendon cell	pericyte cell
+tendon cell	plasma cell
+tendon cell	plasmacytoid dendritic cell
+tendon cell	pulmonary ionocyte
+tendon cell	radial glial cell
+tendon cell	regulatory t cell
+tendon cell	respiratory goblet cell
+tendon cell	retina horizontal cell
+tendon cell	retinal bipolar neuron
+tendon cell	retinal blood vessel endothelial cell
+tendon cell	retinal pigment epithelial cell
+tendon cell	salivary gland cell
+tendon cell	secretory cell
+tendon cell	serous cell of epithelium of trachea
+tendon cell	skeletal muscle satellite stem cell
+tendon cell	small intestine goblet cell
+tendon cell	smooth muscle cell
+tendon cell	tendon cell
+tendon cell	tongue muscle cell
+tendon cell	tracheal goblet cell
+tendon cell	transit amplifying cell of large intestine
+tendon cell	transit amplifying cell of small intestine
+tendon cell	type i nk t cell
+tendon cell	type i pneumocyte
+tendon cell	type ii pneumocyte
+tendon cell	vascular associated smooth muscle cell
+tendon cell	vein endothelial cell
+tendon cell	BTO:0000887
+tongue muscle cell	adipocyte
+tongue muscle cell	adventitial cell
+tongue muscle cell	alveolar fibroblast
+tongue muscle cell	artery endothelial cell
+tongue muscle cell	b cell
+tongue muscle cell	basal cell
+tongue muscle cell	basal cell of prostate epithelium
+tongue muscle cell	bladder urothelial cell
+tongue muscle cell	bronchial smooth muscle cell
+tongue muscle cell	bronchial vessel endothelial cell
+tongue muscle cell	capillary endothelial cell
+tongue muscle cell	cardiac endothelial cell
+tongue muscle cell	cardiac muscle cell
+tongue muscle cell	cd141-positive myeloid dendritic cell
+tongue muscle cell	cd1c-positive myeloid dendritic cell
+tongue muscle cell	cd24 neutrophil
+tongue muscle cell	cd4-positive helper t cell
+tongue muscle cell	cd4-positive, alpha-beta memory t cell
+tongue muscle cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+tongue muscle cell	cd8-positive, alpha-beta cytotoxic t cell
+tongue muscle cell	cell of skeletal muscle
+tongue muscle cell	ciliary body
+tongue muscle cell	ciliated cell
+tongue muscle cell	ciliated epithelial cell
+tongue muscle cell	classical monocyte
+tongue muscle cell	club cell
+tongue muscle cell	club cell of prostate epithelium
+tongue muscle cell	conjunctival epithelial cell
+tongue muscle cell	connective tissue cell
+tongue muscle cell	corneal epithelial cell
+tongue muscle cell	corneal keratocyte
+tongue muscle cell	dendritic cell
+tongue muscle cell	dn1 thymic pro-t cell
+tongue muscle cell	dn3 thymocyte
+tongue muscle cell	dn4 thymocyte
+tongue muscle cell	duct epithelial cell
+tongue muscle cell	duodenum glandular cell
+tongue muscle cell	endothelial cell
+tongue muscle cell	endothelial cell of artery
+tongue muscle cell	endothelial cell of hepatic sinusoid
+tongue muscle cell	endothelial cell of lymphatic vessel
+tongue muscle cell	endothelial cell of vascular tree
+tongue muscle cell	enterocyte of epithelium of large intestine
+tongue muscle cell	enterocyte of epithelium of small intestine
+tongue muscle cell	epithelial cell
+tongue muscle cell	epithelial cell of lacrimal sac
+tongue muscle cell	epithelial cell of uterus
+tongue muscle cell	erythroid progenitor
+tongue muscle cell	eye photoreceptor cell
+tongue muscle cell	fibroblast
+tongue muscle cell	fibroblast of breast
+tongue muscle cell	fibroblast of cardiac tissue
+tongue muscle cell	goblet cell
+tongue muscle cell	granulocyte
+tongue muscle cell	gut endothelial cell
+tongue muscle cell	hematopoietic stem cell
+tongue muscle cell	hepatocyte
+tongue muscle cell	hillock cell of prostate epithelium
+tongue muscle cell	hillock-club cell of prostate epithelium
+tongue muscle cell	immature enterocyte
+tongue muscle cell	immature natural killer cell
+tongue muscle cell	immune cell
+tongue muscle cell	intermediate monocyte
+tongue muscle cell	intestinal crypt stem cell
+tongue muscle cell	intestinal crypt stem cell of large intestine
+tongue muscle cell	intestinal crypt stem cell of small intestine
+tongue muscle cell	intestinal enteroendocrine cell
+tongue muscle cell	intestinal tuft cell
+tongue muscle cell	intrahepatic cholangiocyte
+tongue muscle cell	ionocyte
+tongue muscle cell	keratinocyte
+tongue muscle cell	kidney epithelial cell
+tongue muscle cell	lacrimal gland functional unit cell
+tongue muscle cell	langerhans cell
+tongue muscle cell	large intestine goblet cell
+tongue muscle cell	limbal stem cell
+tongue muscle cell	limbal stromal cell
+tongue muscle cell	liver dendritic cell
+tongue muscle cell	luminal cell of prostate epithelium
+tongue muscle cell	luminal epithelial cell of mammary gland
+tongue muscle cell	lung ciliated cell
+tongue muscle cell	lung microvascular endothelial cell
+tongue muscle cell	lymphatic endothelial cell
+tongue muscle cell	macrophage
+tongue muscle cell	mature conventional dendritic cell
+tongue muscle cell	mature enterocyte
+tongue muscle cell	mature nk t cell
+tongue muscle cell	medullary thymic epithelial cell
+tongue muscle cell	melanocyte
+tongue muscle cell	memory b cell
+tongue muscle cell	mesenchymal stem cell
+tongue muscle cell	mesothelial cell
+tongue muscle cell	microglial cell
+tongue muscle cell	monocyte
+tongue muscle cell	mucus secreting cell
+tongue muscle cell	muller cell
+tongue muscle cell	muscle cell
+tongue muscle cell	myeloid cell
+tongue muscle cell	myeloid progenitor
+tongue muscle cell	myoepithelial cell
+tongue muscle cell	myofibroblast cell
+tongue muscle cell	myometrial cell
+tongue muscle cell	naive regulatory t cell
+tongue muscle cell	naive thymus-derived cd4-positive, alpha-beta t cell
+tongue muscle cell	nampt neutrophil
+tongue muscle cell	nk cell
+tongue muscle cell	non-classical monocyte
+tongue muscle cell	ocular surface cell
+tongue muscle cell	pancreatic acinar cell
+tongue muscle cell	pancreatic alpha cell
+tongue muscle cell	pancreatic beta cell
+tongue muscle cell	pancreatic delta cell
+tongue muscle cell	pancreatic ductal cell
+tongue muscle cell	pancreatic pp cell
+tongue muscle cell	pancreatic stellate cell
+tongue muscle cell	paneth cell of epithelium of large intestine
+tongue muscle cell	paneth cell of epithelium of small intestine
+tongue muscle cell	pericyte cell
+tongue muscle cell	plasma cell
+tongue muscle cell	plasmacytoid dendritic cell
+tongue muscle cell	pulmonary ionocyte
+tongue muscle cell	radial glial cell
+tongue muscle cell	regulatory t cell
+tongue muscle cell	respiratory goblet cell
+tongue muscle cell	retina horizontal cell
+tongue muscle cell	retinal bipolar neuron
+tongue muscle cell	retinal blood vessel endothelial cell
+tongue muscle cell	retinal pigment epithelial cell
+tongue muscle cell	salivary gland cell
+tongue muscle cell	secretory cell
+tongue muscle cell	serous cell of epithelium of trachea
+tongue muscle cell	skeletal muscle satellite stem cell
+tongue muscle cell	small intestine goblet cell
+tongue muscle cell	smooth muscle cell
+tongue muscle cell	tongue muscle cell
+tongue muscle cell	tracheal goblet cell
+tongue muscle cell	transit amplifying cell of large intestine
+tongue muscle cell	transit amplifying cell of small intestine
+tongue muscle cell	type i nk t cell
+tongue muscle cell	type i pneumocyte
+tongue muscle cell	type ii pneumocyte
+tongue muscle cell	vascular associated smooth muscle cell
+tongue muscle cell	vein endothelial cell
+tongue muscle cell	BTO:0001385
+tracheal goblet cell	adipocyte
+tracheal goblet cell	adventitial cell
+tracheal goblet cell	alveolar fibroblast
+tracheal goblet cell	artery endothelial cell
+tracheal goblet cell	b cell
+tracheal goblet cell	basal cell
+tracheal goblet cell	basal cell of prostate epithelium
+tracheal goblet cell	bladder urothelial cell
+tracheal goblet cell	bronchial smooth muscle cell
+tracheal goblet cell	bronchial vessel endothelial cell
+tracheal goblet cell	capillary endothelial cell
+tracheal goblet cell	cardiac endothelial cell
+tracheal goblet cell	cardiac muscle cell
+tracheal goblet cell	cd141-positive myeloid dendritic cell
+tracheal goblet cell	cd1c-positive myeloid dendritic cell
+tracheal goblet cell	cd24 neutrophil
+tracheal goblet cell	cd4-positive helper t cell
+tracheal goblet cell	cd4-positive, alpha-beta memory t cell
+tracheal goblet cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+tracheal goblet cell	cd8-positive, alpha-beta cytotoxic t cell
+tracheal goblet cell	cell of skeletal muscle
+tracheal goblet cell	ciliary body
+tracheal goblet cell	ciliated cell
+tracheal goblet cell	ciliated epithelial cell
+tracheal goblet cell	classical monocyte
+tracheal goblet cell	club cell
+tracheal goblet cell	club cell of prostate epithelium
+tracheal goblet cell	conjunctival epithelial cell
+tracheal goblet cell	connective tissue cell
+tracheal goblet cell	corneal epithelial cell
+tracheal goblet cell	corneal keratocyte
+tracheal goblet cell	dendritic cell
+tracheal goblet cell	dn1 thymic pro-t cell
+tracheal goblet cell	dn3 thymocyte
+tracheal goblet cell	dn4 thymocyte
+tracheal goblet cell	duct epithelial cell
+tracheal goblet cell	duodenum glandular cell
+tracheal goblet cell	endothelial cell
+tracheal goblet cell	endothelial cell of artery
+tracheal goblet cell	endothelial cell of hepatic sinusoid
+tracheal goblet cell	endothelial cell of lymphatic vessel
+tracheal goblet cell	endothelial cell of vascular tree
+tracheal goblet cell	enterocyte of epithelium of large intestine
+tracheal goblet cell	enterocyte of epithelium of small intestine
+tracheal goblet cell	epithelial cell
+tracheal goblet cell	epithelial cell of lacrimal sac
+tracheal goblet cell	epithelial cell of uterus
+tracheal goblet cell	erythroid progenitor
+tracheal goblet cell	eye photoreceptor cell
+tracheal goblet cell	fast muscle cell
+tracheal goblet cell	fibroblast
+tracheal goblet cell	fibroblast of breast
+tracheal goblet cell	fibroblast of cardiac tissue
+tracheal goblet cell	goblet cell
+tracheal goblet cell	granulocyte
+tracheal goblet cell	gut endothelial cell
+tracheal goblet cell	hematopoietic stem cell
+tracheal goblet cell	hepatocyte
+tracheal goblet cell	hillock cell of prostate epithelium
+tracheal goblet cell	hillock-club cell of prostate epithelium
+tracheal goblet cell	immature enterocyte
+tracheal goblet cell	immature natural killer cell
+tracheal goblet cell	immune cell
+tracheal goblet cell	intermediate monocyte
+tracheal goblet cell	intestinal crypt stem cell
+tracheal goblet cell	intestinal crypt stem cell of large intestine
+tracheal goblet cell	intestinal crypt stem cell of small intestine
+tracheal goblet cell	intestinal enteroendocrine cell
+tracheal goblet cell	intestinal tuft cell
+tracheal goblet cell	intrahepatic cholangiocyte
+tracheal goblet cell	ionocyte
+tracheal goblet cell	keratinocyte
+tracheal goblet cell	kidney epithelial cell
+tracheal goblet cell	lacrimal gland functional unit cell
+tracheal goblet cell	langerhans cell
+tracheal goblet cell	large intestine goblet cell
+tracheal goblet cell	limbal stem cell
+tracheal goblet cell	limbal stromal cell
+tracheal goblet cell	liver dendritic cell
+tracheal goblet cell	luminal cell of prostate epithelium
+tracheal goblet cell	luminal epithelial cell of mammary gland
+tracheal goblet cell	lung ciliated cell
+tracheal goblet cell	lung microvascular endothelial cell
+tracheal goblet cell	lymphatic endothelial cell
+tracheal goblet cell	macrophage
+tracheal goblet cell	mature conventional dendritic cell
+tracheal goblet cell	mature enterocyte
+tracheal goblet cell	mature nk t cell
+tracheal goblet cell	medullary thymic epithelial cell
+tracheal goblet cell	melanocyte
+tracheal goblet cell	memory b cell
+tracheal goblet cell	mesenchymal stem cell
+tracheal goblet cell	mesothelial cell
+tracheal goblet cell	microglial cell
+tracheal goblet cell	monocyte
+tracheal goblet cell	mucus secreting cell
+tracheal goblet cell	muller cell
+tracheal goblet cell	muscle cell
+tracheal goblet cell	myeloid cell
+tracheal goblet cell	myeloid progenitor
+tracheal goblet cell	myoepithelial cell
+tracheal goblet cell	myofibroblast cell
+tracheal goblet cell	myometrial cell
+tracheal goblet cell	naive regulatory t cell
+tracheal goblet cell	naive thymus-derived cd4-positive, alpha-beta t cell
+tracheal goblet cell	nampt neutrophil
+tracheal goblet cell	nk cell
+tracheal goblet cell	non-classical monocyte
+tracheal goblet cell	ocular surface cell
+tracheal goblet cell	pancreatic acinar cell
+tracheal goblet cell	pancreatic alpha cell
+tracheal goblet cell	pancreatic beta cell
+tracheal goblet cell	pancreatic delta cell
+tracheal goblet cell	pancreatic ductal cell
+tracheal goblet cell	pancreatic pp cell
+tracheal goblet cell	pancreatic stellate cell
+tracheal goblet cell	paneth cell of epithelium of large intestine
+tracheal goblet cell	paneth cell of epithelium of small intestine
+tracheal goblet cell	pericyte cell
+tracheal goblet cell	plasma cell
+tracheal goblet cell	plasmacytoid dendritic cell
+tracheal goblet cell	pulmonary ionocyte
+tracheal goblet cell	radial glial cell
+tracheal goblet cell	regulatory t cell
+tracheal goblet cell	respiratory goblet cell
+tracheal goblet cell	retina horizontal cell
+tracheal goblet cell	retinal bipolar neuron
+tracheal goblet cell	retinal blood vessel endothelial cell
+tracheal goblet cell	retinal pigment epithelial cell
+tracheal goblet cell	salivary gland cell
+tracheal goblet cell	secretory cell
+tracheal goblet cell	serous cell of epithelium of trachea
+tracheal goblet cell	skeletal muscle satellite stem cell
+tracheal goblet cell	small intestine goblet cell
+tracheal goblet cell	smooth muscle cell
+tracheal goblet cell	retinal ganglion cell
+tracheal goblet cell	schwann cell
+tracheal goblet cell	serous cell of epithelium of bronchus
+tracheal goblet cell	tracheal goblet cell
+tracheal goblet cell	transit amplifying cell of large intestine
+tracheal goblet cell	transit amplifying cell of small intestine
+tracheal goblet cell	type i nk t cell
+tracheal goblet cell	type i pneumocyte
+tracheal goblet cell	type ii pneumocyte
+tracheal goblet cell	vascular associated smooth muscle cell
+tracheal goblet cell	vein endothelial cell
+tracheal goblet cell	BTO:0001388
+transit amplifying cell of large intestine	adipocyte
+transit amplifying cell of large intestine	adventitial cell
+transit amplifying cell of large intestine	alveolar fibroblast
+transit amplifying cell of large intestine	artery endothelial cell
+transit amplifying cell of large intestine	b cell
+transit amplifying cell of large intestine	basal cell
+transit amplifying cell of large intestine	basal cell of prostate epithelium
+transit amplifying cell of large intestine	bladder urothelial cell
+transit amplifying cell of large intestine	bronchial smooth muscle cell
+transit amplifying cell of large intestine	bronchial vessel endothelial cell
+transit amplifying cell of large intestine	capillary endothelial cell
+transit amplifying cell of large intestine	cardiac endothelial cell
+transit amplifying cell of large intestine	cardiac muscle cell
+transit amplifying cell of large intestine	cd141-positive myeloid dendritic cell
+transit amplifying cell of large intestine	cd1c-positive myeloid dendritic cell
+transit amplifying cell of large intestine	cd24 neutrophil
+transit amplifying cell of large intestine	cd4-positive helper t cell
+transit amplifying cell of large intestine	cd4-positive, alpha-beta memory t cell
+transit amplifying cell of large intestine	cd8-positive, alpha-beta cytokine secreting effector t cell
+transit amplifying cell of large intestine	cd8-positive, alpha-beta cytotoxic t cell
+transit amplifying cell of large intestine	cell of skeletal muscle
+transit amplifying cell of large intestine	ciliary body
+transit amplifying cell of large intestine	ciliated cell
+transit amplifying cell of large intestine	ciliated epithelial cell
+transit amplifying cell of large intestine	classical monocyte
+transit amplifying cell of large intestine	club cell
+transit amplifying cell of large intestine	club cell of prostate epithelium
+transit amplifying cell of large intestine	conjunctival epithelial cell
+transit amplifying cell of large intestine	connective tissue cell
+transit amplifying cell of large intestine	corneal epithelial cell
+transit amplifying cell of large intestine	corneal keratocyte
+transit amplifying cell of large intestine	dendritic cell
+transit amplifying cell of large intestine	dn1 thymic pro-t cell
+transit amplifying cell of large intestine	dn3 thymocyte
+transit amplifying cell of large intestine	dn4 thymocyte
+transit amplifying cell of large intestine	duct epithelial cell
+transit amplifying cell of large intestine	duodenum glandular cell
+transit amplifying cell of large intestine	endothelial cell
+transit amplifying cell of large intestine	endothelial cell of artery
+transit amplifying cell of large intestine	endothelial cell of hepatic sinusoid
+transit amplifying cell of large intestine	endothelial cell of lymphatic vessel
+transit amplifying cell of large intestine	endothelial cell of vascular tree
+transit amplifying cell of large intestine	enterocyte of epithelium of large intestine
+transit amplifying cell of large intestine	enterocyte of epithelium of small intestine
+transit amplifying cell of large intestine	epithelial cell
+transit amplifying cell of large intestine	epithelial cell of lacrimal sac
+transit amplifying cell of large intestine	epithelial cell of uterus
+transit amplifying cell of large intestine	erythroid progenitor
+transit amplifying cell of large intestine	eye photoreceptor cell
+transit amplifying cell of large intestine	fast muscle cell
+transit amplifying cell of large intestine	fibroblast
+transit amplifying cell of large intestine	fibroblast of breast
+transit amplifying cell of large intestine	fibroblast of cardiac tissue
+transit amplifying cell of large intestine	goblet cell
+transit amplifying cell of large intestine	granulocyte
+transit amplifying cell of large intestine	gut endothelial cell
+transit amplifying cell of large intestine	hematopoietic stem cell
+transit amplifying cell of large intestine	hepatocyte
+transit amplifying cell of large intestine	hillock cell of prostate epithelium
+transit amplifying cell of large intestine	hillock-club cell of prostate epithelium
+transit amplifying cell of large intestine	immature enterocyte
+transit amplifying cell of large intestine	immature natural killer cell
+transit amplifying cell of large intestine	immune cell
+transit amplifying cell of large intestine	intermediate monocyte
+transit amplifying cell of large intestine	intestinal crypt stem cell
+transit amplifying cell of large intestine	intestinal crypt stem cell of large intestine
+transit amplifying cell of large intestine	intestinal crypt stem cell of small intestine
+transit amplifying cell of large intestine	intestinal enteroendocrine cell
+transit amplifying cell of large intestine	intestinal tuft cell
+transit amplifying cell of large intestine	intrahepatic cholangiocyte
+transit amplifying cell of large intestine	ionocyte
+transit amplifying cell of large intestine	keratinocyte
+transit amplifying cell of large intestine	kidney epithelial cell
+transit amplifying cell of large intestine	lacrimal gland functional unit cell
+transit amplifying cell of large intestine	langerhans cell
+transit amplifying cell of large intestine	large intestine goblet cell
+transit amplifying cell of large intestine	limbal stem cell
+transit amplifying cell of large intestine	limbal stromal cell
+transit amplifying cell of large intestine	liver dendritic cell
+transit amplifying cell of large intestine	luminal cell of prostate epithelium
+transit amplifying cell of large intestine	luminal epithelial cell of mammary gland
+transit amplifying cell of large intestine	lung ciliated cell
+transit amplifying cell of large intestine	lung microvascular endothelial cell
+transit amplifying cell of large intestine	lymphatic endothelial cell
+transit amplifying cell of large intestine	macrophage
+transit amplifying cell of large intestine	mature conventional dendritic cell
+transit amplifying cell of large intestine	mature enterocyte
+transit amplifying cell of large intestine	mature nk t cell
+transit amplifying cell of large intestine	medullary thymic epithelial cell
+transit amplifying cell of large intestine	melanocyte
+transit amplifying cell of large intestine	memory b cell
+transit amplifying cell of large intestine	mesenchymal stem cell
+transit amplifying cell of large intestine	mesothelial cell
+transit amplifying cell of large intestine	microglial cell
+transit amplifying cell of large intestine	monocyte
+transit amplifying cell of large intestine	mucus secreting cell
+transit amplifying cell of large intestine	muller cell
+transit amplifying cell of large intestine	muscle cell
+transit amplifying cell of large intestine	myeloid cell
+transit amplifying cell of large intestine	myeloid progenitor
+transit amplifying cell of large intestine	myoepithelial cell
+transit amplifying cell of large intestine	myofibroblast cell
+transit amplifying cell of large intestine	myometrial cell
+transit amplifying cell of large intestine	naive regulatory t cell
+transit amplifying cell of large intestine	naive thymus-derived cd4-positive, alpha-beta t cell
+transit amplifying cell of large intestine	nampt neutrophil
+transit amplifying cell of large intestine	nk cell
+transit amplifying cell of large intestine	non-classical monocyte
+transit amplifying cell of large intestine	ocular surface cell
+transit amplifying cell of large intestine	pancreatic acinar cell
+transit amplifying cell of large intestine	pancreatic alpha cell
+transit amplifying cell of large intestine	pancreatic beta cell
+transit amplifying cell of large intestine	pancreatic delta cell
+transit amplifying cell of large intestine	pancreatic ductal cell
+transit amplifying cell of large intestine	pancreatic pp cell
+transit amplifying cell of large intestine	pancreatic stellate cell
+transit amplifying cell of large intestine	paneth cell of epithelium of large intestine
+transit amplifying cell of large intestine	paneth cell of epithelium of small intestine
+transit amplifying cell of large intestine	pericyte cell
+transit amplifying cell of large intestine	plasma cell
+transit amplifying cell of large intestine	plasmacytoid dendritic cell
+transit amplifying cell of large intestine	pulmonary ionocyte
+transit amplifying cell of large intestine	radial glial cell
+transit amplifying cell of large intestine	regulatory t cell
+transit amplifying cell of large intestine	respiratory goblet cell
+transit amplifying cell of large intestine	retina horizontal cell
+transit amplifying cell of large intestine	retinal bipolar neuron
+transit amplifying cell of large intestine	retinal blood vessel endothelial cell
+transit amplifying cell of large intestine	retinal pigment epithelial cell
+transit amplifying cell of large intestine	salivary gland cell
+transit amplifying cell of large intestine	secretory cell
+transit amplifying cell of large intestine	serous cell of epithelium of trachea
+transit amplifying cell of large intestine	skeletal muscle satellite stem cell
+transit amplifying cell of large intestine	small intestine goblet cell
+transit amplifying cell of large intestine	smooth muscle cell
+transit amplifying cell of large intestine	transit amplifying cell of large intestine
+transit amplifying cell of large intestine	transit amplifying cell of small intestine
+transit amplifying cell of large intestine	type i nk t cell
+transit amplifying cell of large intestine	type i pneumocyte
+transit amplifying cell of large intestine	type ii pneumocyte
+transit amplifying cell of large intestine	vascular associated smooth muscle cell
+transit amplifying cell of large intestine	vein endothelial cell
+transit amplifying cell of large intestine	BTO:0000706
+transit amplifying cell of small intestine	adipocyte
+transit amplifying cell of small intestine	adventitial cell
+transit amplifying cell of small intestine	alveolar fibroblast
+transit amplifying cell of small intestine	artery endothelial cell
+transit amplifying cell of small intestine	b cell
+transit amplifying cell of small intestine	basal cell
+transit amplifying cell of small intestine	basal cell of prostate epithelium
+transit amplifying cell of small intestine	bladder urothelial cell
+transit amplifying cell of small intestine	bronchial smooth muscle cell
+transit amplifying cell of small intestine	bronchial vessel endothelial cell
+transit amplifying cell of small intestine	capillary endothelial cell
+transit amplifying cell of small intestine	cardiac endothelial cell
+transit amplifying cell of small intestine	cardiac muscle cell
+transit amplifying cell of small intestine	cd141-positive myeloid dendritic cell
+transit amplifying cell of small intestine	cd1c-positive myeloid dendritic cell
+transit amplifying cell of small intestine	cd24 neutrophil
+transit amplifying cell of small intestine	cd4-positive helper t cell
+transit amplifying cell of small intestine	cd4-positive, alpha-beta memory t cell
+transit amplifying cell of small intestine	cd8-positive, alpha-beta cytokine secreting effector t cell
+transit amplifying cell of small intestine	cd8-positive, alpha-beta cytotoxic t cell
+transit amplifying cell of small intestine	cell of skeletal muscle
+transit amplifying cell of small intestine	ciliary body
+transit amplifying cell of small intestine	ciliated cell
+transit amplifying cell of small intestine	ciliated epithelial cell
+transit amplifying cell of small intestine	classical monocyte
+transit amplifying cell of small intestine	club cell
+transit amplifying cell of small intestine	club cell of prostate epithelium
+transit amplifying cell of small intestine	conjunctival epithelial cell
+transit amplifying cell of small intestine	connective tissue cell
+transit amplifying cell of small intestine	corneal epithelial cell
+transit amplifying cell of small intestine	corneal keratocyte
+transit amplifying cell of small intestine	dendritic cell
+transit amplifying cell of small intestine	dn1 thymic pro-t cell
+transit amplifying cell of small intestine	dn3 thymocyte
+transit amplifying cell of small intestine	dn4 thymocyte
+transit amplifying cell of small intestine	duct epithelial cell
+transit amplifying cell of small intestine	duodenum glandular cell
+transit amplifying cell of small intestine	endothelial cell
+transit amplifying cell of small intestine	endothelial cell of artery
+transit amplifying cell of small intestine	endothelial cell of hepatic sinusoid
+transit amplifying cell of small intestine	endothelial cell of lymphatic vessel
+transit amplifying cell of small intestine	endothelial cell of vascular tree
+transit amplifying cell of small intestine	enterocyte of epithelium of large intestine
+transit amplifying cell of small intestine	enterocyte of epithelium of small intestine
+transit amplifying cell of small intestine	epithelial cell
+transit amplifying cell of small intestine	epithelial cell of lacrimal sac
+transit amplifying cell of small intestine	epithelial cell of uterus
+transit amplifying cell of small intestine	erythroid progenitor
+transit amplifying cell of small intestine	eye photoreceptor cell
+transit amplifying cell of small intestine	fast muscle cell
+transit amplifying cell of small intestine	fibroblast
+transit amplifying cell of small intestine	fibroblast of breast
+transit amplifying cell of small intestine	fibroblast of cardiac tissue
+transit amplifying cell of small intestine	goblet cell
+transit amplifying cell of small intestine	granulocyte
+transit amplifying cell of small intestine	gut endothelial cell
+transit amplifying cell of small intestine	hematopoietic stem cell
+transit amplifying cell of small intestine	hepatocyte
+transit amplifying cell of small intestine	hillock cell of prostate epithelium
+transit amplifying cell of small intestine	hillock-club cell of prostate epithelium
+transit amplifying cell of small intestine	immature enterocyte
+transit amplifying cell of small intestine	immature natural killer cell
+transit amplifying cell of small intestine	immune cell
+transit amplifying cell of small intestine	intermediate monocyte
+transit amplifying cell of small intestine	intestinal crypt stem cell
+transit amplifying cell of small intestine	intestinal crypt stem cell of large intestine
+transit amplifying cell of small intestine	intestinal crypt stem cell of small intestine
+transit amplifying cell of small intestine	intestinal enteroendocrine cell
+transit amplifying cell of small intestine	intestinal tuft cell
+transit amplifying cell of small intestine	intrahepatic cholangiocyte
+transit amplifying cell of small intestine	ionocyte
+transit amplifying cell of small intestine	keratinocyte
+transit amplifying cell of small intestine	kidney epithelial cell
+transit amplifying cell of small intestine	lacrimal gland functional unit cell
+transit amplifying cell of small intestine	langerhans cell
+transit amplifying cell of small intestine	large intestine goblet cell
+transit amplifying cell of small intestine	limbal stem cell
+transit amplifying cell of small intestine	limbal stromal cell
+transit amplifying cell of small intestine	liver dendritic cell
+transit amplifying cell of small intestine	luminal cell of prostate epithelium
+transit amplifying cell of small intestine	luminal epithelial cell of mammary gland
+transit amplifying cell of small intestine	lung ciliated cell
+transit amplifying cell of small intestine	lung microvascular endothelial cell
+transit amplifying cell of small intestine	lymphatic endothelial cell
+transit amplifying cell of small intestine	macrophage
+transit amplifying cell of small intestine	mature conventional dendritic cell
+transit amplifying cell of small intestine	mature enterocyte
+transit amplifying cell of small intestine	mature nk t cell
+transit amplifying cell of small intestine	medullary thymic epithelial cell
+transit amplifying cell of small intestine	melanocyte
+transit amplifying cell of small intestine	memory b cell
+transit amplifying cell of small intestine	mesenchymal stem cell
+transit amplifying cell of small intestine	mesothelial cell
+transit amplifying cell of small intestine	microglial cell
+transit amplifying cell of small intestine	monocyte
+transit amplifying cell of small intestine	mucus secreting cell
+transit amplifying cell of small intestine	muller cell
+transit amplifying cell of small intestine	muscle cell
+transit amplifying cell of small intestine	myeloid cell
+transit amplifying cell of small intestine	myeloid progenitor
+transit amplifying cell of small intestine	myoepithelial cell
+transit amplifying cell of small intestine	myofibroblast cell
+transit amplifying cell of small intestine	myometrial cell
+transit amplifying cell of small intestine	naive regulatory t cell
+transit amplifying cell of small intestine	naive thymus-derived cd4-positive, alpha-beta t cell
+transit amplifying cell of small intestine	nampt neutrophil
+transit amplifying cell of small intestine	nk cell
+transit amplifying cell of small intestine	non-classical monocyte
+transit amplifying cell of small intestine	ocular surface cell
+transit amplifying cell of small intestine	pancreatic acinar cell
+transit amplifying cell of small intestine	pancreatic alpha cell
+transit amplifying cell of small intestine	pancreatic beta cell
+transit amplifying cell of small intestine	pancreatic delta cell
+transit amplifying cell of small intestine	pancreatic ductal cell
+transit amplifying cell of small intestine	pancreatic pp cell
+transit amplifying cell of small intestine	pancreatic stellate cell
+transit amplifying cell of small intestine	paneth cell of epithelium of large intestine
+transit amplifying cell of small intestine	paneth cell of epithelium of small intestine
+transit amplifying cell of small intestine	pericyte cell
+transit amplifying cell of small intestine	plasma cell
+transit amplifying cell of small intestine	plasmacytoid dendritic cell
+transit amplifying cell of small intestine	pulmonary ionocyte
+transit amplifying cell of small intestine	radial glial cell
+transit amplifying cell of small intestine	regulatory t cell
+transit amplifying cell of small intestine	respiratory goblet cell
+transit amplifying cell of small intestine	retina horizontal cell
+transit amplifying cell of small intestine	retinal bipolar neuron
+transit amplifying cell of small intestine	retinal blood vessel endothelial cell
+transit amplifying cell of small intestine	retinal pigment epithelial cell
+transit amplifying cell of small intestine	salivary gland cell
+transit amplifying cell of small intestine	secretory cell
+transit amplifying cell of small intestine	serous cell of epithelium of trachea
+transit amplifying cell of small intestine	skeletal muscle satellite stem cell
+transit amplifying cell of small intestine	small intestine goblet cell
+transit amplifying cell of small intestine	smooth muscle cell
+transit amplifying cell of small intestine	transit amplifying cell of small intestine
+transit amplifying cell of small intestine	type i nk t cell
+transit amplifying cell of small intestine	type i pneumocyte
+transit amplifying cell of small intestine	type ii pneumocyte
+transit amplifying cell of small intestine	vascular associated smooth muscle cell
+transit amplifying cell of small intestine	vein endothelial cell
+transit amplifying cell of small intestine	myeloid dendritic cell
+transit amplifying cell of small intestine	BTO:0000651
+type i nk t cell	adipocyte
+type i nk t cell	adventitial cell
+type i nk t cell	alveolar fibroblast
+type i nk t cell	artery endothelial cell
+type i nk t cell	b cell
+type i nk t cell	basal cell
+type i nk t cell	basal cell of prostate epithelium
+type i nk t cell	bladder urothelial cell
+type i nk t cell	bronchial smooth muscle cell
+type i nk t cell	bronchial vessel endothelial cell
+type i nk t cell	capillary endothelial cell
+type i nk t cell	cardiac endothelial cell
+type i nk t cell	cardiac muscle cell
+type i nk t cell	cd141-positive myeloid dendritic cell
+type i nk t cell	cd1c-positive myeloid dendritic cell
+type i nk t cell	cd24 neutrophil
+type i nk t cell	cd4-positive helper t cell
+type i nk t cell	cd4-positive, alpha-beta memory t cell
+type i nk t cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+type i nk t cell	cd8-positive, alpha-beta cytotoxic t cell
+type i nk t cell	cell of skeletal muscle
+type i nk t cell	ciliary body
+type i nk t cell	ciliated cell
+type i nk t cell	ciliated epithelial cell
+type i nk t cell	classical monocyte
+type i nk t cell	club cell
+type i nk t cell	club cell of prostate epithelium
+type i nk t cell	conjunctival epithelial cell
+type i nk t cell	connective tissue cell
+type i nk t cell	corneal epithelial cell
+type i nk t cell	corneal keratocyte
+type i nk t cell	dendritic cell
+type i nk t cell	dn1 thymic pro-t cell
+type i nk t cell	dn3 thymocyte
+type i nk t cell	dn4 thymocyte
+type i nk t cell	duct epithelial cell
+type i nk t cell	duodenum glandular cell
+type i nk t cell	endothelial cell
+type i nk t cell	endothelial cell of artery
+type i nk t cell	endothelial cell of hepatic sinusoid
+type i nk t cell	endothelial cell of lymphatic vessel
+type i nk t cell	endothelial cell of vascular tree
+type i nk t cell	enterocyte of epithelium of large intestine
+type i nk t cell	enterocyte of epithelium of small intestine
+type i nk t cell	epithelial cell
+type i nk t cell	epithelial cell of lacrimal sac
+type i nk t cell	epithelial cell of uterus
+type i nk t cell	erythroid progenitor
+type i nk t cell	eye photoreceptor cell
+type i nk t cell	fast muscle cell
+type i nk t cell	fibroblast
+type i nk t cell	fibroblast of breast
+type i nk t cell	fibroblast of cardiac tissue
+type i nk t cell	goblet cell
+type i nk t cell	granulocyte
+type i nk t cell	gut endothelial cell
+type i nk t cell	hematopoietic stem cell
+type i nk t cell	hepatocyte
+type i nk t cell	hillock cell of prostate epithelium
+type i nk t cell	hillock-club cell of prostate epithelium
+type i nk t cell	immature enterocyte
+type i nk t cell	immature natural killer cell
+type i nk t cell	immune cell
+type i nk t cell	intermediate monocyte
+type i nk t cell	intestinal crypt stem cell
+type i nk t cell	intestinal crypt stem cell of large intestine
+type i nk t cell	intestinal crypt stem cell of small intestine
+type i nk t cell	intestinal enteroendocrine cell
+type i nk t cell	intestinal tuft cell
+type i nk t cell	intrahepatic cholangiocyte
+type i nk t cell	ionocyte
+type i nk t cell	keratinocyte
+type i nk t cell	kidney epithelial cell
+type i nk t cell	lacrimal gland functional unit cell
+type i nk t cell	langerhans cell
+type i nk t cell	large intestine goblet cell
+type i nk t cell	limbal stem cell
+type i nk t cell	limbal stromal cell
+type i nk t cell	liver dendritic cell
+type i nk t cell	luminal cell of prostate epithelium
+type i nk t cell	luminal epithelial cell of mammary gland
+type i nk t cell	lung ciliated cell
+type i nk t cell	lung microvascular endothelial cell
+type i nk t cell	lymphatic endothelial cell
+type i nk t cell	macrophage
+type i nk t cell	mature conventional dendritic cell
+type i nk t cell	mature enterocyte
+type i nk t cell	mature nk t cell
+type i nk t cell	medullary thymic epithelial cell
+type i nk t cell	melanocyte
+type i nk t cell	memory b cell
+type i nk t cell	mesenchymal stem cell
+type i nk t cell	mesothelial cell
+type i nk t cell	microglial cell
+type i nk t cell	monocyte
+type i nk t cell	mucus secreting cell
+type i nk t cell	muller cell
+type i nk t cell	muscle cell
+type i nk t cell	myeloid cell
+type i nk t cell	myeloid progenitor
+type i nk t cell	myoepithelial cell
+type i nk t cell	myofibroblast cell
+type i nk t cell	myometrial cell
+type i nk t cell	naive regulatory t cell
+type i nk t cell	naive thymus-derived cd4-positive, alpha-beta t cell
+type i nk t cell	nampt neutrophil
+type i nk t cell	nk cell
+type i nk t cell	non-classical monocyte
+type i nk t cell	ocular surface cell
+type i nk t cell	pancreatic acinar cell
+type i nk t cell	pancreatic alpha cell
+type i nk t cell	pancreatic beta cell
+type i nk t cell	pancreatic delta cell
+type i nk t cell	pancreatic ductal cell
+type i nk t cell	pancreatic pp cell
+type i nk t cell	pancreatic stellate cell
+type i nk t cell	paneth cell of epithelium of large intestine
+type i nk t cell	paneth cell of epithelium of small intestine
+type i nk t cell	pericyte cell
+type i nk t cell	plasma cell
+type i nk t cell	plasmacytoid dendritic cell
+type i nk t cell	pulmonary ionocyte
+type i nk t cell	radial glial cell
+type i nk t cell	regulatory t cell
+type i nk t cell	respiratory goblet cell
+type i nk t cell	retina horizontal cell
+type i nk t cell	retinal bipolar neuron
+type i nk t cell	retinal blood vessel endothelial cell
+type i nk t cell	retinal pigment epithelial cell
+type i nk t cell	salivary gland cell
+type i nk t cell	schwann cell
+type i nk t cell	secretory cell
+type i nk t cell	serous cell of epithelium of bronchus
+type i nk t cell	serous cell of epithelium of trachea
+type i nk t cell	skeletal muscle satellite stem cell
+type i nk t cell	small intestine goblet cell
+type i nk t cell	smooth muscle cell
+type i nk t cell	type i nk t cell
+type i nk t cell	type i pneumocyte
+type i nk t cell	type ii pneumocyte
+type i nk t cell	vascular associated smooth muscle cell
+type i nk t cell	vein endothelial cell
+type i nk t cell	myeloid dendritic cell
+type i nk t cell	BTO:0000089
+type i nk t cell	BTO:0000784
+type i nk t cell	BTO:0001281
+type i pneumocyte	adipocyte
+type i pneumocyte	adventitial cell
+type i pneumocyte	alveolar fibroblast
+type i pneumocyte	artery endothelial cell
+type i pneumocyte	b cell
+type i pneumocyte	basal cell
+type i pneumocyte	basal cell of prostate epithelium
+type i pneumocyte	bladder urothelial cell
+type i pneumocyte	bronchial smooth muscle cell
+type i pneumocyte	bronchial vessel endothelial cell
+type i pneumocyte	capillary endothelial cell
+type i pneumocyte	cardiac endothelial cell
+type i pneumocyte	cardiac muscle cell
+type i pneumocyte	cd141-positive myeloid dendritic cell
+type i pneumocyte	cd1c-positive myeloid dendritic cell
+type i pneumocyte	cd24 neutrophil
+type i pneumocyte	cd4-positive helper t cell
+type i pneumocyte	cd4-positive, alpha-beta memory t cell
+type i pneumocyte	cd8-positive, alpha-beta cytokine secreting effector t cell
+type i pneumocyte	cd8-positive, alpha-beta cytotoxic t cell
+type i pneumocyte	cell of skeletal muscle
+type i pneumocyte	ciliary body
+type i pneumocyte	ciliated cell
+type i pneumocyte	ciliated epithelial cell
+type i pneumocyte	classical monocyte
+type i pneumocyte	club cell
+type i pneumocyte	club cell of prostate epithelium
+type i pneumocyte	conjunctival epithelial cell
+type i pneumocyte	connective tissue cell
+type i pneumocyte	corneal epithelial cell
+type i pneumocyte	corneal keratocyte
+type i pneumocyte	dendritic cell
+type i pneumocyte	dn1 thymic pro-t cell
+type i pneumocyte	dn3 thymocyte
+type i pneumocyte	dn4 thymocyte
+type i pneumocyte	duct epithelial cell
+type i pneumocyte	duodenum glandular cell
+type i pneumocyte	endothelial cell
+type i pneumocyte	endothelial cell of artery
+type i pneumocyte	endothelial cell of hepatic sinusoid
+type i pneumocyte	endothelial cell of lymphatic vessel
+type i pneumocyte	endothelial cell of vascular tree
+type i pneumocyte	enterocyte of epithelium of large intestine
+type i pneumocyte	enterocyte of epithelium of small intestine
+type i pneumocyte	epithelial cell
+type i pneumocyte	epithelial cell of lacrimal sac
+type i pneumocyte	epithelial cell of uterus
+type i pneumocyte	erythroid progenitor
+type i pneumocyte	eye photoreceptor cell
+type i pneumocyte	fast muscle cell
+type i pneumocyte	fibroblast
+type i pneumocyte	fibroblast of breast
+type i pneumocyte	fibroblast of cardiac tissue
+type i pneumocyte	goblet cell
+type i pneumocyte	granulocyte
+type i pneumocyte	gut endothelial cell
+type i pneumocyte	hematopoietic stem cell
+type i pneumocyte	hepatocyte
+type i pneumocyte	hillock cell of prostate epithelium
+type i pneumocyte	hillock-club cell of prostate epithelium
+type i pneumocyte	immature enterocyte
+type i pneumocyte	immature natural killer cell
+type i pneumocyte	immune cell
+type i pneumocyte	intermediate monocyte
+type i pneumocyte	intestinal crypt stem cell
+type i pneumocyte	intestinal crypt stem cell of large intestine
+type i pneumocyte	intestinal crypt stem cell of small intestine
+type i pneumocyte	intestinal enteroendocrine cell
+type i pneumocyte	intestinal tuft cell
+type i pneumocyte	intrahepatic cholangiocyte
+type i pneumocyte	ionocyte
+type i pneumocyte	keratinocyte
+type i pneumocyte	kidney epithelial cell
+type i pneumocyte	lacrimal gland functional unit cell
+type i pneumocyte	langerhans cell
+type i pneumocyte	large intestine goblet cell
+type i pneumocyte	limbal stem cell
+type i pneumocyte	limbal stromal cell
+type i pneumocyte	liver dendritic cell
+type i pneumocyte	luminal cell of prostate epithelium
+type i pneumocyte	luminal epithelial cell of mammary gland
+type i pneumocyte	lung ciliated cell
+type i pneumocyte	lung microvascular endothelial cell
+type i pneumocyte	lymphatic endothelial cell
+type i pneumocyte	macrophage
+type i pneumocyte	mature conventional dendritic cell
+type i pneumocyte	mature enterocyte
+type i pneumocyte	mature nk t cell
+type i pneumocyte	medullary thymic epithelial cell
+type i pneumocyte	melanocyte
+type i pneumocyte	memory b cell
+type i pneumocyte	mesenchymal stem cell
+type i pneumocyte	mesothelial cell
+type i pneumocyte	microglial cell
+type i pneumocyte	monocyte
+type i pneumocyte	mucus secreting cell
+type i pneumocyte	muller cell
+type i pneumocyte	muscle cell
+type i pneumocyte	myeloid cell
+type i pneumocyte	myeloid progenitor
+type i pneumocyte	myoepithelial cell
+type i pneumocyte	myofibroblast cell
+type i pneumocyte	myometrial cell
+type i pneumocyte	naive regulatory t cell
+type i pneumocyte	naive thymus-derived cd4-positive, alpha-beta t cell
+type i pneumocyte	nampt neutrophil
+type i pneumocyte	nk cell
+type i pneumocyte	non-classical monocyte
+type i pneumocyte	ocular surface cell
+type i pneumocyte	pancreatic acinar cell
+type i pneumocyte	pancreatic alpha cell
+type i pneumocyte	pancreatic beta cell
+type i pneumocyte	pancreatic delta cell
+type i pneumocyte	pancreatic ductal cell
+type i pneumocyte	pancreatic pp cell
+type i pneumocyte	pancreatic stellate cell
+type i pneumocyte	paneth cell of epithelium of large intestine
+type i pneumocyte	paneth cell of epithelium of small intestine
+type i pneumocyte	pericyte cell
+type i pneumocyte	plasma cell
+type i pneumocyte	plasmacytoid dendritic cell
+type i pneumocyte	pulmonary ionocyte
+type i pneumocyte	radial glial cell
+type i pneumocyte	regulatory t cell
+type i pneumocyte	respiratory goblet cell
+type i pneumocyte	retina horizontal cell
+type i pneumocyte	retinal bipolar neuron
+type i pneumocyte	retinal blood vessel endothelial cell
+type i pneumocyte	retinal pigment epithelial cell
+type i pneumocyte	salivary gland cell
+type i pneumocyte	schwann cell
+type i pneumocyte	secretory cell
+type i pneumocyte	serous cell of epithelium of bronchus
+type i pneumocyte	serous cell of epithelium of trachea
+type i pneumocyte	skeletal muscle satellite stem cell
+type i pneumocyte	small intestine goblet cell
+type i pneumocyte	smooth muscle cell
+type i pneumocyte	type i pneumocyte
+type i pneumocyte	type ii pneumocyte
+type i pneumocyte	vascular associated smooth muscle cell
+type i pneumocyte	vein endothelial cell
+type i pneumocyte	myeloid dendritic cell
+type i pneumocyte	BTO:0000763
+type ii pneumocyte	adipocyte
+type ii pneumocyte	adventitial cell
+type ii pneumocyte	alveolar fibroblast
+type ii pneumocyte	artery endothelial cell
+type ii pneumocyte	b cell
+type ii pneumocyte	basal cell
+type ii pneumocyte	basal cell of prostate epithelium
+type ii pneumocyte	bladder urothelial cell
+type ii pneumocyte	bronchial smooth muscle cell
+type ii pneumocyte	bronchial vessel endothelial cell
+type ii pneumocyte	capillary endothelial cell
+type ii pneumocyte	cardiac endothelial cell
+type ii pneumocyte	cardiac muscle cell
+type ii pneumocyte	cd141-positive myeloid dendritic cell
+type ii pneumocyte	cd1c-positive myeloid dendritic cell
+type ii pneumocyte	cd24 neutrophil
+type ii pneumocyte	cd4-positive helper t cell
+type ii pneumocyte	cd4-positive, alpha-beta memory t cell
+type ii pneumocyte	cd8-positive, alpha-beta cytokine secreting effector t cell
+type ii pneumocyte	cd8-positive, alpha-beta cytotoxic t cell
+type ii pneumocyte	cell of skeletal muscle
+type ii pneumocyte	ciliary body
+type ii pneumocyte	ciliated cell
+type ii pneumocyte	ciliated epithelial cell
+type ii pneumocyte	classical monocyte
+type ii pneumocyte	club cell
+type ii pneumocyte	club cell of prostate epithelium
+type ii pneumocyte	conjunctival epithelial cell
+type ii pneumocyte	connective tissue cell
+type ii pneumocyte	corneal epithelial cell
+type ii pneumocyte	corneal keratocyte
+type ii pneumocyte	dendritic cell
+type ii pneumocyte	dn1 thymic pro-t cell
+type ii pneumocyte	dn3 thymocyte
+type ii pneumocyte	dn4 thymocyte
+type ii pneumocyte	duct epithelial cell
+type ii pneumocyte	duodenum glandular cell
+type ii pneumocyte	endothelial cell
+type ii pneumocyte	endothelial cell of artery
+type ii pneumocyte	endothelial cell of hepatic sinusoid
+type ii pneumocyte	endothelial cell of lymphatic vessel
+type ii pneumocyte	endothelial cell of vascular tree
+type ii pneumocyte	enterocyte of epithelium of large intestine
+type ii pneumocyte	enterocyte of epithelium of small intestine
+type ii pneumocyte	epithelial cell
+type ii pneumocyte	epithelial cell of lacrimal sac
+type ii pneumocyte	epithelial cell of uterus
+type ii pneumocyte	erythroid progenitor
+type ii pneumocyte	eye photoreceptor cell
+type ii pneumocyte	fast muscle cell
+type ii pneumocyte	fibroblast
+type ii pneumocyte	fibroblast of breast
+type ii pneumocyte	fibroblast of cardiac tissue
+type ii pneumocyte	goblet cell
+type ii pneumocyte	granulocyte
+type ii pneumocyte	gut endothelial cell
+type ii pneumocyte	hematopoietic stem cell
+type ii pneumocyte	hepatocyte
+type ii pneumocyte	hillock cell of prostate epithelium
+type ii pneumocyte	hillock-club cell of prostate epithelium
+type ii pneumocyte	immature enterocyte
+type ii pneumocyte	immature natural killer cell
+type ii pneumocyte	immune cell
+type ii pneumocyte	intermediate monocyte
+type ii pneumocyte	intestinal crypt stem cell
+type ii pneumocyte	intestinal crypt stem cell of large intestine
+type ii pneumocyte	intestinal crypt stem cell of small intestine
+type ii pneumocyte	intestinal enteroendocrine cell
+type ii pneumocyte	intestinal tuft cell
+type ii pneumocyte	intrahepatic cholangiocyte
+type ii pneumocyte	ionocyte
+type ii pneumocyte	keratinocyte
+type ii pneumocyte	kidney epithelial cell
+type ii pneumocyte	lacrimal gland functional unit cell
+type ii pneumocyte	langerhans cell
+type ii pneumocyte	large intestine goblet cell
+type ii pneumocyte	limbal stem cell
+type ii pneumocyte	limbal stromal cell
+type ii pneumocyte	liver dendritic cell
+type ii pneumocyte	luminal cell of prostate epithelium
+type ii pneumocyte	luminal epithelial cell of mammary gland
+type ii pneumocyte	lung ciliated cell
+type ii pneumocyte	lung microvascular endothelial cell
+type ii pneumocyte	lymphatic endothelial cell
+type ii pneumocyte	macrophage
+type ii pneumocyte	mature conventional dendritic cell
+type ii pneumocyte	mature enterocyte
+type ii pneumocyte	mature nk t cell
+type ii pneumocyte	medullary thymic epithelial cell
+type ii pneumocyte	melanocyte
+type ii pneumocyte	memory b cell
+type ii pneumocyte	mesenchymal stem cell
+type ii pneumocyte	mesothelial cell
+type ii pneumocyte	microglial cell
+type ii pneumocyte	monocyte
+type ii pneumocyte	mucus secreting cell
+type ii pneumocyte	muller cell
+type ii pneumocyte	muscle cell
+type ii pneumocyte	myeloid cell
+type ii pneumocyte	myeloid progenitor
+type ii pneumocyte	myoepithelial cell
+type ii pneumocyte	myofibroblast cell
+type ii pneumocyte	myometrial cell
+type ii pneumocyte	naive regulatory t cell
+type ii pneumocyte	naive thymus-derived cd4-positive, alpha-beta t cell
+type ii pneumocyte	nampt neutrophil
+type ii pneumocyte	nk cell
+type ii pneumocyte	non-classical monocyte
+type ii pneumocyte	ocular surface cell
+type ii pneumocyte	pancreatic acinar cell
+type ii pneumocyte	pancreatic alpha cell
+type ii pneumocyte	pancreatic beta cell
+type ii pneumocyte	pancreatic delta cell
+type ii pneumocyte	pancreatic ductal cell
+type ii pneumocyte	pancreatic pp cell
+type ii pneumocyte	pancreatic stellate cell
+type ii pneumocyte	paneth cell of epithelium of large intestine
+type ii pneumocyte	paneth cell of epithelium of small intestine
+type ii pneumocyte	pericyte cell
+type ii pneumocyte	plasma cell
+type ii pneumocyte	plasmacytoid dendritic cell
+type ii pneumocyte	pulmonary ionocyte
+type ii pneumocyte	radial glial cell
+type ii pneumocyte	regulatory t cell
+type ii pneumocyte	respiratory goblet cell
+type ii pneumocyte	retina horizontal cell
+type ii pneumocyte	retinal bipolar neuron
+type ii pneumocyte	retinal blood vessel endothelial cell
+type ii pneumocyte	retinal pigment epithelial cell
+type ii pneumocyte	salivary gland cell
+type ii pneumocyte	schwann cell
+type ii pneumocyte	secretory cell
+type ii pneumocyte	serous cell of epithelium of bronchus
+type ii pneumocyte	serous cell of epithelium of trachea
+type ii pneumocyte	skeletal muscle satellite stem cell
+type ii pneumocyte	small intestine goblet cell
+type ii pneumocyte	smooth muscle cell
+type ii pneumocyte	type ii pneumocyte
+type ii pneumocyte	vascular associated smooth muscle cell
+type ii pneumocyte	vein endothelial cell
+type ii pneumocyte	myeloid dendritic cell
+type ii pneumocyte	BTO:0000763
+vascular associated smooth muscle cell	adipocyte
+vascular associated smooth muscle cell	adventitial cell
+vascular associated smooth muscle cell	alveolar fibroblast
+vascular associated smooth muscle cell	artery endothelial cell
+vascular associated smooth muscle cell	b cell
+vascular associated smooth muscle cell	basal cell
+vascular associated smooth muscle cell	basal cell of prostate epithelium
+vascular associated smooth muscle cell	bladder urothelial cell
+vascular associated smooth muscle cell	bronchial smooth muscle cell
+vascular associated smooth muscle cell	bronchial vessel endothelial cell
+vascular associated smooth muscle cell	capillary endothelial cell
+vascular associated smooth muscle cell	cardiac endothelial cell
+vascular associated smooth muscle cell	cardiac muscle cell
+vascular associated smooth muscle cell	cd141-positive myeloid dendritic cell
+vascular associated smooth muscle cell	cd1c-positive myeloid dendritic cell
+vascular associated smooth muscle cell	cd24 neutrophil
+vascular associated smooth muscle cell	cd4-positive helper t cell
+vascular associated smooth muscle cell	cd4-positive, alpha-beta memory t cell
+vascular associated smooth muscle cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+vascular associated smooth muscle cell	cd8-positive, alpha-beta cytotoxic t cell
+vascular associated smooth muscle cell	cell of skeletal muscle
+vascular associated smooth muscle cell	ciliary body
+vascular associated smooth muscle cell	ciliated cell
+vascular associated smooth muscle cell	ciliated epithelial cell
+vascular associated smooth muscle cell	classical monocyte
+vascular associated smooth muscle cell	club cell
+vascular associated smooth muscle cell	club cell of prostate epithelium
+vascular associated smooth muscle cell	conjunctival epithelial cell
+vascular associated smooth muscle cell	connective tissue cell
+vascular associated smooth muscle cell	corneal epithelial cell
+vascular associated smooth muscle cell	corneal keratocyte
+vascular associated smooth muscle cell	dendritic cell
+vascular associated smooth muscle cell	dn1 thymic pro-t cell
+vascular associated smooth muscle cell	dn3 thymocyte
+vascular associated smooth muscle cell	dn4 thymocyte
+vascular associated smooth muscle cell	duct epithelial cell
+vascular associated smooth muscle cell	duodenum glandular cell
+vascular associated smooth muscle cell	endothelial cell
+vascular associated smooth muscle cell	endothelial cell of artery
+vascular associated smooth muscle cell	endothelial cell of hepatic sinusoid
+vascular associated smooth muscle cell	endothelial cell of lymphatic vessel
+vascular associated smooth muscle cell	endothelial cell of vascular tree
+vascular associated smooth muscle cell	enterocyte of epithelium of large intestine
+vascular associated smooth muscle cell	enterocyte of epithelium of small intestine
+vascular associated smooth muscle cell	epithelial cell
+vascular associated smooth muscle cell	epithelial cell of lacrimal sac
+vascular associated smooth muscle cell	epithelial cell of uterus
+vascular associated smooth muscle cell	erythroid progenitor
+vascular associated smooth muscle cell	eye photoreceptor cell
+vascular associated smooth muscle cell	fast muscle cell
+vascular associated smooth muscle cell	fibroblast
+vascular associated smooth muscle cell	fibroblast of breast
+vascular associated smooth muscle cell	fibroblast of cardiac tissue
+vascular associated smooth muscle cell	goblet cell
+vascular associated smooth muscle cell	granulocyte
+vascular associated smooth muscle cell	gut endothelial cell
+vascular associated smooth muscle cell	hematopoietic stem cell
+vascular associated smooth muscle cell	hepatocyte
+vascular associated smooth muscle cell	hillock cell of prostate epithelium
+vascular associated smooth muscle cell	hillock-club cell of prostate epithelium
+vascular associated smooth muscle cell	immature enterocyte
+vascular associated smooth muscle cell	immature natural killer cell
+vascular associated smooth muscle cell	immune cell
+vascular associated smooth muscle cell	intermediate monocyte
+vascular associated smooth muscle cell	intestinal crypt stem cell
+vascular associated smooth muscle cell	intestinal crypt stem cell of large intestine
+vascular associated smooth muscle cell	intestinal crypt stem cell of small intestine
+vascular associated smooth muscle cell	intestinal enteroendocrine cell
+vascular associated smooth muscle cell	intestinal tuft cell
+vascular associated smooth muscle cell	intrahepatic cholangiocyte
+vascular associated smooth muscle cell	ionocyte
+vascular associated smooth muscle cell	keratinocyte
+vascular associated smooth muscle cell	kidney epithelial cell
+vascular associated smooth muscle cell	lacrimal gland functional unit cell
+vascular associated smooth muscle cell	langerhans cell
+vascular associated smooth muscle cell	large intestine goblet cell
+vascular associated smooth muscle cell	limbal stem cell
+vascular associated smooth muscle cell	limbal stromal cell
+vascular associated smooth muscle cell	liver dendritic cell
+vascular associated smooth muscle cell	luminal cell of prostate epithelium
+vascular associated smooth muscle cell	luminal epithelial cell of mammary gland
+vascular associated smooth muscle cell	lung ciliated cell
+vascular associated smooth muscle cell	lung microvascular endothelial cell
+vascular associated smooth muscle cell	lymphatic endothelial cell
+vascular associated smooth muscle cell	macrophage
+vascular associated smooth muscle cell	mature conventional dendritic cell
+vascular associated smooth muscle cell	mature enterocyte
+vascular associated smooth muscle cell	mature nk t cell
+vascular associated smooth muscle cell	medullary thymic epithelial cell
+vascular associated smooth muscle cell	melanocyte
+vascular associated smooth muscle cell	memory b cell
+vascular associated smooth muscle cell	mesenchymal stem cell
+vascular associated smooth muscle cell	mesothelial cell
+vascular associated smooth muscle cell	microglial cell
+vascular associated smooth muscle cell	monocyte
+vascular associated smooth muscle cell	mucus secreting cell
+vascular associated smooth muscle cell	muller cell
+vascular associated smooth muscle cell	muscle cell
+vascular associated smooth muscle cell	myeloid cell
+vascular associated smooth muscle cell	myeloid progenitor
+vascular associated smooth muscle cell	myoepithelial cell
+vascular associated smooth muscle cell	myofibroblast cell
+vascular associated smooth muscle cell	myometrial cell
+vascular associated smooth muscle cell	naive regulatory t cell
+vascular associated smooth muscle cell	naive thymus-derived cd4-positive, alpha-beta t cell
+vascular associated smooth muscle cell	nampt neutrophil
+vascular associated smooth muscle cell	nk cell
+vascular associated smooth muscle cell	non-classical monocyte
+vascular associated smooth muscle cell	ocular surface cell
+vascular associated smooth muscle cell	pancreatic acinar cell
+vascular associated smooth muscle cell	pancreatic alpha cell
+vascular associated smooth muscle cell	pancreatic beta cell
+vascular associated smooth muscle cell	pancreatic delta cell
+vascular associated smooth muscle cell	pancreatic ductal cell
+vascular associated smooth muscle cell	pancreatic pp cell
+vascular associated smooth muscle cell	pancreatic stellate cell
+vascular associated smooth muscle cell	paneth cell of epithelium of large intestine
+vascular associated smooth muscle cell	paneth cell of epithelium of small intestine
+vascular associated smooth muscle cell	pericyte cell
+vascular associated smooth muscle cell	plasma cell
+vascular associated smooth muscle cell	plasmablast
+vascular associated smooth muscle cell	plasmacytoid dendritic cell
+vascular associated smooth muscle cell	pulmonary ionocyte
+vascular associated smooth muscle cell	radial glial cell
+vascular associated smooth muscle cell	regulatory t cell
+vascular associated smooth muscle cell	respiratory goblet cell
+vascular associated smooth muscle cell	retina horizontal cell
+vascular associated smooth muscle cell	retinal bipolar neuron
+vascular associated smooth muscle cell	retinal blood vessel endothelial cell
+vascular associated smooth muscle cell	retinal pigment epithelial cell
+vascular associated smooth muscle cell	salivary gland cell
+vascular associated smooth muscle cell	schwann cell
+vascular associated smooth muscle cell	secretory cell
+vascular associated smooth muscle cell	serous cell of epithelium of bronchus
+vascular associated smooth muscle cell	serous cell of epithelium of trachea
+vascular associated smooth muscle cell	skeletal muscle satellite stem cell
+vascular associated smooth muscle cell	small intestine goblet cell
+vascular associated smooth muscle cell	smooth muscle cell
+vascular associated smooth muscle cell	vascular associated smooth muscle cell
+vascular associated smooth muscle cell	vein endothelial cell
+vascular associated smooth muscle cell	double-positive, alpha-beta thymocyte
+vascular associated smooth muscle cell	myeloid dendritic cell
+vascular associated smooth muscle cell	BTO:0000817
+vascular associated smooth muscle cell	BTO:0001424
+vascular associated smooth muscle cell	BTO:0001374
+vascular associated smooth muscle cell	BTO:0000763
+vein endothelial cell	adipocyte
+vein endothelial cell	adventitial cell
+vein endothelial cell	alveolar fibroblast
+vein endothelial cell	artery endothelial cell
+vein endothelial cell	b cell
+vein endothelial cell	basal cell
+vein endothelial cell	basal cell of prostate epithelium
+vein endothelial cell	bladder urothelial cell
+vein endothelial cell	bronchial smooth muscle cell
+vein endothelial cell	bronchial vessel endothelial cell
+vein endothelial cell	capillary endothelial cell
+vein endothelial cell	cardiac endothelial cell
+vein endothelial cell	cardiac muscle cell
+vein endothelial cell	cd141-positive myeloid dendritic cell
+vein endothelial cell	cd1c-positive myeloid dendritic cell
+vein endothelial cell	cd24 neutrophil
+vein endothelial cell	cd4-positive helper t cell
+vein endothelial cell	cd4-positive, alpha-beta memory t cell
+vein endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+vein endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+vein endothelial cell	cell of skeletal muscle
+vein endothelial cell	ciliary body
+vein endothelial cell	ciliated cell
+vein endothelial cell	ciliated epithelial cell
+vein endothelial cell	classical monocyte
+vein endothelial cell	club cell
+vein endothelial cell	club cell of prostate epithelium
+vein endothelial cell	conjunctival epithelial cell
+vein endothelial cell	connective tissue cell
+vein endothelial cell	corneal epithelial cell
+vein endothelial cell	corneal keratocyte
+vein endothelial cell	dendritic cell
+vein endothelial cell	dn1 thymic pro-t cell
+vein endothelial cell	dn3 thymocyte
+vein endothelial cell	dn4 thymocyte
+vein endothelial cell	duct epithelial cell
+vein endothelial cell	duodenum glandular cell
+vein endothelial cell	endothelial cell
+vein endothelial cell	endothelial cell of artery
+vein endothelial cell	endothelial cell of hepatic sinusoid
+vein endothelial cell	endothelial cell of lymphatic vessel
+vein endothelial cell	endothelial cell of vascular tree
+vein endothelial cell	enterocyte of epithelium of large intestine
+vein endothelial cell	enterocyte of epithelium of small intestine
+vein endothelial cell	epithelial cell
+vein endothelial cell	epithelial cell of lacrimal sac
+vein endothelial cell	epithelial cell of uterus
+vein endothelial cell	erythroid progenitor
+vein endothelial cell	eye photoreceptor cell
+vein endothelial cell	fast muscle cell
+vein endothelial cell	fibroblast
+vein endothelial cell	fibroblast of breast
+vein endothelial cell	fibroblast of cardiac tissue
+vein endothelial cell	goblet cell
+vein endothelial cell	granulocyte
+vein endothelial cell	gut endothelial cell
+vein endothelial cell	hematopoietic stem cell
+vein endothelial cell	hepatocyte
+vein endothelial cell	hillock cell of prostate epithelium
+vein endothelial cell	hillock-club cell of prostate epithelium
+vein endothelial cell	immature enterocyte
+vein endothelial cell	immature natural killer cell
+vein endothelial cell	immune cell
+vein endothelial cell	intermediate monocyte
+vein endothelial cell	intestinal crypt stem cell
+vein endothelial cell	intestinal crypt stem cell of large intestine
+vein endothelial cell	intestinal crypt stem cell of small intestine
+vein endothelial cell	intestinal enteroendocrine cell
+vein endothelial cell	intestinal tuft cell
+vein endothelial cell	intrahepatic cholangiocyte
+vein endothelial cell	ionocyte
+vein endothelial cell	keratinocyte
+vein endothelial cell	kidney epithelial cell
+vein endothelial cell	lacrimal gland functional unit cell
+vein endothelial cell	langerhans cell
+vein endothelial cell	large intestine goblet cell
+vein endothelial cell	limbal stem cell
+vein endothelial cell	limbal stromal cell
+vein endothelial cell	liver dendritic cell
+vein endothelial cell	luminal cell of prostate epithelium
+vein endothelial cell	luminal epithelial cell of mammary gland
+vein endothelial cell	lung ciliated cell
+vein endothelial cell	lung microvascular endothelial cell
+vein endothelial cell	lymphatic endothelial cell
+vein endothelial cell	macrophage
+vein endothelial cell	mature conventional dendritic cell
+vein endothelial cell	mature enterocyte
+vein endothelial cell	mature nk t cell
+vein endothelial cell	medullary thymic epithelial cell
+vein endothelial cell	melanocyte
+vein endothelial cell	memory b cell
+vein endothelial cell	mesenchymal stem cell
+vein endothelial cell	mesothelial cell
+vein endothelial cell	microglial cell
+vein endothelial cell	monocyte
+vein endothelial cell	mucus secreting cell
+vein endothelial cell	muller cell
+vein endothelial cell	muscle cell
+vein endothelial cell	myeloid cell
+vein endothelial cell	myeloid progenitor
+vein endothelial cell	myoepithelial cell
+vein endothelial cell	myofibroblast cell
+vein endothelial cell	myometrial cell
+vein endothelial cell	naive regulatory t cell
+vein endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+vein endothelial cell	nampt neutrophil
+vein endothelial cell	nk cell
+vein endothelial cell	non-classical monocyte
+vein endothelial cell	ocular surface cell
+vein endothelial cell	pancreatic acinar cell
+vein endothelial cell	pancreatic alpha cell
+vein endothelial cell	pancreatic beta cell
+vein endothelial cell	pancreatic delta cell
+vein endothelial cell	pancreatic ductal cell
+vein endothelial cell	pancreatic pp cell
+vein endothelial cell	pancreatic stellate cell
+vein endothelial cell	paneth cell of epithelium of large intestine
+vein endothelial cell	paneth cell of epithelium of small intestine
+vein endothelial cell	pericyte cell
+vein endothelial cell	plasma cell
+vein endothelial cell	plasmablast
+vein endothelial cell	plasmacytoid dendritic cell
+vein endothelial cell	pulmonary ionocyte
+vein endothelial cell	radial glial cell
+vein endothelial cell	regulatory t cell
+vein endothelial cell	respiratory goblet cell
+vein endothelial cell	respiratory mucous cell
+vein endothelial cell	retina horizontal cell
+vein endothelial cell	retinal bipolar neuron
+vein endothelial cell	retinal blood vessel endothelial cell
+vein endothelial cell	retinal ganglion cell
+vein endothelial cell	retinal pigment epithelial cell
+vein endothelial cell	salivary gland cell
+vein endothelial cell	schwann cell
+vein endothelial cell	secretory cell
+vein endothelial cell	serous cell of epithelium of bronchus
+vein endothelial cell	serous cell of epithelium of trachea
+vein endothelial cell	skeletal muscle satellite stem cell
+vein endothelial cell	small intestine goblet cell
+vein endothelial cell	smooth muscle cell
+vein endothelial cell	double-positive, alpha-beta thymocyte
+vein endothelial cell	vein endothelial cell
+vein endothelial cell	myeloid dendritic cell
+vein endothelial cell	BTO:0001385
+vein endothelial cell	BTO:0000817
+vein endothelial cell	BTO:0001374
+vein endothelial cell	BTO:0000123
+vein endothelial cell	BTO:0000763
+artery endothelial cell	adipocyte
+artery endothelial cell	adventitial cell
+artery endothelial cell	alveolar fibroblast
+artery endothelial cell	retina horizontal cell
+artery endothelial cell	retinal bipolar neuron
+artery endothelial cell	retinal blood vessel endothelial cell
+artery endothelial cell	retinal ganglion cell
+artery endothelial cell	retinal pigment epithelial cell
+artery endothelial cell	salivary gland cell
+artery endothelial cell	schwann cell
+artery endothelial cell	secretory cell
+artery endothelial cell	serous cell of epithelium of bronchus
+artery endothelial cell	serous cell of epithelium of trachea
+artery endothelial cell	skeletal muscle satellite stem cell
+artery endothelial cell	small intestine goblet cell
+artery endothelial cell	smooth muscle cell
+artery endothelial cell	artery endothelial cell
+artery endothelial cell	b cell
+artery endothelial cell	basal cell
+artery endothelial cell	basal cell of prostate epithelium
+artery endothelial cell	bladder urothelial cell
+artery endothelial cell	bronchial smooth muscle cell
+artery endothelial cell	bronchial vessel endothelial cell
+artery endothelial cell	capillary endothelial cell
+artery endothelial cell	cardiac endothelial cell
+artery endothelial cell	cardiac muscle cell
+artery endothelial cell	cd141-positive myeloid dendritic cell
+artery endothelial cell	cd1c-positive myeloid dendritic cell
+artery endothelial cell	cd24 neutrophil
+artery endothelial cell	cd4-positive helper t cell
+artery endothelial cell	cd4-positive, alpha-beta memory t cell
+artery endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+artery endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+artery endothelial cell	cell of skeletal muscle
+artery endothelial cell	ciliated cell
+artery endothelial cell	ciliated epithelial cell
+artery endothelial cell	classical monocyte
+artery endothelial cell	club cell
+artery endothelial cell	club cell of prostate epithelium
+artery endothelial cell	conjunctival epithelial cell
+artery endothelial cell	connective tissue cell
+artery endothelial cell	corneal epithelial cell
+artery endothelial cell	corneal keratocyte
+artery endothelial cell	dendritic cell
+artery endothelial cell	dn1 thymic pro-t cell
+artery endothelial cell	dn3 thymocyte
+artery endothelial cell	dn4 thymocyte
+artery endothelial cell	duct epithelial cell
+artery endothelial cell	duodenum glandular cell
+artery endothelial cell	endothelial cell
+artery endothelial cell	endothelial cell of artery
+artery endothelial cell	endothelial cell of hepatic sinusoid
+artery endothelial cell	endothelial cell of lymphatic vessel
+artery endothelial cell	endothelial cell of vascular tree
+artery endothelial cell	enterocyte of epithelium of large intestine
+artery endothelial cell	enterocyte of epithelium of small intestine
+artery endothelial cell	epithelial cell
+artery endothelial cell	epithelial cell of lacrimal sac
+artery endothelial cell	epithelial cell of uterus
+artery endothelial cell	erythroid progenitor
+artery endothelial cell	eye photoreceptor cell
+artery endothelial cell	fast muscle cell
+artery endothelial cell	fibroblast
+artery endothelial cell	fibroblast of breast
+artery endothelial cell	fibroblast of cardiac tissue
+artery endothelial cell	goblet cell
+artery endothelial cell	granulocyte
+artery endothelial cell	gut endothelial cell
+artery endothelial cell	hematopoietic stem cell
+artery endothelial cell	hepatocyte
+artery endothelial cell	hillock cell of prostate epithelium
+artery endothelial cell	hillock-club cell of prostate epithelium
+artery endothelial cell	immature enterocyte
+artery endothelial cell	immature natural killer cell
+artery endothelial cell	immune cell
+artery endothelial cell	intermediate monocyte
+artery endothelial cell	intestinal crypt stem cell
+artery endothelial cell	intestinal crypt stem cell of large intestine
+artery endothelial cell	intestinal crypt stem cell of small intestine
+artery endothelial cell	intestinal enteroendocrine cell
+artery endothelial cell	intestinal tuft cell
+artery endothelial cell	intrahepatic cholangiocyte
+artery endothelial cell	ionocyte
+artery endothelial cell	keratinocyte
+artery endothelial cell	kidney epithelial cell
+artery endothelial cell	lacrimal gland functional unit cell
+artery endothelial cell	langerhans cell
+artery endothelial cell	large intestine goblet cell
+artery endothelial cell	limbal stem cell
+artery endothelial cell	limbal stromal cell
+artery endothelial cell	liver dendritic cell
+artery endothelial cell	luminal cell of prostate epithelium
+artery endothelial cell	luminal epithelial cell of mammary gland
+artery endothelial cell	lung ciliated cell
+artery endothelial cell	lung microvascular endothelial cell
+artery endothelial cell	lymphatic endothelial cell
+artery endothelial cell	macrophage
+artery endothelial cell	mature conventional dendritic cell
+artery endothelial cell	mature enterocyte
+artery endothelial cell	mature nk t cell
+artery endothelial cell	medullary thymic epithelial cell
+artery endothelial cell	melanocyte
+artery endothelial cell	memory b cell
+artery endothelial cell	mesenchymal stem cell
+artery endothelial cell	mesothelial cell
+artery endothelial cell	microglial cell
+artery endothelial cell	monocyte
+artery endothelial cell	mucus secreting cell
+artery endothelial cell	muller cell
+artery endothelial cell	muscle cell
+artery endothelial cell	myeloid cell
+artery endothelial cell	myeloid progenitor
+artery endothelial cell	myoepithelial cell
+artery endothelial cell	myofibroblast cell
+artery endothelial cell	myometrial cell
+artery endothelial cell	naive regulatory t cell
+artery endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+artery endothelial cell	nampt neutrophil
+artery endothelial cell	nk cell
+artery endothelial cell	non-classical monocyte
+artery endothelial cell	ocular surface cell
+artery endothelial cell	pancreatic acinar cell
+artery endothelial cell	pancreatic alpha cell
+artery endothelial cell	pancreatic beta cell
+artery endothelial cell	pancreatic delta cell
+artery endothelial cell	pancreatic ductal cell
+artery endothelial cell	pancreatic pp cell
+artery endothelial cell	pancreatic stellate cell
+artery endothelial cell	paneth cell of epithelium of large intestine
+artery endothelial cell	paneth cell of epithelium of small intestine
+artery endothelial cell	pericyte cell
+artery endothelial cell	plasma cell
+artery endothelial cell	plasmablast
+artery endothelial cell	plasmacytoid dendritic cell
+artery endothelial cell	pulmonary ionocyte
+artery endothelial cell	radial glial cell
+artery endothelial cell	regulatory t cell
+artery endothelial cell	respiratory goblet cell
+artery endothelial cell	respiratory mucous cell
+artery endothelial cell	ciliary body
+artery endothelial cell	double-positive, alpha-beta thymocyte
+artery endothelial cell	myeloid dendritic cell
+artery endothelial cell	BTO:0003718
+bronchial vessel endothelial cell	adipocyte
+bronchial vessel endothelial cell	adventitial cell
+bronchial vessel endothelial cell	alveolar fibroblast
+bronchial vessel endothelial cell	retina horizontal cell
+bronchial vessel endothelial cell	retinal bipolar neuron
+bronchial vessel endothelial cell	retinal blood vessel endothelial cell
+bronchial vessel endothelial cell	retinal ganglion cell
+bronchial vessel endothelial cell	retinal pigment epithelial cell
+bronchial vessel endothelial cell	salivary gland cell
+bronchial vessel endothelial cell	schwann cell
+bronchial vessel endothelial cell	secretory cell
+bronchial vessel endothelial cell	serous cell of epithelium of bronchus
+bronchial vessel endothelial cell	serous cell of epithelium of trachea
+bronchial vessel endothelial cell	skeletal muscle satellite stem cell
+bronchial vessel endothelial cell	small intestine goblet cell
+bronchial vessel endothelial cell	smooth muscle cell
+bronchial vessel endothelial cell	b cell
+bronchial vessel endothelial cell	basal cell
+bronchial vessel endothelial cell	basal cell of prostate epithelium
+bronchial vessel endothelial cell	bladder urothelial cell
+bronchial vessel endothelial cell	bronchial smooth muscle cell
+bronchial vessel endothelial cell	bronchial vessel endothelial cell
+bronchial vessel endothelial cell	capillary endothelial cell
+bronchial vessel endothelial cell	cardiac endothelial cell
+bronchial vessel endothelial cell	cardiac muscle cell
+bronchial vessel endothelial cell	cd141-positive myeloid dendritic cell
+bronchial vessel endothelial cell	cd1c-positive myeloid dendritic cell
+bronchial vessel endothelial cell	cd24 neutrophil
+bronchial vessel endothelial cell	cd4-positive helper t cell
+bronchial vessel endothelial cell	cd4-positive, alpha-beta memory t cell
+bronchial vessel endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+bronchial vessel endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+bronchial vessel endothelial cell	cell of skeletal muscle
+bronchial vessel endothelial cell	ciliary body
+bronchial vessel endothelial cell	ciliated cell
+bronchial vessel endothelial cell	ciliated epithelial cell
+bronchial vessel endothelial cell	classical monocyte
+bronchial vessel endothelial cell	club cell
+bronchial vessel endothelial cell	club cell of prostate epithelium
+bronchial vessel endothelial cell	conjunctival epithelial cell
+bronchial vessel endothelial cell	connective tissue cell
+bronchial vessel endothelial cell	corneal epithelial cell
+bronchial vessel endothelial cell	corneal keratocyte
+bronchial vessel endothelial cell	dendritic cell
+bronchial vessel endothelial cell	dn1 thymic pro-t cell
+bronchial vessel endothelial cell	dn3 thymocyte
+bronchial vessel endothelial cell	dn4 thymocyte
+bronchial vessel endothelial cell	double-positive, alpha-beta thymocyte
+bronchial vessel endothelial cell	duct epithelial cell
+bronchial vessel endothelial cell	duodenum glandular cell
+bronchial vessel endothelial cell	endothelial cell
+bronchial vessel endothelial cell	endothelial cell of artery
+bronchial vessel endothelial cell	endothelial cell of hepatic sinusoid
+bronchial vessel endothelial cell	endothelial cell of lymphatic vessel
+bronchial vessel endothelial cell	endothelial cell of vascular tree
+bronchial vessel endothelial cell	enterocyte of epithelium of large intestine
+bronchial vessel endothelial cell	enterocyte of epithelium of small intestine
+bronchial vessel endothelial cell	epithelial cell
+bronchial vessel endothelial cell	epithelial cell of lacrimal sac
+bronchial vessel endothelial cell	epithelial cell of uterus
+bronchial vessel endothelial cell	erythroid progenitor
+bronchial vessel endothelial cell	eye photoreceptor cell
+bronchial vessel endothelial cell	fast muscle cell
+bronchial vessel endothelial cell	fibroblast
+bronchial vessel endothelial cell	fibroblast of breast
+bronchial vessel endothelial cell	fibroblast of cardiac tissue
+bronchial vessel endothelial cell	goblet cell
+bronchial vessel endothelial cell	granulocyte
+bronchial vessel endothelial cell	gut endothelial cell
+bronchial vessel endothelial cell	hematopoietic stem cell
+bronchial vessel endothelial cell	hepatocyte
+bronchial vessel endothelial cell	hillock cell of prostate epithelium
+bronchial vessel endothelial cell	hillock-club cell of prostate epithelium
+bronchial vessel endothelial cell	immature enterocyte
+bronchial vessel endothelial cell	immature natural killer cell
+bronchial vessel endothelial cell	immune cell
+bronchial vessel endothelial cell	intermediate monocyte
+bronchial vessel endothelial cell	intestinal crypt stem cell
+bronchial vessel endothelial cell	intestinal crypt stem cell of large intestine
+bronchial vessel endothelial cell	intestinal crypt stem cell of small intestine
+bronchial vessel endothelial cell	intestinal enteroendocrine cell
+bronchial vessel endothelial cell	intestinal tuft cell
+bronchial vessel endothelial cell	intrahepatic cholangiocyte
+bronchial vessel endothelial cell	ionocyte
+bronchial vessel endothelial cell	keratinocyte
+bronchial vessel endothelial cell	kidney epithelial cell
+bronchial vessel endothelial cell	lacrimal gland functional unit cell
+bronchial vessel endothelial cell	langerhans cell
+bronchial vessel endothelial cell	large intestine goblet cell
+bronchial vessel endothelial cell	limbal stem cell
+bronchial vessel endothelial cell	limbal stromal cell
+bronchial vessel endothelial cell	liver dendritic cell
+bronchial vessel endothelial cell	luminal cell of prostate epithelium
+bronchial vessel endothelial cell	luminal epithelial cell of mammary gland
+bronchial vessel endothelial cell	lung ciliated cell
+bronchial vessel endothelial cell	lung microvascular endothelial cell
+bronchial vessel endothelial cell	lymphatic endothelial cell
+bronchial vessel endothelial cell	macrophage
+bronchial vessel endothelial cell	mature conventional dendritic cell
+bronchial vessel endothelial cell	mature enterocyte
+bronchial vessel endothelial cell	mature nk t cell
+bronchial vessel endothelial cell	medullary thymic epithelial cell
+bronchial vessel endothelial cell	melanocyte
+bronchial vessel endothelial cell	memory b cell
+bronchial vessel endothelial cell	mesenchymal stem cell
+bronchial vessel endothelial cell	mesothelial cell
+bronchial vessel endothelial cell	microglial cell
+bronchial vessel endothelial cell	monocyte
+bronchial vessel endothelial cell	mucus secreting cell
+bronchial vessel endothelial cell	muller cell
+bronchial vessel endothelial cell	muscle cell
+bronchial vessel endothelial cell	myeloid cell
+bronchial vessel endothelial cell	myeloid dendritic cell
+bronchial vessel endothelial cell	myeloid progenitor
+bronchial vessel endothelial cell	myoepithelial cell
+bronchial vessel endothelial cell	myofibroblast cell
+bronchial vessel endothelial cell	myometrial cell
+bronchial vessel endothelial cell	naive regulatory t cell
+bronchial vessel endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+bronchial vessel endothelial cell	nampt neutrophil
+bronchial vessel endothelial cell	nk cell
+bronchial vessel endothelial cell	non-classical monocyte
+bronchial vessel endothelial cell	ocular surface cell
+bronchial vessel endothelial cell	pancreatic acinar cell
+bronchial vessel endothelial cell	pancreatic alpha cell
+bronchial vessel endothelial cell	pancreatic beta cell
+bronchial vessel endothelial cell	pancreatic delta cell
+bronchial vessel endothelial cell	pancreatic ductal cell
+bronchial vessel endothelial cell	pancreatic pp cell
+bronchial vessel endothelial cell	pancreatic stellate cell
+bronchial vessel endothelial cell	paneth cell of epithelium of large intestine
+bronchial vessel endothelial cell	paneth cell of epithelium of small intestine
+bronchial vessel endothelial cell	pericyte cell
+bronchial vessel endothelial cell	plasma cell
+bronchial vessel endothelial cell	plasmablast
+bronchial vessel endothelial cell	plasmacytoid dendritic cell
+bronchial vessel endothelial cell	pulmonary ionocyte
+bronchial vessel endothelial cell	radial glial cell
+bronchial vessel endothelial cell	regulatory t cell
+bronchial vessel endothelial cell	respiratory goblet cell
+bronchial vessel endothelial cell	BTO:0000763
+capillary endothelial cell	adipocyte
+capillary endothelial cell	adventitial cell
+capillary endothelial cell	alveolar fibroblast
+capillary endothelial cell	retina horizontal cell
+capillary endothelial cell	retinal bipolar neuron
+capillary endothelial cell	retinal blood vessel endothelial cell
+capillary endothelial cell	retinal ganglion cell
+capillary endothelial cell	retinal pigment epithelial cell
+capillary endothelial cell	salivary gland cell
+capillary endothelial cell	schwann cell
+capillary endothelial cell	secretory cell
+capillary endothelial cell	serous cell of epithelium of bronchus
+capillary endothelial cell	serous cell of epithelium of trachea
+capillary endothelial cell	skeletal muscle satellite stem cell
+capillary endothelial cell	small intestine goblet cell
+capillary endothelial cell	smooth muscle cell
+capillary endothelial cell	b cell
+capillary endothelial cell	basal cell
+capillary endothelial cell	basal cell of prostate epithelium
+capillary endothelial cell	bladder urothelial cell
+capillary endothelial cell	bronchial smooth muscle cell
+capillary endothelial cell	capillary endothelial cell
+capillary endothelial cell	cardiac endothelial cell
+capillary endothelial cell	cardiac muscle cell
+capillary endothelial cell	cd141-positive myeloid dendritic cell
+capillary endothelial cell	cd1c-positive myeloid dendritic cell
+capillary endothelial cell	cd24 neutrophil
+capillary endothelial cell	cd4-positive helper t cell
+capillary endothelial cell	cd4-positive, alpha-beta memory t cell
+capillary endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+capillary endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+capillary endothelial cell	cell of skeletal muscle
+capillary endothelial cell	ciliary body
+capillary endothelial cell	ciliated cell
+capillary endothelial cell	ciliated epithelial cell
+capillary endothelial cell	classical monocyte
+capillary endothelial cell	club cell
+capillary endothelial cell	club cell of prostate epithelium
+capillary endothelial cell	conjunctival epithelial cell
+capillary endothelial cell	connective tissue cell
+capillary endothelial cell	corneal epithelial cell
+capillary endothelial cell	corneal keratocyte
+capillary endothelial cell	dendritic cell
+capillary endothelial cell	dn1 thymic pro-t cell
+capillary endothelial cell	dn3 thymocyte
+capillary endothelial cell	dn4 thymocyte
+capillary endothelial cell	double-positive, alpha-beta thymocyte
+capillary endothelial cell	duct epithelial cell
+capillary endothelial cell	duodenum glandular cell
+capillary endothelial cell	endothelial cell
+capillary endothelial cell	endothelial cell of artery
+capillary endothelial cell	endothelial cell of hepatic sinusoid
+capillary endothelial cell	endothelial cell of lymphatic vessel
+capillary endothelial cell	endothelial cell of vascular tree
+capillary endothelial cell	enterocyte of epithelium of large intestine
+capillary endothelial cell	enterocyte of epithelium of small intestine
+capillary endothelial cell	epithelial cell
+capillary endothelial cell	epithelial cell of lacrimal sac
+capillary endothelial cell	epithelial cell of uterus
+capillary endothelial cell	erythroid progenitor
+capillary endothelial cell	eye photoreceptor cell
+capillary endothelial cell	fast muscle cell
+capillary endothelial cell	fibroblast
+capillary endothelial cell	fibroblast of breast
+capillary endothelial cell	fibroblast of cardiac tissue
+capillary endothelial cell	goblet cell
+capillary endothelial cell	granulocyte
+capillary endothelial cell	gut endothelial cell
+capillary endothelial cell	hematopoietic stem cell
+capillary endothelial cell	hepatocyte
+capillary endothelial cell	hillock cell of prostate epithelium
+capillary endothelial cell	hillock-club cell of prostate epithelium
+capillary endothelial cell	immature enterocyte
+capillary endothelial cell	immature natural killer cell
+capillary endothelial cell	immune cell
+capillary endothelial cell	intermediate monocyte
+capillary endothelial cell	intestinal crypt stem cell
+capillary endothelial cell	intestinal crypt stem cell of large intestine
+capillary endothelial cell	intestinal crypt stem cell of small intestine
+capillary endothelial cell	intestinal enteroendocrine cell
+capillary endothelial cell	intestinal tuft cell
+capillary endothelial cell	intrahepatic cholangiocyte
+capillary endothelial cell	ionocyte
+capillary endothelial cell	keratinocyte
+capillary endothelial cell	kidney epithelial cell
+capillary endothelial cell	lacrimal gland functional unit cell
+capillary endothelial cell	langerhans cell
+capillary endothelial cell	large intestine goblet cell
+capillary endothelial cell	limbal stem cell
+capillary endothelial cell	limbal stromal cell
+capillary endothelial cell	liver dendritic cell
+capillary endothelial cell	luminal cell of prostate epithelium
+capillary endothelial cell	luminal epithelial cell of mammary gland
+capillary endothelial cell	lung ciliated cell
+capillary endothelial cell	lung microvascular endothelial cell
+capillary endothelial cell	lymphatic endothelial cell
+capillary endothelial cell	macrophage
+capillary endothelial cell	mature conventional dendritic cell
+capillary endothelial cell	mature enterocyte
+capillary endothelial cell	mature nk t cell
+capillary endothelial cell	medullary thymic epithelial cell
+capillary endothelial cell	melanocyte
+capillary endothelial cell	memory b cell
+capillary endothelial cell	mesenchymal stem cell
+capillary endothelial cell	mesothelial cell
+capillary endothelial cell	microglial cell
+capillary endothelial cell	monocyte
+capillary endothelial cell	mucus secreting cell
+capillary endothelial cell	muller cell
+capillary endothelial cell	muscle cell
+capillary endothelial cell	myeloid cell
+capillary endothelial cell	myeloid progenitor
+capillary endothelial cell	myoepithelial cell
+capillary endothelial cell	myofibroblast cell
+capillary endothelial cell	myometrial cell
+capillary endothelial cell	naive regulatory t cell
+capillary endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+capillary endothelial cell	nampt neutrophil
+capillary endothelial cell	nk cell
+capillary endothelial cell	non-classical monocyte
+capillary endothelial cell	ocular surface cell
+capillary endothelial cell	pancreatic acinar cell
+capillary endothelial cell	pancreatic alpha cell
+capillary endothelial cell	pancreatic beta cell
+capillary endothelial cell	pancreatic delta cell
+capillary endothelial cell	pancreatic ductal cell
+capillary endothelial cell	pancreatic pp cell
+capillary endothelial cell	pancreatic stellate cell
+capillary endothelial cell	paneth cell of epithelium of large intestine
+capillary endothelial cell	paneth cell of epithelium of small intestine
+capillary endothelial cell	pericyte cell
+capillary endothelial cell	plasma cell
+capillary endothelial cell	plasmablast
+capillary endothelial cell	plasmacytoid dendritic cell
+capillary endothelial cell	pulmonary ionocyte
+capillary endothelial cell	radial glial cell
+capillary endothelial cell	regulatory t cell
+capillary endothelial cell	respiratory goblet cell
+capillary endothelial cell	myeloid dendritic cell
+capillary endothelial cell	BTO:0001385
+capillary endothelial cell	BTO:0000887
+capillary endothelial cell	BTO:0001374
+capillary endothelial cell	BTO:0000123
+capillary endothelial cell	BTO:0000763
+classical monocyte	adipocyte
+classical monocyte	adventitial cell
+classical monocyte	alveolar fibroblast
+classical monocyte	retina horizontal cell
+classical monocyte	retinal bipolar neuron
+classical monocyte	retinal blood vessel endothelial cell
+classical monocyte	retinal ganglion cell
+classical monocyte	retinal pigment epithelial cell
+classical monocyte	salivary gland cell
+classical monocyte	schwann cell
+classical monocyte	secretory cell
+classical monocyte	serous cell of epithelium of bronchus
+classical monocyte	serous cell of epithelium of trachea
+classical monocyte	skeletal muscle satellite stem cell
+classical monocyte	small intestine goblet cell
+classical monocyte	smooth muscle cell
+classical monocyte	b cell
+classical monocyte	basal cell
+classical monocyte	basal cell of prostate epithelium
+classical monocyte	bladder urothelial cell
+classical monocyte	bronchial smooth muscle cell
+classical monocyte	cardiac endothelial cell
+classical monocyte	cardiac muscle cell
+classical monocyte	cd141-positive myeloid dendritic cell
+classical monocyte	cd1c-positive myeloid dendritic cell
+classical monocyte	cd24 neutrophil
+classical monocyte	cd4-positive helper t cell
+classical monocyte	cd4-positive, alpha-beta memory t cell
+classical monocyte	cd8-positive, alpha-beta cytokine secreting effector t cell
+classical monocyte	cd8-positive, alpha-beta cytotoxic t cell
+classical monocyte	cell of skeletal muscle
+classical monocyte	ciliated cell
+classical monocyte	ciliated epithelial cell
+classical monocyte	ciliary body
+classical monocyte	classical monocyte
+classical monocyte	club cell
+classical monocyte	club cell of prostate epithelium
+classical monocyte	conjunctival epithelial cell
+classical monocyte	connective tissue cell
+classical monocyte	corneal epithelial cell
+classical monocyte	corneal keratocyte
+classical monocyte	dendritic cell
+classical monocyte	dn1 thymic pro-t cell
+classical monocyte	dn3 thymocyte
+classical monocyte	dn4 thymocyte
+classical monocyte	double-positive, alpha-beta thymocyte
+classical monocyte	duct epithelial cell
+classical monocyte	duodenum glandular cell
+classical monocyte	endothelial cell
+classical monocyte	endothelial cell of artery
+classical monocyte	endothelial cell of hepatic sinusoid
+classical monocyte	endothelial cell of lymphatic vessel
+classical monocyte	endothelial cell of vascular tree
+classical monocyte	enterocyte of epithelium of large intestine
+classical monocyte	enterocyte of epithelium of small intestine
+classical monocyte	epithelial cell
+classical monocyte	epithelial cell of lacrimal sac
+classical monocyte	epithelial cell of uterus
+classical monocyte	erythroid progenitor
+classical monocyte	eye photoreceptor cell
+classical monocyte	fast muscle cell
+classical monocyte	fibroblast
+classical monocyte	fibroblast of breast
+classical monocyte	fibroblast of cardiac tissue
+classical monocyte	goblet cell
+classical monocyte	granulocyte
+classical monocyte	gut endothelial cell
+classical monocyte	hematopoietic stem cell
+classical monocyte	hepatocyte
+classical monocyte	hillock cell of prostate epithelium
+classical monocyte	hillock-club cell of prostate epithelium
+classical monocyte	immature enterocyte
+classical monocyte	immature natural killer cell
+classical monocyte	immune cell
+classical monocyte	intermediate monocyte
+classical monocyte	intestinal crypt stem cell
+classical monocyte	intestinal crypt stem cell of large intestine
+classical monocyte	intestinal crypt stem cell of small intestine
+classical monocyte	intestinal enteroendocrine cell
+classical monocyte	intestinal tuft cell
+classical monocyte	intrahepatic cholangiocyte
+classical monocyte	ionocyte
+classical monocyte	keratinocyte
+classical monocyte	kidney epithelial cell
+classical monocyte	lacrimal gland functional unit cell
+classical monocyte	langerhans cell
+classical monocyte	large intestine goblet cell
+classical monocyte	limbal stem cell
+classical monocyte	limbal stromal cell
+classical monocyte	liver dendritic cell
+classical monocyte	luminal cell of prostate epithelium
+classical monocyte	luminal epithelial cell of mammary gland
+classical monocyte	lung ciliated cell
+classical monocyte	lung microvascular endothelial cell
+classical monocyte	lymphatic endothelial cell
+classical monocyte	macrophage
+classical monocyte	mature conventional dendritic cell
+classical monocyte	mature enterocyte
+classical monocyte	mature nk t cell
+classical monocyte	medullary thymic epithelial cell
+classical monocyte	melanocyte
+classical monocyte	memory b cell
+classical monocyte	mesenchymal stem cell
+classical monocyte	mesothelial cell
+classical monocyte	microglial cell
+classical monocyte	monocyte
+classical monocyte	mucus secreting cell
+classical monocyte	muller cell
+classical monocyte	muscle cell
+classical monocyte	myeloid cell
+classical monocyte	myeloid dendritic cell
+classical monocyte	myeloid progenitor
+classical monocyte	myoepithelial cell
+classical monocyte	myofibroblast cell
+classical monocyte	myometrial cell
+classical monocyte	naive regulatory t cell
+classical monocyte	naive thymus-derived cd4-positive, alpha-beta t cell
+classical monocyte	nampt neutrophil
+classical monocyte	nk cell
+classical monocyte	non-classical monocyte
+classical monocyte	ocular surface cell
+classical monocyte	pancreatic acinar cell
+classical monocyte	pancreatic alpha cell
+classical monocyte	pancreatic beta cell
+classical monocyte	pancreatic delta cell
+classical monocyte	pancreatic ductal cell
+classical monocyte	pancreatic pp cell
+classical monocyte	pancreatic stellate cell
+classical monocyte	paneth cell of epithelium of large intestine
+classical monocyte	paneth cell of epithelium of small intestine
+classical monocyte	pericyte cell
+classical monocyte	plasma cell
+classical monocyte	plasmablast
+classical monocyte	plasmacytoid dendritic cell
+classical monocyte	pulmonary ionocyte
+classical monocyte	radial glial cell
+classical monocyte	regulatory t cell
+classical monocyte	respiratory goblet cell
+classical monocyte	BTO:0000089
+classical monocyte	BTO:0000784
+classical monocyte	BTO:0001281
+classical monocyte	BTO:0000763
+endothelial cell	adipocyte
+endothelial cell	adventitial cell
+endothelial cell	alveolar fibroblast
+endothelial cell	retina horizontal cell
+endothelial cell	retinal bipolar neuron
+endothelial cell	retinal blood vessel endothelial cell
+endothelial cell	retinal ganglion cell
+endothelial cell	retinal pigment epithelial cell
+endothelial cell	salivary gland cell
+endothelial cell	schwann cell
+endothelial cell	secretory cell
+endothelial cell	serous cell of epithelium of bronchus
+endothelial cell	serous cell of epithelium of trachea
+endothelial cell	skeletal muscle satellite stem cell
+endothelial cell	small intestine goblet cell
+endothelial cell	smooth muscle cell
+endothelial cell	b cell
+endothelial cell	basal cell
+endothelial cell	basal cell of prostate epithelium
+endothelial cell	bladder urothelial cell
+endothelial cell	bronchial smooth muscle cell
+endothelial cell	cardiac endothelial cell
+endothelial cell	cardiac muscle cell
+endothelial cell	cd141-positive myeloid dendritic cell
+endothelial cell	cd1c-positive myeloid dendritic cell
+endothelial cell	cd24 neutrophil
+endothelial cell	cd4-positive helper t cell
+endothelial cell	cd4-positive, alpha-beta memory t cell
+endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+endothelial cell	cell of skeletal muscle
+endothelial cell	ciliated cell
+endothelial cell	ciliated epithelial cell
+endothelial cell	club cell
+endothelial cell	club cell of prostate epithelium
+endothelial cell	conjunctival epithelial cell
+endothelial cell	connective tissue cell
+endothelial cell	corneal epithelial cell
+endothelial cell	corneal keratocyte
+endothelial cell	dendritic cell
+endothelial cell	dn1 thymic pro-t cell
+endothelial cell	dn3 thymocyte
+endothelial cell	dn4 thymocyte
+endothelial cell	duct epithelial cell
+endothelial cell	duodenum glandular cell
+endothelial cell	double-positive, alpha-beta thymocyte
+endothelial cell	endothelial cell
+endothelial cell	endothelial cell of artery
+endothelial cell	endothelial cell of hepatic sinusoid
+endothelial cell	endothelial cell of lymphatic vessel
+endothelial cell	endothelial cell of vascular tree
+endothelial cell	enterocyte of epithelium of large intestine
+endothelial cell	enterocyte of epithelium of small intestine
+endothelial cell	epithelial cell
+endothelial cell	epithelial cell of lacrimal sac
+endothelial cell	epithelial cell of uterus
+endothelial cell	erythroid progenitor
+endothelial cell	eye photoreceptor cell
+endothelial cell	fast muscle cell
+endothelial cell	fibroblast
+endothelial cell	fibroblast of breast
+endothelial cell	fibroblast of cardiac tissue
+endothelial cell	goblet cell
+endothelial cell	granulocyte
+endothelial cell	gut endothelial cell
+endothelial cell	hematopoietic stem cell
+endothelial cell	hepatocyte
+endothelial cell	hillock cell of prostate epithelium
+endothelial cell	hillock-club cell of prostate epithelium
+endothelial cell	immature enterocyte
+endothelial cell	immature natural killer cell
+endothelial cell	immune cell
+endothelial cell	intermediate monocyte
+endothelial cell	intestinal crypt stem cell
+endothelial cell	intestinal crypt stem cell of large intestine
+endothelial cell	intestinal crypt stem cell of small intestine
+endothelial cell	intestinal enteroendocrine cell
+endothelial cell	intestinal tuft cell
+endothelial cell	intrahepatic cholangiocyte
+endothelial cell	ionocyte
+endothelial cell	keratinocyte
+endothelial cell	kidney epithelial cell
+endothelial cell	lacrimal gland functional unit cell
+endothelial cell	langerhans cell
+endothelial cell	large intestine goblet cell
+endothelial cell	limbal stem cell
+endothelial cell	limbal stromal cell
+endothelial cell	liver dendritic cell
+endothelial cell	luminal cell of prostate epithelium
+endothelial cell	luminal epithelial cell of mammary gland
+endothelial cell	lung ciliated cell
+endothelial cell	lung microvascular endothelial cell
+endothelial cell	lymphatic endothelial cell
+endothelial cell	macrophage
+endothelial cell	mature conventional dendritic cell
+endothelial cell	mature enterocyte
+endothelial cell	mature nk t cell
+endothelial cell	medullary thymic epithelial cell
+endothelial cell	melanocyte
+endothelial cell	memory b cell
+endothelial cell	mesenchymal stem cell
+endothelial cell	mesothelial cell
+endothelial cell	microglial cell
+endothelial cell	monocyte
+endothelial cell	mucus secreting cell
+endothelial cell	muller cell
+endothelial cell	muscle cell
+endothelial cell	myeloid cell
+endothelial cell	myeloid progenitor
+endothelial cell	myoepithelial cell
+endothelial cell	myofibroblast cell
+endothelial cell	myometrial cell
+endothelial cell	naive regulatory t cell
+endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+endothelial cell	nampt neutrophil
+endothelial cell	nk cell
+endothelial cell	non-classical monocyte
+endothelial cell	ocular surface cell
+endothelial cell	pancreatic acinar cell
+endothelial cell	pancreatic alpha cell
+endothelial cell	pancreatic beta cell
+endothelial cell	pancreatic delta cell
+endothelial cell	pancreatic ductal cell
+endothelial cell	pancreatic pp cell
+endothelial cell	pancreatic stellate cell
+endothelial cell	paneth cell of epithelium of large intestine
+endothelial cell	paneth cell of epithelium of small intestine
+endothelial cell	pericyte cell
+endothelial cell	plasma cell
+endothelial cell	plasmablast
+endothelial cell	plasmacytoid dendritic cell
+endothelial cell	pulmonary ionocyte
+endothelial cell	radial glial cell
+endothelial cell	regulatory t cell
+endothelial cell	respiratory goblet cell
+endothelial cell	ciliary body
+endothelial cell	myeloid dendritic cell
+endothelial cell	BTO:0001388
+endothelial cell	BTO:0000784
+endothelial cell	BTO:0001203
+endothelial cell	BTO:0001281
+endothelial cell	BTO:0001424
+endothelial cell	BTO:0000439
+endothelial cell	BTO:0001487
+endothelial cell	BTO:0001253
+endothelial cell	BTO:0000988
+endothelial cell	BTO:0001129
+endothelial cell	BTO:0000759
+endothelial cell	BTO:0003718
+endothelial cell	BTO:0000671
+endothelial cell of artery	adipocyte
+endothelial cell of artery	adventitial cell
+endothelial cell of artery	alveolar fibroblast
+endothelial cell of artery	retina horizontal cell
+endothelial cell of artery	retinal bipolar neuron
+endothelial cell of artery	retinal blood vessel endothelial cell
+endothelial cell of artery	retinal ganglion cell
+endothelial cell of artery	retinal pigment epithelial cell
+endothelial cell of artery	salivary gland cell
+endothelial cell of artery	schwann cell
+endothelial cell of artery	secretory cell
+endothelial cell of artery	serous cell of epithelium of bronchus
+endothelial cell of artery	serous cell of epithelium of trachea
+endothelial cell of artery	skeletal muscle satellite stem cell
+endothelial cell of artery	small intestine goblet cell
+endothelial cell of artery	smooth muscle cell
+endothelial cell of artery	b cell
+endothelial cell of artery	basal cell
+endothelial cell of artery	basal cell of prostate epithelium
+endothelial cell of artery	bladder urothelial cell
+endothelial cell of artery	bronchial smooth muscle cell
+endothelial cell of artery	cardiac endothelial cell
+endothelial cell of artery	cardiac muscle cell
+endothelial cell of artery	cd141-positive myeloid dendritic cell
+endothelial cell of artery	cd1c-positive myeloid dendritic cell
+endothelial cell of artery	cd24 neutrophil
+endothelial cell of artery	cd4-positive helper t cell
+endothelial cell of artery	cd4-positive, alpha-beta memory t cell
+endothelial cell of artery	cd8-positive, alpha-beta cytokine secreting effector t cell
+endothelial cell of artery	cd8-positive, alpha-beta cytotoxic t cell
+endothelial cell of artery	cell of skeletal muscle
+endothelial cell of artery	ciliated cell
+endothelial cell of artery	ciliated epithelial cell
+endothelial cell of artery	club cell
+endothelial cell of artery	club cell of prostate epithelium
+endothelial cell of artery	conjunctival epithelial cell
+endothelial cell of artery	connective tissue cell
+endothelial cell of artery	corneal epithelial cell
+endothelial cell of artery	corneal keratocyte
+endothelial cell of artery	dendritic cell
+endothelial cell of artery	dn1 thymic pro-t cell
+endothelial cell of artery	dn3 thymocyte
+endothelial cell of artery	dn4 thymocyte
+endothelial cell of artery	duct epithelial cell
+endothelial cell of artery	duodenum glandular cell
+endothelial cell of artery	ciliary body
+endothelial cell of artery	double-positive, alpha-beta thymocyte
+endothelial cell of artery	endothelial cell of artery
+endothelial cell of artery	endothelial cell of hepatic sinusoid
+endothelial cell of artery	endothelial cell of lymphatic vessel
+endothelial cell of artery	endothelial cell of vascular tree
+endothelial cell of artery	enterocyte of epithelium of large intestine
+endothelial cell of artery	enterocyte of epithelium of small intestine
+endothelial cell of artery	epithelial cell
+endothelial cell of artery	epithelial cell of lacrimal sac
+endothelial cell of artery	epithelial cell of uterus
+endothelial cell of artery	erythroid progenitor
+endothelial cell of artery	eye photoreceptor cell
+endothelial cell of artery	fast muscle cell
+endothelial cell of artery	fibroblast
+endothelial cell of artery	fibroblast of breast
+endothelial cell of artery	fibroblast of cardiac tissue
+endothelial cell of artery	goblet cell
+endothelial cell of artery	granulocyte
+endothelial cell of artery	gut endothelial cell
+endothelial cell of artery	hematopoietic stem cell
+endothelial cell of artery	hepatocyte
+endothelial cell of artery	hillock cell of prostate epithelium
+endothelial cell of artery	hillock-club cell of prostate epithelium
+endothelial cell of artery	immature enterocyte
+endothelial cell of artery	immature natural killer cell
+endothelial cell of artery	immune cell
+endothelial cell of artery	intermediate monocyte
+endothelial cell of artery	intestinal crypt stem cell
+endothelial cell of artery	intestinal crypt stem cell of large intestine
+endothelial cell of artery	intestinal crypt stem cell of small intestine
+endothelial cell of artery	intestinal enteroendocrine cell
+endothelial cell of artery	intestinal tuft cell
+endothelial cell of artery	intrahepatic cholangiocyte
+endothelial cell of artery	ionocyte
+endothelial cell of artery	keratinocyte
+endothelial cell of artery	kidney epithelial cell
+endothelial cell of artery	lacrimal gland functional unit cell
+endothelial cell of artery	langerhans cell
+endothelial cell of artery	large intestine goblet cell
+endothelial cell of artery	limbal stem cell
+endothelial cell of artery	limbal stromal cell
+endothelial cell of artery	liver dendritic cell
+endothelial cell of artery	luminal cell of prostate epithelium
+endothelial cell of artery	luminal epithelial cell of mammary gland
+endothelial cell of artery	lung ciliated cell
+endothelial cell of artery	lung microvascular endothelial cell
+endothelial cell of artery	lymphatic endothelial cell
+endothelial cell of artery	macrophage
+endothelial cell of artery	mature conventional dendritic cell
+endothelial cell of artery	mature enterocyte
+endothelial cell of artery	mature nk t cell
+endothelial cell of artery	medullary thymic epithelial cell
+endothelial cell of artery	melanocyte
+endothelial cell of artery	memory b cell
+endothelial cell of artery	mesenchymal stem cell
+endothelial cell of artery	mesothelial cell
+endothelial cell of artery	microglial cell
+endothelial cell of artery	monocyte
+endothelial cell of artery	mucus secreting cell
+endothelial cell of artery	muller cell
+endothelial cell of artery	muscle cell
+endothelial cell of artery	myeloid cell
+endothelial cell of artery	myeloid dendritic cell
+endothelial cell of artery	myeloid progenitor
+endothelial cell of artery	myoepithelial cell
+endothelial cell of artery	myofibroblast cell
+endothelial cell of artery	myometrial cell
+endothelial cell of artery	naive regulatory t cell
+endothelial cell of artery	naive thymus-derived cd4-positive, alpha-beta t cell
+endothelial cell of artery	nampt neutrophil
+endothelial cell of artery	nk cell
+endothelial cell of artery	non-classical monocyte
+endothelial cell of artery	ocular surface cell
+endothelial cell of artery	pancreatic acinar cell
+endothelial cell of artery	pancreatic alpha cell
+endothelial cell of artery	pancreatic beta cell
+endothelial cell of artery	pancreatic delta cell
+endothelial cell of artery	pancreatic ductal cell
+endothelial cell of artery	pancreatic pp cell
+endothelial cell of artery	pancreatic stellate cell
+endothelial cell of artery	paneth cell of epithelium of large intestine
+endothelial cell of artery	paneth cell of epithelium of small intestine
+endothelial cell of artery	pericyte cell
+endothelial cell of artery	plasma cell
+endothelial cell of artery	plasmablast
+endothelial cell of artery	plasmacytoid dendritic cell
+endothelial cell of artery	pulmonary ionocyte
+endothelial cell of artery	radial glial cell
+endothelial cell of artery	regulatory t cell
+endothelial cell of artery	respiratory goblet cell
+endothelial cell of artery	BTO:0001385
+endothelial cell of artery	BTO:0000817
+endothelial cell of artery	BTO:0000887
+endothelial cell of artery	BTO:0001374
+endothelial cell of artery	BTO:0000763
+langerhans cell	adipocyte
+langerhans cell	adventitial cell
+langerhans cell	alveolar fibroblast
+langerhans cell	retina horizontal cell
+langerhans cell	retinal bipolar neuron
+langerhans cell	retinal blood vessel endothelial cell
+langerhans cell	retinal ganglion cell
+langerhans cell	retinal pigment epithelial cell
+langerhans cell	salivary gland cell
+langerhans cell	schwann cell
+langerhans cell	secretory cell
+langerhans cell	serous cell of epithelium of bronchus
+langerhans cell	serous cell of epithelium of trachea
+langerhans cell	skeletal muscle satellite stem cell
+langerhans cell	small intestine goblet cell
+langerhans cell	smooth muscle cell
+langerhans cell	b cell
+langerhans cell	basal cell
+langerhans cell	basal cell of prostate epithelium
+langerhans cell	bladder urothelial cell
+langerhans cell	bronchial smooth muscle cell
+langerhans cell	cardiac endothelial cell
+langerhans cell	cardiac muscle cell
+langerhans cell	cd141-positive myeloid dendritic cell
+langerhans cell	cd1c-positive myeloid dendritic cell
+langerhans cell	cd24 neutrophil
+langerhans cell	cd4-positive helper t cell
+langerhans cell	cd4-positive, alpha-beta memory t cell
+langerhans cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+langerhans cell	cd8-positive, alpha-beta cytotoxic t cell
+langerhans cell	cell of skeletal muscle
+langerhans cell	ciliated cell
+langerhans cell	ciliated epithelial cell
+langerhans cell	club cell
+langerhans cell	club cell of prostate epithelium
+langerhans cell	conjunctival epithelial cell
+langerhans cell	connective tissue cell
+langerhans cell	corneal epithelial cell
+langerhans cell	corneal keratocyte
+langerhans cell	dendritic cell
+langerhans cell	dn1 thymic pro-t cell
+langerhans cell	dn3 thymocyte
+langerhans cell	dn4 thymocyte
+langerhans cell	duct epithelial cell
+langerhans cell	duodenum glandular cell
+langerhans cell	endothelial cell of hepatic sinusoid
+langerhans cell	endothelial cell of lymphatic vessel
+langerhans cell	endothelial cell of vascular tree
+langerhans cell	enterocyte of epithelium of large intestine
+langerhans cell	enterocyte of epithelium of small intestine
+langerhans cell	epithelial cell
+langerhans cell	epithelial cell of lacrimal sac
+langerhans cell	epithelial cell of uterus
+langerhans cell	erythroid progenitor
+langerhans cell	eye photoreceptor cell
+langerhans cell	fast muscle cell
+langerhans cell	fibroblast
+langerhans cell	fibroblast of breast
+langerhans cell	fibroblast of cardiac tissue
+langerhans cell	goblet cell
+langerhans cell	granulocyte
+langerhans cell	gut endothelial cell
+langerhans cell	hematopoietic stem cell
+langerhans cell	hepatocyte
+langerhans cell	hillock cell of prostate epithelium
+langerhans cell	hillock-club cell of prostate epithelium
+langerhans cell	immature enterocyte
+langerhans cell	immature natural killer cell
+langerhans cell	immune cell
+langerhans cell	intermediate monocyte
+langerhans cell	intestinal crypt stem cell
+langerhans cell	intestinal crypt stem cell of large intestine
+langerhans cell	intestinal crypt stem cell of small intestine
+langerhans cell	intestinal enteroendocrine cell
+langerhans cell	intestinal tuft cell
+langerhans cell	intrahepatic cholangiocyte
+langerhans cell	ionocyte
+langerhans cell	keratinocyte
+langerhans cell	kidney epithelial cell
+langerhans cell	lacrimal gland functional unit cell
+langerhans cell	ciliary body
+langerhans cell	langerhans cell
+langerhans cell	large intestine goblet cell
+langerhans cell	limbal stem cell
+langerhans cell	limbal stromal cell
+langerhans cell	liver dendritic cell
+langerhans cell	luminal cell of prostate epithelium
+langerhans cell	luminal epithelial cell of mammary gland
+langerhans cell	lung ciliated cell
+langerhans cell	lung microvascular endothelial cell
+langerhans cell	lymphatic endothelial cell
+langerhans cell	macrophage
+langerhans cell	mature conventional dendritic cell
+langerhans cell	mature enterocyte
+langerhans cell	mature nk t cell
+langerhans cell	medullary thymic epithelial cell
+langerhans cell	melanocyte
+langerhans cell	memory b cell
+langerhans cell	mesenchymal stem cell
+langerhans cell	mesothelial cell
+langerhans cell	microglial cell
+langerhans cell	monocyte
+langerhans cell	mucus secreting cell
+langerhans cell	muller cell
+langerhans cell	muscle cell
+langerhans cell	myeloid cell
+langerhans cell	myeloid progenitor
+langerhans cell	myoepithelial cell
+langerhans cell	myofibroblast cell
+langerhans cell	myometrial cell
+langerhans cell	naive regulatory t cell
+langerhans cell	naive thymus-derived cd4-positive, alpha-beta t cell
+langerhans cell	nampt neutrophil
+langerhans cell	nk cell
+langerhans cell	non-classical monocyte
+langerhans cell	ocular surface cell
+langerhans cell	pancreatic acinar cell
+langerhans cell	pancreatic alpha cell
+langerhans cell	pancreatic beta cell
+langerhans cell	pancreatic delta cell
+langerhans cell	pancreatic ductal cell
+langerhans cell	pancreatic pp cell
+langerhans cell	pancreatic stellate cell
+langerhans cell	paneth cell of epithelium of large intestine
+langerhans cell	paneth cell of epithelium of small intestine
+langerhans cell	pericyte cell
+langerhans cell	plasma cell
+langerhans cell	plasmablast
+langerhans cell	plasmacytoid dendritic cell
+langerhans cell	pulmonary ionocyte
+langerhans cell	radial glial cell
+langerhans cell	regulatory t cell
+langerhans cell	respiratory goblet cell
+langerhans cell	respiratory mucous cell
+langerhans cell	double-positive, alpha-beta thymocyte
+langerhans cell	myeloid dendritic cell
+langerhans cell	BTO:0001253
+limbal stem cell	adipocyte
+limbal stem cell	adventitial cell
+limbal stem cell	alveolar fibroblast
+limbal stem cell	retina horizontal cell
+limbal stem cell	retinal bipolar neuron
+limbal stem cell	retinal blood vessel endothelial cell
+limbal stem cell	retinal ganglion cell
+limbal stem cell	retinal pigment epithelial cell
+limbal stem cell	salivary gland cell
+limbal stem cell	schwann cell
+limbal stem cell	secretory cell
+limbal stem cell	serous cell of epithelium of bronchus
+limbal stem cell	serous cell of epithelium of trachea
+limbal stem cell	skeletal muscle satellite stem cell
+limbal stem cell	small intestine goblet cell
+limbal stem cell	smooth muscle cell
+limbal stem cell	b cell
+limbal stem cell	basal cell
+limbal stem cell	basal cell of prostate epithelium
+limbal stem cell	bladder urothelial cell
+limbal stem cell	bronchial smooth muscle cell
+limbal stem cell	cardiac endothelial cell
+limbal stem cell	cardiac muscle cell
+limbal stem cell	cd141-positive myeloid dendritic cell
+limbal stem cell	cd1c-positive myeloid dendritic cell
+limbal stem cell	cd24 neutrophil
+limbal stem cell	cd4-positive helper t cell
+limbal stem cell	cd4-positive, alpha-beta memory t cell
+limbal stem cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+limbal stem cell	cd8-positive, alpha-beta cytotoxic t cell
+limbal stem cell	cell of skeletal muscle
+limbal stem cell	ciliated cell
+limbal stem cell	ciliated epithelial cell
+limbal stem cell	club cell
+limbal stem cell	club cell of prostate epithelium
+limbal stem cell	conjunctival epithelial cell
+limbal stem cell	connective tissue cell
+limbal stem cell	corneal epithelial cell
+limbal stem cell	corneal keratocyte
+limbal stem cell	dendritic cell
+limbal stem cell	dn1 thymic pro-t cell
+limbal stem cell	dn3 thymocyte
+limbal stem cell	dn4 thymocyte
+limbal stem cell	duct epithelial cell
+limbal stem cell	duodenum glandular cell
+limbal stem cell	endothelial cell of hepatic sinusoid
+limbal stem cell	endothelial cell of lymphatic vessel
+limbal stem cell	endothelial cell of vascular tree
+limbal stem cell	enterocyte of epithelium of large intestine
+limbal stem cell	enterocyte of epithelium of small intestine
+limbal stem cell	epithelial cell
+limbal stem cell	epithelial cell of lacrimal sac
+limbal stem cell	epithelial cell of uterus
+limbal stem cell	erythroid progenitor
+limbal stem cell	eye photoreceptor cell
+limbal stem cell	fast muscle cell
+limbal stem cell	fibroblast
+limbal stem cell	fibroblast of breast
+limbal stem cell	fibroblast of cardiac tissue
+limbal stem cell	goblet cell
+limbal stem cell	granulocyte
+limbal stem cell	gut endothelial cell
+limbal stem cell	hematopoietic stem cell
+limbal stem cell	hepatocyte
+limbal stem cell	hillock cell of prostate epithelium
+limbal stem cell	hillock-club cell of prostate epithelium
+limbal stem cell	immature enterocyte
+limbal stem cell	immature natural killer cell
+limbal stem cell	immune cell
+limbal stem cell	intermediate monocyte
+limbal stem cell	intestinal crypt stem cell
+limbal stem cell	intestinal crypt stem cell of large intestine
+limbal stem cell	intestinal crypt stem cell of small intestine
+limbal stem cell	intestinal enteroendocrine cell
+limbal stem cell	intestinal tuft cell
+limbal stem cell	intrahepatic cholangiocyte
+limbal stem cell	ionocyte
+limbal stem cell	keratinocyte
+limbal stem cell	kidney epithelial cell
+limbal stem cell	lacrimal gland functional unit cell
+limbal stem cell	large intestine goblet cell
+limbal stem cell	limbal stem cell
+limbal stem cell	limbal stromal cell
+limbal stem cell	liver dendritic cell
+limbal stem cell	luminal cell of prostate epithelium
+limbal stem cell	luminal epithelial cell of mammary gland
+limbal stem cell	lung ciliated cell
+limbal stem cell	lung microvascular endothelial cell
+limbal stem cell	lymphatic endothelial cell
+limbal stem cell	macrophage
+limbal stem cell	mature conventional dendritic cell
+limbal stem cell	mature enterocyte
+limbal stem cell	mature nk t cell
+limbal stem cell	medullary thymic epithelial cell
+limbal stem cell	melanocyte
+limbal stem cell	memory b cell
+limbal stem cell	mesenchymal stem cell
+limbal stem cell	mesothelial cell
+limbal stem cell	microglial cell
+limbal stem cell	monocyte
+limbal stem cell	mucus secreting cell
+limbal stem cell	muller cell
+limbal stem cell	muscle cell
+limbal stem cell	myeloid cell
+limbal stem cell	myeloid progenitor
+limbal stem cell	myoepithelial cell
+limbal stem cell	myofibroblast cell
+limbal stem cell	myometrial cell
+limbal stem cell	naive regulatory t cell
+limbal stem cell	naive thymus-derived cd4-positive, alpha-beta t cell
+limbal stem cell	nampt neutrophil
+limbal stem cell	nk cell
+limbal stem cell	non-classical monocyte
+limbal stem cell	ocular surface cell
+limbal stem cell	pancreatic acinar cell
+limbal stem cell	pancreatic alpha cell
+limbal stem cell	pancreatic beta cell
+limbal stem cell	pancreatic delta cell
+limbal stem cell	pancreatic ductal cell
+limbal stem cell	pancreatic pp cell
+limbal stem cell	pancreatic stellate cell
+limbal stem cell	paneth cell of epithelium of large intestine
+limbal stem cell	paneth cell of epithelium of small intestine
+limbal stem cell	pericyte cell
+limbal stem cell	plasma cell
+limbal stem cell	plasmablast
+limbal stem cell	plasmacytoid dendritic cell
+limbal stem cell	pulmonary ionocyte
+limbal stem cell	radial glial cell
+limbal stem cell	regulatory t cell
+limbal stem cell	respiratory goblet cell
+limbal stem cell	ciliary body
+limbal stem cell	double-positive, alpha-beta thymocyte
+limbal stem cell	myeloid dendritic cell
+limbal stem cell	BTO:0000439
+lung microvascular endothelial cell	adipocyte
+lung microvascular endothelial cell	adventitial cell
+lung microvascular endothelial cell	alveolar fibroblast
+lung microvascular endothelial cell	retina horizontal cell
+lung microvascular endothelial cell	retinal bipolar neuron
+lung microvascular endothelial cell	retinal blood vessel endothelial cell
+lung microvascular endothelial cell	retinal ganglion cell
+lung microvascular endothelial cell	retinal pigment epithelial cell
+lung microvascular endothelial cell	salivary gland cell
+lung microvascular endothelial cell	schwann cell
+lung microvascular endothelial cell	secretory cell
+lung microvascular endothelial cell	serous cell of epithelium of bronchus
+lung microvascular endothelial cell	serous cell of epithelium of trachea
+lung microvascular endothelial cell	skeletal muscle satellite stem cell
+lung microvascular endothelial cell	small intestine goblet cell
+lung microvascular endothelial cell	smooth muscle cell
+lung microvascular endothelial cell	b cell
+lung microvascular endothelial cell	basal cell
+lung microvascular endothelial cell	basal cell of prostate epithelium
+lung microvascular endothelial cell	bladder urothelial cell
+lung microvascular endothelial cell	bronchial smooth muscle cell
+lung microvascular endothelial cell	cardiac endothelial cell
+lung microvascular endothelial cell	cardiac muscle cell
+lung microvascular endothelial cell	cd141-positive myeloid dendritic cell
+lung microvascular endothelial cell	cd1c-positive myeloid dendritic cell
+lung microvascular endothelial cell	cd24 neutrophil
+lung microvascular endothelial cell	cd4-positive helper t cell
+lung microvascular endothelial cell	cd4-positive, alpha-beta memory t cell
+lung microvascular endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+lung microvascular endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+lung microvascular endothelial cell	cell of skeletal muscle
+lung microvascular endothelial cell	ciliated cell
+lung microvascular endothelial cell	ciliated epithelial cell
+lung microvascular endothelial cell	club cell
+lung microvascular endothelial cell	club cell of prostate epithelium
+lung microvascular endothelial cell	conjunctival epithelial cell
+lung microvascular endothelial cell	connective tissue cell
+lung microvascular endothelial cell	corneal epithelial cell
+lung microvascular endothelial cell	corneal keratocyte
+lung microvascular endothelial cell	dendritic cell
+lung microvascular endothelial cell	dn1 thymic pro-t cell
+lung microvascular endothelial cell	dn3 thymocyte
+lung microvascular endothelial cell	dn4 thymocyte
+lung microvascular endothelial cell	duct epithelial cell
+lung microvascular endothelial cell	duodenum glandular cell
+lung microvascular endothelial cell	endothelial cell of hepatic sinusoid
+lung microvascular endothelial cell	endothelial cell of lymphatic vessel
+lung microvascular endothelial cell	endothelial cell of vascular tree
+lung microvascular endothelial cell	enterocyte of epithelium of large intestine
+lung microvascular endothelial cell	enterocyte of epithelium of small intestine
+lung microvascular endothelial cell	epithelial cell
+lung microvascular endothelial cell	epithelial cell of lacrimal sac
+lung microvascular endothelial cell	epithelial cell of uterus
+lung microvascular endothelial cell	erythroid progenitor
+lung microvascular endothelial cell	eye photoreceptor cell
+lung microvascular endothelial cell	fast muscle cell
+lung microvascular endothelial cell	fibroblast
+lung microvascular endothelial cell	fibroblast of breast
+lung microvascular endothelial cell	fibroblast of cardiac tissue
+lung microvascular endothelial cell	goblet cell
+lung microvascular endothelial cell	granulocyte
+lung microvascular endothelial cell	gut endothelial cell
+lung microvascular endothelial cell	hematopoietic stem cell
+lung microvascular endothelial cell	hepatocyte
+lung microvascular endothelial cell	hillock cell of prostate epithelium
+lung microvascular endothelial cell	hillock-club cell of prostate epithelium
+lung microvascular endothelial cell	immature enterocyte
+lung microvascular endothelial cell	immature natural killer cell
+lung microvascular endothelial cell	immune cell
+lung microvascular endothelial cell	intermediate monocyte
+lung microvascular endothelial cell	intestinal crypt stem cell
+lung microvascular endothelial cell	intestinal crypt stem cell of large intestine
+lung microvascular endothelial cell	intestinal crypt stem cell of small intestine
+lung microvascular endothelial cell	intestinal enteroendocrine cell
+lung microvascular endothelial cell	intestinal tuft cell
+lung microvascular endothelial cell	intrahepatic cholangiocyte
+lung microvascular endothelial cell	ionocyte
+lung microvascular endothelial cell	keratinocyte
+lung microvascular endothelial cell	kidney epithelial cell
+lung microvascular endothelial cell	lacrimal gland functional unit cell
+lung microvascular endothelial cell	large intestine goblet cell
+lung microvascular endothelial cell	limbal stromal cell
+lung microvascular endothelial cell	liver dendritic cell
+lung microvascular endothelial cell	luminal cell of prostate epithelium
+lung microvascular endothelial cell	luminal epithelial cell of mammary gland
+lung microvascular endothelial cell	lung ciliated cell
+lung microvascular endothelial cell	ciliary body
+lung microvascular endothelial cell	double-positive, alpha-beta thymocyte
+lung microvascular endothelial cell	lung microvascular endothelial cell
+lung microvascular endothelial cell	lymphatic endothelial cell
+lung microvascular endothelial cell	macrophage
+lung microvascular endothelial cell	mature conventional dendritic cell
+lung microvascular endothelial cell	mature enterocyte
+lung microvascular endothelial cell	mature nk t cell
+lung microvascular endothelial cell	medullary thymic epithelial cell
+lung microvascular endothelial cell	melanocyte
+lung microvascular endothelial cell	memory b cell
+lung microvascular endothelial cell	mesenchymal stem cell
+lung microvascular endothelial cell	mesothelial cell
+lung microvascular endothelial cell	microglial cell
+lung microvascular endothelial cell	monocyte
+lung microvascular endothelial cell	mucus secreting cell
+lung microvascular endothelial cell	muller cell
+lung microvascular endothelial cell	muscle cell
+lung microvascular endothelial cell	myeloid cell
+lung microvascular endothelial cell	myeloid dendritic cell
+lung microvascular endothelial cell	myeloid progenitor
+lung microvascular endothelial cell	myoepithelial cell
+lung microvascular endothelial cell	myofibroblast cell
+lung microvascular endothelial cell	myometrial cell
+lung microvascular endothelial cell	naive regulatory t cell
+lung microvascular endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+lung microvascular endothelial cell	nampt neutrophil
+lung microvascular endothelial cell	nk cell
+lung microvascular endothelial cell	non-classical monocyte
+lung microvascular endothelial cell	ocular surface cell
+lung microvascular endothelial cell	pancreatic acinar cell
+lung microvascular endothelial cell	pancreatic alpha cell
+lung microvascular endothelial cell	pancreatic beta cell
+lung microvascular endothelial cell	pancreatic delta cell
+lung microvascular endothelial cell	pancreatic ductal cell
+lung microvascular endothelial cell	pancreatic pp cell
+lung microvascular endothelial cell	pancreatic stellate cell
+lung microvascular endothelial cell	paneth cell of epithelium of large intestine
+lung microvascular endothelial cell	paneth cell of epithelium of small intestine
+lung microvascular endothelial cell	pericyte cell
+lung microvascular endothelial cell	plasma cell
+lung microvascular endothelial cell	plasmablast
+lung microvascular endothelial cell	plasmacytoid dendritic cell
+lung microvascular endothelial cell	pulmonary ionocyte
+lung microvascular endothelial cell	radial glial cell
+lung microvascular endothelial cell	regulatory t cell
+lung microvascular endothelial cell	respiratory goblet cell
+lung microvascular endothelial cell	BTO:0000763
+retinal blood vessel endothelial cell	adipocyte
+retinal blood vessel endothelial cell	adventitial cell
+retinal blood vessel endothelial cell	alveolar fibroblast
+retinal blood vessel endothelial cell	retina horizontal cell
+retinal blood vessel endothelial cell	retinal bipolar neuron
+retinal blood vessel endothelial cell	cd8-positive, alpha-beta cytokine secreting effector t cell
+retinal blood vessel endothelial cell	endothelial cell of lymphatic vessel
+retinal blood vessel endothelial cell	endothelial cell of vascular tree
+retinal blood vessel endothelial cell	intermediate monocyte
+retinal blood vessel endothelial cell	monocyte
+retinal blood vessel endothelial cell	nampt neutrophil
+retinal blood vessel endothelial cell	erythroid progenitor
+retinal blood vessel endothelial cell	eye photoreceptor cell
+retinal blood vessel endothelial cell	fast muscle cell
+retinal blood vessel endothelial cell	fibroblast
+retinal blood vessel endothelial cell	fibroblast of breast
+retinal blood vessel endothelial cell	fibroblast of cardiac tissue
+retinal blood vessel endothelial cell	goblet cell
+retinal blood vessel endothelial cell	granulocyte
+retinal blood vessel endothelial cell	gut endothelial cell
+retinal blood vessel endothelial cell	hematopoietic stem cell
+retinal blood vessel endothelial cell	hepatocyte
+retinal blood vessel endothelial cell	hillock cell of prostate epithelium
+retinal blood vessel endothelial cell	hillock-club cell of prostate epithelium
+retinal blood vessel endothelial cell	immature enterocyte
+retinal blood vessel endothelial cell	immature natural killer cell
+retinal blood vessel endothelial cell	immune cell
+retinal blood vessel endothelial cell	intestinal crypt stem cell
+retinal blood vessel endothelial cell	intestinal crypt stem cell of large intestine
+retinal blood vessel endothelial cell	intestinal crypt stem cell of small intestine
+retinal blood vessel endothelial cell	intestinal enteroendocrine cell
+retinal blood vessel endothelial cell	intestinal tuft cell
+retinal blood vessel endothelial cell	intrahepatic cholangiocyte
+retinal blood vessel endothelial cell	ionocyte
+retinal blood vessel endothelial cell	keratinocyte
+retinal blood vessel endothelial cell	kidney epithelial cell
+retinal blood vessel endothelial cell	lacrimal gland functional unit cell
+retinal blood vessel endothelial cell	large intestine goblet cell
+retinal blood vessel endothelial cell	limbal stromal cell
+retinal blood vessel endothelial cell	liver dendritic cell
+retinal blood vessel endothelial cell	luminal cell of prostate epithelium
+retinal blood vessel endothelial cell	luminal epithelial cell of mammary gland
+retinal blood vessel endothelial cell	lung ciliated cell
+retinal blood vessel endothelial cell	lymphatic endothelial cell
+retinal blood vessel endothelial cell	macrophage
+retinal blood vessel endothelial cell	mature conventional dendritic cell
+retinal blood vessel endothelial cell	mature enterocyte
+retinal blood vessel endothelial cell	mature nk t cell
+retinal blood vessel endothelial cell	medullary thymic epithelial cell
+retinal blood vessel endothelial cell	melanocyte
+retinal blood vessel endothelial cell	memory b cell
+retinal blood vessel endothelial cell	mesenchymal stem cell
+retinal blood vessel endothelial cell	mesothelial cell
+retinal blood vessel endothelial cell	microglial cell
+retinal blood vessel endothelial cell	mucus secreting cell
+retinal blood vessel endothelial cell	muller cell
+retinal blood vessel endothelial cell	muscle cell
+retinal blood vessel endothelial cell	myeloid cell
+retinal blood vessel endothelial cell	myeloid progenitor
+retinal blood vessel endothelial cell	myoepithelial cell
+retinal blood vessel endothelial cell	myofibroblast cell
+retinal blood vessel endothelial cell	myometrial cell
+retinal blood vessel endothelial cell	naive regulatory t cell
+retinal blood vessel endothelial cell	naive thymus-derived cd4-positive, alpha-beta t cell
+retinal blood vessel endothelial cell	nk cell
+retinal blood vessel endothelial cell	non-classical monocyte
+retinal blood vessel endothelial cell	ocular surface cell
+retinal blood vessel endothelial cell	pancreatic acinar cell
+retinal blood vessel endothelial cell	pancreatic alpha cell
+retinal blood vessel endothelial cell	pancreatic beta cell
+retinal blood vessel endothelial cell	pancreatic delta cell
+retinal blood vessel endothelial cell	pancreatic ductal cell
+retinal blood vessel endothelial cell	pancreatic pp cell
+retinal blood vessel endothelial cell	pancreatic stellate cell
+retinal blood vessel endothelial cell	paneth cell of epithelium of large intestine
+retinal blood vessel endothelial cell	paneth cell of epithelium of small intestine
+retinal blood vessel endothelial cell	pericyte cell
+retinal blood vessel endothelial cell	plasma cell
+retinal blood vessel endothelial cell	plasmablast
+retinal blood vessel endothelial cell	plasmacytoid dendritic cell
+retinal blood vessel endothelial cell	pulmonary ionocyte
+retinal blood vessel endothelial cell	radial glial cell
+retinal blood vessel endothelial cell	regulatory t cell
+retinal blood vessel endothelial cell	respiratory goblet cell
+retinal blood vessel endothelial cell	respiratory mucous cell
+retinal blood vessel endothelial cell	retinal blood vessel endothelial cell
+retinal blood vessel endothelial cell	retinal ganglion cell
+retinal blood vessel endothelial cell	retinal pigment epithelial cell
+retinal blood vessel endothelial cell	salivary gland cell
+retinal blood vessel endothelial cell	schwann cell
+retinal blood vessel endothelial cell	secretory cell
+retinal blood vessel endothelial cell	serous cell of epithelium of bronchus
+retinal blood vessel endothelial cell	serous cell of epithelium of trachea
+retinal blood vessel endothelial cell	skeletal muscle satellite stem cell
+retinal blood vessel endothelial cell	small intestine goblet cell
+retinal blood vessel endothelial cell	smooth muscle cell
+retinal blood vessel endothelial cell	b cell
+retinal blood vessel endothelial cell	basal cell
+retinal blood vessel endothelial cell	basal cell of prostate epithelium
+retinal blood vessel endothelial cell	bladder urothelial cell
+retinal blood vessel endothelial cell	bronchial smooth muscle cell
+retinal blood vessel endothelial cell	cardiac endothelial cell
+retinal blood vessel endothelial cell	cardiac muscle cell
+retinal blood vessel endothelial cell	cd141-positive myeloid dendritic cell
+retinal blood vessel endothelial cell	cd1c-positive myeloid dendritic cell
+retinal blood vessel endothelial cell	cd24 neutrophil
+retinal blood vessel endothelial cell	cd4-positive helper t cell
+retinal blood vessel endothelial cell	cd4-positive, alpha-beta memory t cell
+retinal blood vessel endothelial cell	cd8-positive, alpha-beta cytotoxic t cell
+retinal blood vessel endothelial cell	cell of skeletal muscle
+retinal blood vessel endothelial cell	ciliated cell
+retinal blood vessel endothelial cell	ciliated epithelial cell
+retinal blood vessel endothelial cell	club cell
+retinal blood vessel endothelial cell	club cell of prostate epithelium
+retinal blood vessel endothelial cell	conjunctival epithelial cell
+retinal blood vessel endothelial cell	connective tissue cell
+retinal blood vessel endothelial cell	corneal epithelial cell
+retinal blood vessel endothelial cell	corneal keratocyte
+retinal blood vessel endothelial cell	dendritic cell
+retinal blood vessel endothelial cell	dn1 thymic pro-t cell
+retinal blood vessel endothelial cell	dn3 thymocyte
+retinal blood vessel endothelial cell	dn4 thymocyte
+retinal blood vessel endothelial cell	duct epithelial cell
+retinal blood vessel endothelial cell	duodenum glandular cell
+retinal blood vessel endothelial cell	endothelial cell of hepatic sinusoid
+retinal blood vessel endothelial cell	enterocyte of epithelium of large intestine
+retinal blood vessel endothelial cell	enterocyte of epithelium of small intestine
+retinal blood vessel endothelial cell	epithelial cell
+retinal blood vessel endothelial cell	epithelial cell of lacrimal sac
+retinal blood vessel endothelial cell	epithelial cell of uterus
+retinal blood vessel endothelial cell	ciliary body
+retinal blood vessel endothelial cell	double-positive, alpha-beta thymocyte
+retinal blood vessel endothelial cell	myeloid dendritic cell
+retinal blood vessel endothelial cell	BTO:0000439
+adipocyte	BTO:0000439
+adventitial cell	BTO:0001203
+adventitial cell	BTO:0000763
+alveolar fibroblast	BTO:0000763
+b cell	schwann cell
+b cell	secretory cell
+b cell	serous cell of epithelium of bronchus
+b cell	serous cell of epithelium of trachea
+b cell	skeletal muscle satellite stem cell
+b cell	small intestine goblet cell
+b cell	smooth muscle cell
+b cell	BTO:0001388
+b cell	BTO:0000784
+b cell	BTO:0001203
+b cell	BTO:0000817
+b cell	BTO:0001424
+b cell	BTO:0000439
+b cell	BTO:0000988
+b cell	BTO:0001487
+b cell	BTO:0001374
+b cell	BTO:0000123
+b cell	BTO:0000706
+b cell	BTO:0000651
+b cell	BTO:0003718
+b cell	BTO:0000671
+b cell	BTO:0000763
+basal cell	BTO:0001388
+basal cell	BTO:0001203
+basal cell	BTO:0001385
+basal cell	BTO:0000817
+basal cell	BTO:0000763
+basal cell of prostate epithelium	BTO:0001129
+bladder urothelial cell	BTO:0000123
+bronchial smooth muscle cell	BTO:0000763
+cardiac endothelial cell	BTO:0000562
+cardiac muscle cell	retinal ganglion cell
+cardiac muscle cell	retinal pigment epithelial cell
+cardiac muscle cell	salivary gland cell
+cardiac muscle cell	schwann cell
+cardiac muscle cell	secretory cell
+cardiac muscle cell	serous cell of epithelium of bronchus
+cardiac muscle cell	serous cell of epithelium of trachea
+cardiac muscle cell	skeletal muscle satellite stem cell
+cardiac muscle cell	small intestine goblet cell
+cardiac muscle cell	smooth muscle cell
+cardiac muscle cell	BTO:0000562
+cd141-positive myeloid dendritic cell	schwann cell
+cd141-positive myeloid dendritic cell	secretory cell
+cd141-positive myeloid dendritic cell	serous cell of epithelium of bronchus
+cd141-positive myeloid dendritic cell	serous cell of epithelium of trachea
+cd141-positive myeloid dendritic cell	skeletal muscle satellite stem cell
+cd141-positive myeloid dendritic cell	small intestine goblet cell
+cd141-positive myeloid dendritic cell	smooth muscle cell
+cd141-positive myeloid dendritic cell	BTO:0000089
+cd141-positive myeloid dendritic cell	BTO:0000784
+cd141-positive myeloid dendritic cell	BTO:0001281
+cd141-positive myeloid dendritic cell	BTO:0001253
+cd1c-positive myeloid dendritic cell	schwann cell
+cd1c-positive myeloid dendritic cell	secretory cell
+cd1c-positive myeloid dendritic cell	serous cell of epithelium of bronchus
+cd1c-positive myeloid dendritic cell	serous cell of epithelium of trachea
+cd1c-positive myeloid dendritic cell	skeletal muscle satellite stem cell
+cd1c-positive myeloid dendritic cell	small intestine goblet cell
+cd1c-positive myeloid dendritic cell	smooth muscle cell
+cd1c-positive myeloid dendritic cell	BTO:0000784
+cd1c-positive myeloid dendritic cell	BTO:0001281
+cd1c-positive myeloid dendritic cell	BTO:0001253
+cd24 neutrophil	schwann cell
+cd24 neutrophil	secretory cell
+cd24 neutrophil	serous cell of epithelium of bronchus
+cd24 neutrophil	serous cell of epithelium of trachea
+cd24 neutrophil	skeletal muscle satellite stem cell
+cd24 neutrophil	small intestine goblet cell
+cd24 neutrophil	smooth muscle cell
+cd24 neutrophil	BTO:0000141
+cd24 neutrophil	BTO:0000089
+cd4-positive helper t cell	BTO:0001203
+cd4-positive helper t cell	BTO:0001253
+cd4-positive helper t cell	BTO:0001374
+cd4-positive helper t cell	BTO:0000671
+cd4-positive, alpha-beta memory t cell	BTO:0000089
+cd4-positive, alpha-beta memory t cell	BTO:0001281
+cd4-positive, alpha-beta memory t cell	BTO:0001253
+cd4-positive, alpha-beta memory t cell	BTO:0000784
+cd8-positive, alpha-beta cytokine secreting effector t cell	retina horizontal cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	retinal bipolar neuron
+cd8-positive, alpha-beta cytokine secreting effector t cell	retinal ganglion cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	retinal pigment epithelial cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	salivary gland cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	schwann cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	secretory cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	serous cell of epithelium of bronchus
+cd8-positive, alpha-beta cytokine secreting effector t cell	serous cell of epithelium of trachea
+cd8-positive, alpha-beta cytokine secreting effector t cell	skeletal muscle satellite stem cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	small intestine goblet cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	smooth muscle cell
+cd8-positive, alpha-beta cytokine secreting effector t cell	BTO:0000089
+cd8-positive, alpha-beta cytotoxic t cell	schwann cell
+cd8-positive, alpha-beta cytotoxic t cell	secretory cell
+cd8-positive, alpha-beta cytotoxic t cell	serous cell of epithelium of bronchus
+cd8-positive, alpha-beta cytotoxic t cell	serous cell of epithelium of trachea
+cd8-positive, alpha-beta cytotoxic t cell	skeletal muscle satellite stem cell
+cd8-positive, alpha-beta cytotoxic t cell	small intestine goblet cell
+cd8-positive, alpha-beta cytotoxic t cell	smooth muscle cell
+cd8-positive, alpha-beta cytotoxic t cell	BTO:0001253
+cd8-positive, alpha-beta cytotoxic t cell	BTO:0001374
+cell of skeletal muscle	BTO:0001253
+ciliary body	BTO:0000439
+ciliated cell	BTO:0001388
+ciliated epithelial cell	BTO:0001424
+club cell	BTO:0000763
+club cell of prostate epithelium	retinal ganglion cell
+club cell of prostate epithelium	retinal pigment epithelial cell
+club cell of prostate epithelium	salivary gland cell
+club cell of prostate epithelium	schwann cell
+club cell of prostate epithelium	secretory cell
+club cell of prostate epithelium	serous cell of epithelium of bronchus
+club cell of prostate epithelium	serous cell of epithelium of trachea
+club cell of prostate epithelium	skeletal muscle satellite stem cell
+club cell of prostate epithelium	small intestine goblet cell
+club cell of prostate epithelium	smooth muscle cell
+club cell of prostate epithelium	BTO:0001129
+conjunctival epithelial cell	BTO:0000439
+connective tissue cell	BTO:0001388
+corneal epithelial cell	BTO:0000439
+corneal keratocyte	BTO:0000439
+dendritic cell	schwann cell
+dendritic cell	secretory cell
+dendritic cell	serous cell of epithelium of bronchus
+dendritic cell	serous cell of epithelium of trachea
+dendritic cell	skeletal muscle satellite stem cell
+dendritic cell	small intestine goblet cell
+dendritic cell	smooth muscle cell
+dendritic cell	BTO:0000439
+dendritic cell	BTO:0000763
+dendritic cell	BTO:0001374
+dn1 thymic pro-t cell	BTO:0001374
+dn3 thymocyte	BTO:0001374
+dn4 thymocyte	BTO:0001374
+duct epithelial cell	BTO:0001203
+duodenum glandular cell	BTO:0000651
+endothelial cell of hepatic sinusoid	BTO:0000759
+endothelial cell of lymphatic vessel	retina horizontal cell
+endothelial cell of lymphatic vessel	retinal bipolar neuron
+endothelial cell of lymphatic vessel	retinal ganglion cell
+endothelial cell of lymphatic vessel	retinal pigment epithelial cell
+endothelial cell of lymphatic vessel	salivary gland cell
+endothelial cell of lymphatic vessel	schwann cell
+endothelial cell of lymphatic vessel	secretory cell
+endothelial cell of lymphatic vessel	serous cell of epithelium of bronchus
+endothelial cell of lymphatic vessel	serous cell of epithelium of trachea
+endothelial cell of lymphatic vessel	skeletal muscle satellite stem cell
+endothelial cell of lymphatic vessel	small intestine goblet cell
+endothelial cell of lymphatic vessel	smooth muscle cell
+endothelial cell of lymphatic vessel	BTO:0001203
+endothelial cell of lymphatic vessel	BTO:0001385
+endothelial cell of lymphatic vessel	BTO:0000817
+endothelial cell of lymphatic vessel	BTO:0001424
+endothelial cell of lymphatic vessel	BTO:0000887
+endothelial cell of lymphatic vessel	BTO:0001374
+endothelial cell of lymphatic vessel	BTO:0000123
+endothelial cell of lymphatic vessel	BTO:0000763
+endothelial cell of vascular tree	retina horizontal cell
+endothelial cell of vascular tree	retinal bipolar neuron
+endothelial cell of vascular tree	retinal ganglion cell
+endothelial cell of vascular tree	retinal pigment epithelial cell
+endothelial cell of vascular tree	salivary gland cell
+endothelial cell of vascular tree	schwann cell
+endothelial cell of vascular tree	secretory cell
+endothelial cell of vascular tree	serous cell of epithelium of bronchus
+endothelial cell of vascular tree	serous cell of epithelium of trachea
+endothelial cell of vascular tree	skeletal muscle satellite stem cell
+endothelial cell of vascular tree	small intestine goblet cell
+endothelial cell of vascular tree	smooth muscle cell
+endothelial cell of vascular tree	BTO:0000887
+enterocyte of epithelium of large intestine	BTO:0000706
+enterocyte of epithelium of small intestine	BTO:0000651
+epithelial cell of lacrimal sac	BTO:0000439
+epithelial cell of uterus	BTO:0001424
+erythroid progenitor	BTO:0000141
+erythroid progenitor	BTO:0001129
+eye photoreceptor cell	BTO:0000439
+fibroblast	BTO:0000759
+fibroblast	BTO:0001388
+fibroblast	BTO:0001203
+fibroblast	BTO:0001385
+fibroblast	BTO:0001424
+fibroblast	BTO:0000439
+fibroblast	BTO:0001487
+fibroblast	BTO:0000988
+fibroblast	BTO:0001129
+fibroblast	BTO:0001374
+fibroblast	BTO:0000123
+fibroblast	BTO:0000706
+fibroblast	BTO:0000651
+fibroblast	BTO:0003718
+fibroblast	BTO:0000763
+fibroblast of breast	BTO:0000817
+fibroblast of cardiac tissue	BTO:0000562
+goblet cell	BTO:0000706
+goblet cell	BTO:0000651
+goblet cell	BTO:0001388
+granulocyte	BTO:0000141
+granulocyte	BTO:0000089
+gut endothelial cell	serous cell of epithelium of bronchus
+gut endothelial cell	serous cell of epithelium of trachea
+gut endothelial cell	skeletal muscle satellite stem cell
+gut endothelial cell	small intestine goblet cell
+gut endothelial cell	smooth muscle cell
+gut endothelial cell	BTO:0000706
+gut endothelial cell	BTO:0000651
+hematopoietic stem cell	BTO:0000089
+hematopoietic stem cell	BTO:0000784
+hematopoietic stem cell	BTO:0001281
+hematopoietic stem cell	BTO:0000141
+hepatocyte	BTO:0000759
+hepatocyte	BTO:0000562
+hillock cell of prostate epithelium	retinal ganglion cell
+hillock cell of prostate epithelium	retinal pigment epithelial cell
+hillock cell of prostate epithelium	salivary gland cell
+hillock cell of prostate epithelium	schwann cell
+hillock cell of prostate epithelium	secretory cell
+hillock cell of prostate epithelium	serous cell of epithelium of bronchus
+hillock cell of prostate epithelium	serous cell of epithelium of trachea
+hillock cell of prostate epithelium	skeletal muscle satellite stem cell
+hillock cell of prostate epithelium	small intestine goblet cell
+hillock cell of prostate epithelium	smooth muscle cell
+hillock cell of prostate epithelium	BTO:0001129
+hillock-club cell of prostate epithelium	retinal ganglion cell
+hillock-club cell of prostate epithelium	retinal pigment epithelial cell
+hillock-club cell of prostate epithelium	salivary gland cell
+hillock-club cell of prostate epithelium	schwann cell
+hillock-club cell of prostate epithelium	secretory cell
+hillock-club cell of prostate epithelium	serous cell of epithelium of bronchus
+hillock-club cell of prostate epithelium	serous cell of epithelium of trachea
+hillock-club cell of prostate epithelium	skeletal muscle satellite stem cell
+hillock-club cell of prostate epithelium	small intestine goblet cell
+hillock-club cell of prostate epithelium	smooth muscle cell
+hillock-club cell of prostate epithelium	BTO:0001129
+immature enterocyte	BTO:0000706
+immature enterocyte	BTO:0000651
+immature natural killer cell	BTO:0001374
+immune cell	BTO:0001385
+immune cell	BTO:0001424
+intermediate monocyte	retina horizontal cell
+intermediate monocyte	retinal bipolar neuron
+intermediate monocyte	retinal ganglion cell
+intermediate monocyte	retinal pigment epithelial cell
+intermediate monocyte	salivary gland cell
+intermediate monocyte	schwann cell
+intermediate monocyte	secretory cell
+intermediate monocyte	serous cell of epithelium of bronchus
+intermediate monocyte	serous cell of epithelium of trachea
+intermediate monocyte	skeletal muscle satellite stem cell
+intermediate monocyte	small intestine goblet cell
+intermediate monocyte	smooth muscle cell
+intermediate monocyte	pancreatic delta cell
+intermediate monocyte	pancreatic ductal cell
+intermediate monocyte	pancreatic pp cell
+intermediate monocyte	pancreatic stellate cell
+intermediate monocyte	paneth cell of epithelium of large intestine
+intermediate monocyte	paneth cell of epithelium of small intestine
+intermediate monocyte	pericyte cell
+intermediate monocyte	plasma cell
+intermediate monocyte	plasmablast
+intermediate monocyte	plasmacytoid dendritic cell
+intermediate monocyte	pulmonary ionocyte
+intermediate monocyte	radial glial cell
+intermediate monocyte	regulatory t cell
+intermediate monocyte	respiratory goblet cell
+intermediate monocyte	BTO:0000784
+intermediate monocyte	BTO:0001281
+intermediate monocyte	BTO:0000763
+intestinal crypt stem cell	BTO:0000706
+intestinal crypt stem cell	BTO:0000651
+intestinal crypt stem cell of large intestine	BTO:0000706
+intestinal crypt stem cell of small intestine	BTO:0000651
+intestinal enteroendocrine cell	BTO:0000706
+intestinal enteroendocrine cell	BTO:0000651
+intestinal tuft cell	BTO:0000706
+intestinal tuft cell	BTO:0000651
+intrahepatic cholangiocyte	BTO:0000759
+ionocyte	retinal ganglion cell
+ionocyte	retinal pigment epithelial cell
+ionocyte	salivary gland cell
+ionocyte	schwann cell
+ionocyte	secretory cell
+ionocyte	serous cell of epithelium of bronchus
+ionocyte	serous cell of epithelium of trachea
+ionocyte	skeletal muscle satellite stem cell
+ionocyte	small intestine goblet cell
+ionocyte	smooth muscle cell
+ionocyte	BTO:0001388
+ionocyte	BTO:0001203
+keratinocyte	BTO:0001385
+kidney epithelial cell	BTO:0000671
+lacrimal gland functional unit cell	BTO:0000439
+large intestine goblet cell	BTO:0000706
+limbal stromal cell	serous cell of epithelium of bronchus
+limbal stromal cell	serous cell of epithelium of trachea
+limbal stromal cell	skeletal muscle satellite stem cell
+limbal stromal cell	small intestine goblet cell
+limbal stromal cell	smooth muscle cell
+limbal stromal cell	BTO:0000439
+liver dendritic cell	BTO:0000759
+luminal cell of prostate epithelium	BTO:0001129
+luminal epithelial cell of mammary gland	BTO:0000817
+lung ciliated cell	BTO:0000763
+lymphatic endothelial cell	BTO:0003718
+macrophage	schwann cell
+macrophage	secretory cell
+macrophage	serous cell of epithelium of bronchus
+macrophage	serous cell of epithelium of trachea
+macrophage	skeletal muscle satellite stem cell
+macrophage	small intestine goblet cell
+macrophage	smooth muscle cell
+macrophage	BTO:0000759
+macrophage	BTO:0001388
+macrophage	BTO:0000784
+macrophage	BTO:0001281
+macrophage	BTO:0000817
+macrophage	BTO:0001424
+macrophage	BTO:0000439
+macrophage	BTO:0001487
+macrophage	BTO:0001253
+macrophage	BTO:0000141
+macrophage	BTO:0000562
+macrophage	BTO:0001129
+macrophage	BTO:0000887
+macrophage	BTO:0001203
+macrophage	BTO:0001374
+macrophage	BTO:0000123
+macrophage	BTO:0000763
+macrophage	BTO:0003718
+macrophage	BTO:0000089
+macrophage	BTO:0000671
+mature conventional dendritic cell	small intestine goblet cell
+mature conventional dendritic cell	smooth muscle cell
+mature conventional dendritic cell	BTO:0000784
+mature enterocyte	BTO:0000706
+mature enterocyte	BTO:0000651
+mature nk t cell	BTO:0000887
+mature nk t cell	BTO:0000784
+mature nk t cell	BTO:0001281
+mature nk t cell	BTO:0001374
+medullary thymic epithelial cell	serous cell of epithelium of bronchus
+medullary thymic epithelial cell	serous cell of epithelium of trachea
+medullary thymic epithelial cell	skeletal muscle satellite stem cell
+medullary thymic epithelial cell	small intestine goblet cell
+medullary thymic epithelial cell	smooth muscle cell
+medullary thymic epithelial cell	BTO:0001374
+melanocyte	BTO:0000439
+melanocyte	BTO:0001253
+memory b cell	schwann cell
+memory b cell	secretory cell
+memory b cell	serous cell of epithelium of bronchus
+memory b cell	serous cell of epithelium of trachea
+memory b cell	skeletal muscle satellite stem cell
+memory b cell	small intestine goblet cell
+memory b cell	smooth muscle cell
+memory b cell	BTO:0000089
+memory b cell	BTO:0001203
+memory b cell	BTO:0001281
+memory b cell	BTO:0001253
+memory b cell	BTO:0000141
+memory b cell	BTO:0000784
+memory b cell	BTO:0001374
+mesenchymal stem cell	retinal ganglion cell
+mesenchymal stem cell	retinal pigment epithelial cell
+mesenchymal stem cell	salivary gland cell
+mesenchymal stem cell	schwann cell
+mesenchymal stem cell	secretory cell
+mesenchymal stem cell	serous cell of epithelium of bronchus
+mesenchymal stem cell	serous cell of epithelium of trachea
+mesenchymal stem cell	skeletal muscle satellite stem cell
+mesenchymal stem cell	small intestine goblet cell
+mesenchymal stem cell	smooth muscle cell
+mesenchymal stem cell	BTO:0001487
+mesenchymal stem cell	BTO:0000887
+mesothelial cell	BTO:0000887
+mesothelial cell	BTO:0000763
+mesothelial cell	BTO:0001374
+microglial cell	schwann cell
+microglial cell	secretory cell
+microglial cell	serous cell of epithelium of bronchus
+microglial cell	serous cell of epithelium of trachea
+microglial cell	skeletal muscle satellite stem cell
+microglial cell	small intestine goblet cell
+microglial cell	smooth muscle cell
+microglial cell	BTO:0000439
+monocyte	retina horizontal cell
+monocyte	retinal bipolar neuron
+monocyte	retinal ganglion cell
+monocyte	retinal pigment epithelial cell
+monocyte	salivary gland cell
+monocyte	schwann cell
+monocyte	secretory cell
+monocyte	serous cell of epithelium of bronchus
+monocyte	serous cell of epithelium of trachea
+monocyte	skeletal muscle satellite stem cell
+monocyte	small intestine goblet cell
+monocyte	smooth muscle cell
+monocyte	myeloid dendritic cell
+monocyte	myeloid progenitor
+monocyte	myoepithelial cell
+monocyte	myofibroblast cell
+monocyte	myometrial cell
+monocyte	naive regulatory t cell
+monocyte	naive thymus-derived cd4-positive, alpha-beta t cell
+monocyte	nampt neutrophil
+monocyte	nk cell
+monocyte	non-classical monocyte
+monocyte	ocular surface cell
+monocyte	pancreatic acinar cell
+monocyte	pancreatic alpha cell
+monocyte	pancreatic beta cell
+monocyte	pancreatic delta cell
+monocyte	pancreatic ductal cell
+monocyte	pancreatic pp cell
+monocyte	pancreatic stellate cell
+monocyte	paneth cell of epithelium of large intestine
+monocyte	paneth cell of epithelium of small intestine
+monocyte	pericyte cell
+monocyte	plasma cell
+monocyte	plasmablast
+monocyte	plasmacytoid dendritic cell
+monocyte	pulmonary ionocyte
+monocyte	radial glial cell
+monocyte	regulatory t cell
+monocyte	respiratory goblet cell
+monocyte	BTO:0000759
+monocyte	BTO:0001203
+monocyte	BTO:0000439
+monocyte	BTO:0000141
+monocyte	BTO:0001129
+monocyte	BTO:0001374
+monocyte	BTO:0000706
+monocyte	BTO:0000651
+monocyte	BTO:0000089
+mucus secreting cell	BTO:0001388
+muller cell	BTO:0000439
+muscle cell	BTO:0001253
+myeloid cell	schwann cell
+myeloid cell	secretory cell
+myeloid cell	serous cell of epithelium of bronchus
+myeloid cell	serous cell of epithelium of trachea
+myeloid cell	skeletal muscle satellite stem cell
+myeloid cell	small intestine goblet cell
+myeloid cell	smooth muscle cell
+myeloid cell	BTO:0000988
+myeloid cell	BTO:0001129
+myeloid progenitor	serous cell of epithelium of bronchus
+myeloid progenitor	serous cell of epithelium of trachea
+myeloid progenitor	skeletal muscle satellite stem cell
+myeloid progenitor	small intestine goblet cell
+myeloid progenitor	smooth muscle cell
+myeloid progenitor	BTO:0000141
+myeloid progenitor	BTO:0000089
+myoepithelial cell	BTO:0001203
+myofibroblast cell	BTO:0001487
+myofibroblast cell	BTO:0000123
+myofibroblast cell	BTO:0000763
+myometrial cell	BTO:0001424
+naive regulatory t cell	BTO:0001374
+naive thymus-derived cd4-positive, alpha-beta t cell	BTO:0000089
+naive thymus-derived cd4-positive, alpha-beta t cell	BTO:0001281
+naive thymus-derived cd4-positive, alpha-beta t cell	BTO:0001253
+naive thymus-derived cd4-positive, alpha-beta t cell	BTO:0000784
+nampt neutrophil	retina horizontal cell
+nampt neutrophil	retinal bipolar neuron
+nampt neutrophil	retinal ganglion cell
+nampt neutrophil	retinal pigment epithelial cell
+nampt neutrophil	salivary gland cell
+nampt neutrophil	schwann cell
+nampt neutrophil	secretory cell
+nampt neutrophil	serous cell of epithelium of bronchus
+nampt neutrophil	serous cell of epithelium of trachea
+nampt neutrophil	skeletal muscle satellite stem cell
+nampt neutrophil	small intestine goblet cell
+nampt neutrophil	smooth muscle cell
+nampt neutrophil	pancreatic delta cell
+nampt neutrophil	pancreatic ductal cell
+nampt neutrophil	pancreatic pp cell
+nampt neutrophil	pancreatic stellate cell
+nampt neutrophil	paneth cell of epithelium of large intestine
+nampt neutrophil	paneth cell of epithelium of small intestine
+nampt neutrophil	pericyte cell
+nampt neutrophil	plasma cell
+nampt neutrophil	plasmablast
+nampt neutrophil	plasmacytoid dendritic cell
+nampt neutrophil	pulmonary ionocyte
+nampt neutrophil	radial glial cell
+nampt neutrophil	regulatory t cell
+nampt neutrophil	respiratory goblet cell
+nampt neutrophil	BTO:0000141
+nampt neutrophil	BTO:0000089
+nk cell	BTO:0000759
+nk cell	BTO:0000089
+nk cell	BTO:0000784
+nk cell	BTO:0001203
+nk cell	BTO:0001281
+nk cell	BTO:0000817
+nk cell	BTO:0001424
+nk cell	BTO:0001487
+nk cell	BTO:0001253
+nk cell	BTO:0000141
+nk cell	BTO:0000988
+nk cell	BTO:0001374
+nk cell	BTO:0000123
+nk cell	BTO:0000763
+nk cell	BTO:0003718
+nk cell	BTO:0000671
+non-classical monocyte	schwann cell
+non-classical monocyte	secretory cell
+non-classical monocyte	serous cell of epithelium of bronchus
+non-classical monocyte	serous cell of epithelium of trachea
+non-classical monocyte	skeletal muscle satellite stem cell
+non-classical monocyte	small intestine goblet cell
+non-classical monocyte	smooth muscle cell
+non-classical monocyte	BTO:0000089
+non-classical monocyte	BTO:0000784
+non-classical monocyte	BTO:0000763
+ocular surface cell	BTO:0000439
+pancreatic alpha cell	BTO:0000988
+pancreatic beta cell	BTO:0000988
+pancreatic delta cell	BTO:0000988
+pancreatic ductal cell	BTO:0000988
+pancreatic pp cell	BTO:0000988
+pancreatic stellate cell	BTO:0000988
+paneth cell of epithelium of large intestine	BTO:0000706
+paneth cell of epithelium of small intestine	BTO:0000651
+pericyte cell	BTO:0001203
+pericyte cell	BTO:0001385
+pericyte cell	BTO:0000817
+pericyte cell	BTO:0001424
+pericyte cell	BTO:0000887
+pericyte cell	BTO:0000123
+pericyte cell	BTO:0003718
+pericyte cell	BTO:0000763
+plasma cell	BTO:0000759
+plasma cell	BTO:0001388
+plasma cell	BTO:0000089
+plasma cell	BTO:0000784
+plasma cell	BTO:0001203
+plasma cell	BTO:0001281
+plasma cell	BTO:0000817
+plasma cell	BTO:0000439
+plasma cell	BTO:0001487
+plasma cell	BTO:0001253
+plasma cell	BTO:0000141
+plasma cell	BTO:0000988
+plasma cell	BTO:0001374
+plasma cell	BTO:0000706
+plasma cell	BTO:0000651
+plasma cell	BTO:0003718
+plasma cell	BTO:0000123
+plasma cell	BTO:0000763
+plasmacytoid dendritic cell	retinal ganglion cell
+plasmacytoid dendritic cell	retinal pigment epithelial cell
+plasmacytoid dendritic cell	salivary gland cell
+plasmacytoid dendritic cell	schwann cell
+plasmacytoid dendritic cell	secretory cell
+plasmacytoid dendritic cell	serous cell of epithelium of bronchus
+plasmacytoid dendritic cell	serous cell of epithelium of trachea
+plasmacytoid dendritic cell	skeletal muscle satellite stem cell
+plasmacytoid dendritic cell	small intestine goblet cell
+plasmacytoid dendritic cell	smooth muscle cell
+plasmacytoid dendritic cell	BTO:0000089
+plasmacytoid dendritic cell	BTO:0000784
+plasmacytoid dendritic cell	BTO:0001281
+plasmacytoid dendritic cell	BTO:0000123
+plasmacytoid dendritic cell	BTO:0000763
+pulmonary ionocyte	BTO:0000763
+radial glial cell	BTO:0000439
+regulatory t cell	small intestine goblet cell
+regulatory t cell	smooth muscle cell
+regulatory t cell	BTO:0000784
+regulatory t cell	BTO:0001281
+regulatory t cell	BTO:0001253
+respiratory goblet cell	retinal ganglion cell
+respiratory goblet cell	retinal pigment epithelial cell
+respiratory goblet cell	salivary gland cell
+respiratory goblet cell	schwann cell
+respiratory goblet cell	secretory cell
+respiratory goblet cell	serous cell of epithelium of bronchus
+respiratory goblet cell	serous cell of epithelium of trachea
+respiratory goblet cell	skeletal muscle satellite stem cell
+respiratory goblet cell	small intestine goblet cell
+respiratory goblet cell	smooth muscle cell
+respiratory goblet cell	BTO:0000763
+retina horizontal cell	BTO:0000439
+retinal bipolar neuron	BTO:0000439
+retinal pigment epithelial cell	skeletal muscle satellite stem cell
+retinal pigment epithelial cell	BTO:0000439
+salivary gland cell	skeletal muscle satellite stem cell
+salivary gland cell	BTO:0001203
+secretory cell	skeletal muscle satellite stem cell
+secretory cell	BTO:0001388
+serous cell of epithelium of trachea	skeletal muscle satellite stem cell
+serous cell of epithelium of trachea	BTO:0001388
+skeletal muscle satellite stem cell	retinal ganglion cell
+skeletal muscle satellite stem cell	schwann cell
+skeletal muscle satellite stem cell	serous cell of epithelium of bronchus
+skeletal muscle satellite stem cell	skeletal muscle satellite stem cell
+skeletal muscle satellite stem cell	small intestine goblet cell
+skeletal muscle satellite stem cell	smooth muscle cell
+skeletal muscle satellite stem cell	BTO:0000887
+small intestine goblet cell	BTO:0000651
+smooth muscle cell	BTO:0001388
+smooth muscle cell	BTO:0001487
+smooth muscle cell	BTO:0000562
+smooth muscle cell	BTO:0001129
+smooth muscle cell	BTO:0000887
+smooth muscle cell	BTO:0000123
+smooth muscle cell	BTO:0000763
+smooth muscle cell	BTO:0001253
+smooth muscle cell	BTO:0003718
+epithelial cell	BTO:0001385
+epithelial cell	BTO:0001424
+epithelial cell	BTO:0001253
+epithelial cell	BTO:0001129
+epithelial cell	BTO:0003718
+pancreatic acinar cell	BTO:0000988
+fast muscle cell	BTO:0000887
+fast muscle cell	BTO:0001374
+retinal ganglion cell	BTO:0000439
+schwann cell	BTO:0001385
+serous cell of epithelium of bronchus	BTO:0000763
+myeloid dendritic cell	BTO:0001374
+plasmablast	BTO:0000141
+plasmablast	BTO:0000089
+double-positive, alpha-beta thymocyte	BTO:0001388
+respiratory mucous cell	BTO:0000763
+BTO:0000282	BTO:0001489
+BTO:0000282	BTO:0000439
+BTO:0000282	BTO:0001090
+BTO:0001368	BTO:0001493
+BTO:0001368	BTO:0000149
+BTO:0001368	BTO:0001374
+BTO:0000141	BTO:0001486
+BTO:0000651	BTO:0000648
+BTO:0001488	BTO:0000522
+BTO:0001488	BTO:0000345
+BTO:0001488	BTO:0000254
+BTO:0001488	BTO:0000784
+BTO:0001488	BTO:0001374
+BTO:0001488	BTO:0000080
+BTO:0000763	BTO:0000203
+BTO:0000522	BTO:0001489
+BTO:0000522	BTO:0000765
+BTO:0000522	BTO:0000431
+BTO:0003099	BTO:0000083
+BTO:0003099	BTO:0001424
+BTO:0003096	BTO:0000082
+BTO:0003096	BTO:0001129
+BTO:0000345	BTO:0000988
+BTO:0000345	BTO:0000759
+BTO:0000000	BTO:0000042
+BTO:0001388	BTO:0000203
+BTO:0000988	BTO:0001491
+BTO:0000149	BTO:0000254
+BTO:0000149	BTO:0000431
+BTO:0000149	BTO:0000817
+BTO:0000042	BTO:0001489
+BTO:0000887	BTO:0001485
+BTO:0000634	BTO:0001489
+BTO:0000634	BTO:0001253
+BTO:0000671	BTO:0000431
+BTO:0000671	BTO:0001491
+BTO:0000671	BTO:0001244
+BTO:0000671	BTO:0003092
+BTO:0001489	BTO:0003091
+BTO:0001489	BTO:0000088
+BTO:0001489	BTO:0000570
+BTO:0001489	BTO:0000421
+BTO:0001489	BTO:0000203
+BTO:0001489	BTO:0001493
+BTO:0001489	BTO:0001486
+BTO:0001489	BTO:0000202
+BTO:0001489	BTO:0001485
+BTO:0001489	BTO:0005810
+BTO:0001489	BTO:0001491
+BTO:0001244	BTO:0001491
+BTO:0001129	BTO:0000080
+BTO:0000562	BTO:0000088
+BTO:0001085	BTO:0000088
+BTO:0001085	BTO:0003718
+BTO:0000254	BTO:0000083
+BTO:0000765	BTO:0001203
+BTO:0000648	BTO:0000511
+BTO:0000648	BTO:0000706
+BTO:0000753	BTO:0000570
+BTO:0000753	BTO:0005810
+BTO:0000753	BTO:0001281
+BTO:0000753	BTO:0000784
+BTO:0000753	BTO:0001374
+BTO:0001281	BTO:0001491
+BTO:0000123	BTO:0001491
+BTO:0001385	BTO:0000202
+BTO:0001385	BTO:0001090
+BTO:0003091	BTO:0000081
+BTO:0003091	BTO:0003092
+BTO:0000511	BTO:0000058
+BTO:0000089	BTO:0000570
+BTO:0000759	BTO:0001491
+BTO:0000421	BTO:0001487
+BTO:0000082	BTO:0000081
+BTO:0000082	BTO:0000080
+BTO:0000083	BTO:0000081
+BTO:0000058	BTO:0001491
+BTO:0000439	BTO:0000202
+BTO:0001203	BTO:0001090
