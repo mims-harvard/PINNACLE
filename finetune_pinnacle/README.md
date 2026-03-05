@@ -33,14 +33,13 @@ With the three files created in Step 1, run `data_prep.py`. The outputs of this 
 
 Example command:
 ```
-python data_prep.py \
-    --embeddings_dir ../data/pinnacle_embeds/ \
+python finetune_pinnacle/data_prep.py  \
+    --embeddings_dir data/pinnacle_embeds/ \
     --embed pinnacle \
-    --celltype_ppi ../data/networks/ \
-    --positive_proteins_prefix ../data/therapeutic_target_task/positive_proteins_EFO_0000685 \
-    --negative_proteins_prefix ../data/therapeutic_target_task/negative_proteins_EFO_0000685 \
-    --raw_data_prefix ../data/therapeutic_target_task/raw_targets_EFO_0000685 \
-    --data_split_path ../data/therapeutic_target_task/data_split_EFO_0000685
+    --disease 'EFO_0000401' \
+    --result_dir data/therapeutic_target_task \
+    --embeddings_dir data/pinnacle_embeds/ \
+    --embed pinnacle \
 ```
 
 ### Step 3: Finetune
