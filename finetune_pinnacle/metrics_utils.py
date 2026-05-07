@@ -45,15 +45,16 @@ def save_torch_train_val_preds(best_train_y, best_train_preds, best_train_groups
         val_ranks[ct_name] = temp
         temp.to_csv(f'{models_output_dir}/{embed_name}_val_preds_{ct_name}.csv', index=False)  # Save the validation predictions
 
-        wandb.log({f'val AUPRC cell types {ct_name}': ap_score, 
-                   f'val AUROC cell types {ct_name}': auroc_score,
-                   f'val recall@5 cell types {ct_name}': ct_recall_5,
-                   f'val precision@5 cell types {ct_name}': ct_precision_5,
-                   f'val AP@5 cell types {ct_name}': ct_ap_5,
-                   f'val recall@10 cell types {ct_name}': ct_recall_10, 
-                   f'val precision@10 cell types {ct_name}': ct_precision_10,
-                   f'val AP@10 cell types {ct_name}': ct_ap_10,
-                   f'val positive proportion {ct_name}': positive_proportion_val})
+        if wandb is not None:
+            wandb.log({f'val AUPRC cell types {ct_name}': ap_score, 
+                       f'val AUROC cell types {ct_name}': auroc_score,
+                       f'val recall@5 cell types {ct_name}': ct_recall_5,
+                       f'val precision@5 cell types {ct_name}': ct_precision_5,
+                       f'val AP@5 cell types {ct_name}': ct_ap_5,
+                       f'val recall@10 cell types {ct_name}': ct_recall_10, 
+                       f'val precision@10 cell types {ct_name}': ct_precision_10,
+                       f'val AP@10 cell types {ct_name}': ct_ap_10,
+                       f'val positive proportion {ct_name}': positive_proportion_val})
             
     for ct in np.unique(best_train_cts): 
         hits = np.where(best_train_cts == ct)[0]
