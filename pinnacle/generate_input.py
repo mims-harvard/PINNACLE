@@ -30,11 +30,13 @@ def read_ppi(ppi_dir):
     ppi_val = dict()
     ppi_test = dict()
 
-    for f in glob.glob(ppi_dir + "*edgelist.txt"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
+    #for f in glob.glob(ppi_dir + "*edgelist.txt"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
+    for f in glob.glob(ppi_dir + "*.txt"): # Expected format of filename: <PPI_DIR>/<CONTEXT>.<suffix>
 
         # Parse name of context
         context = f.split(ppi_dir)[1].split(".")[0].replace("_edgelist", "")
-        context = "cluster:" + context.replace("_", " ")
+        #context = "cluster:" + context.replace("_", " ")
+        context = context.replace("_", " ")
 
         # Read edgelist
         ppi = nx.read_edgelist(f)
