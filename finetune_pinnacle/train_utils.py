@@ -77,7 +77,7 @@ def training_and_validation(X_train, X_val, y_train, y_val, cts_train, cts_val, 
     loss_func = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optim = torch.optim.Adam(model.parameters(), lr=hparams[lr], weight_decay=hparams[wd])
     
-    wandb.watch(model, log_freq=20)
+    if wandb.run is not None: wandb.watch(model, log_freq=20)
     for i in range(num_epoch):
         print(f"Epoch {i+1}\n---------------")
         _, _, train_y, train_preds, train_cts, train_groups = train_epoch(model, train_loader, optim, loss_func, batch_size, wandb, device)
