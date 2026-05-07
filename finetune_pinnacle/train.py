@@ -24,7 +24,7 @@ def run_finetune(embed, celltype_dict, celltype_protein_dict, positive_proteins,
     
     positive_proportion_train = {}
     positive_proportion_train['celltype'] = sum(y_train) / len(y_train)
-    wandb.log({f'train positive proportion celltype': positive_proportion_train['celltype'], 'best_val_auprc': best_val_auprc})
+    if wandb is not None: wandb.log({f'train positive proportion celltype': positive_proportion_train['celltype'], 'best_val_auprc': best_val_auprc})
 
     # Evaluation for each cell celltype separately
     positive_proportion_test, auroc_scores, ap_scores = finetune_evaluate(celltype_protein_dict, clf, X_test, y_test, groups_test, models_output_dir, embed_name, train_ranks, val_ranks)
@@ -64,17 +64,18 @@ def finetune_evaluate(celltype_protein_dict, clf, X_test, y_test, groups_test, m
         
         # Evaluation on test set
         auroc_scores[celltype], ap_scores[celltype], test_recall_5, test_precision_5, test_ap_5, test_recall_10, test_precision_10, test_ap_10, sorted_y_test, sorted_preds_test, sorted_groups_test, positive_proportion_test[celltype] = get_metrics(y_test, y_test_pred, groups_test, celltype)
-        wandb.log({f'test AUPRC {celltype}': ap_scores[celltype], 
-                   f'test AUROC {celltype}': auroc_scores[celltype],
-                   f'test positive proportion {celltype}': positive_proportion_test[celltype],
-                   f'test positive number {celltype}': sum(y_test[celltype]),
-                   f'test total number {celltype}': len(y_test[celltype]),
-                   f'test recall@5 {celltype}': test_recall_5,
-                   f'test precision@5 {celltype}': test_precision_5,
-                   f'test AP@5 {celltype}': test_ap_5,
-                   f'test recall@10 {celltype}': test_recall_10,
-                   f'test precision@10 {celltype}': test_precision_10,
-                   f'test AP@10 {celltype}': test_ap_10})
+        if wandb is not None: 
+            wandb.log({f'test AUPRC {celltype}': ap_scores[celltype], 
+                       f'test AUROC {celltype}': auroc_scores[celltype],
+                       f'test positive proportion {celltype}': positive_proportion_test[celltype],
+                       f'test positive number {celltype}': sum(y_test[celltype]),
+                       f'test total number {celltype}': len(y_test[celltype]),
+                       f'test recall@5 {celltype}': test_recall_5,
+                       f'test precision@5 {celltype}': test_precision_5,
+                       f'test AP@5 {celltype}': test_ap_5,
+                       f'test recall@10 {celltype}': test_recall_10,
+                       f'test precision@10 {celltype}': test_precision_10,
+                       f'test AP@10 {celltype}': test_ap_10})
         temp = pd.DataFrame({'y': sorted_y_test, 'preds': sorted_preds_test, 'name': [prot for prot in sorted_groups_test]})
         temp['type'] = ['test'] * len(temp)
         test_ranks[celltype] = temp
@@ -119,7 +120,8 @@ if __name__ == '__main__':
     hparams = get_hparams(args)
     print(hparams)
 
-    wandb.init(config = hparams, project = "finetune", entity = "pinnacle")
-    hparams = wandb.config
+    if wandb is not None: 
+        wandb.init(config = hparams, project = "finetune", entity = "pinnacle")
+        hparams = wandb.config
 
     main(args, hparams, wandb)
