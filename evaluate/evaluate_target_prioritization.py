@@ -17,6 +17,16 @@ sys.path.insert(0, '..') # add data_config to path
 from data_config import DATA_DIR, TS_TISSUE_DATA_DIR, METAGRAPH_DIR
 
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("true", "t", "1", "yes", "y"):
+        return True
+    if v.lower() in ("false", "f", "0", "no", "n"):
+        return False
+    raise argparse.ArgumentTypeError("Boolean value expected, got %r." % v)
+
+
 def read_model_data(model_outputs_dir, disease, test_only):
     
     # Read model outputs
@@ -133,7 +143,7 @@ def main():
     parser.add_argument('--benchmark_inventory_f', type=str, default="")
     parser.add_argument('--disease', type=str)
     parser.add_argument('--model_outputs_dir', type=str)
-    parser.add_argument('--test_only', type=bool)
+    parser.add_argument('--test_only', type=str2bool)
     parser.add_argument('--drug_targets', type=str, default="")
     args = parser.parse_args()
 
