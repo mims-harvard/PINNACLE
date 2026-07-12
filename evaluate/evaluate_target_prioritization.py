@@ -106,7 +106,7 @@ def percentile_per_drug_target(selected_targets, model_outputs_df, evidence, out
     
     for p in selected_targets:
         p_percs = model_outputs_df[model_outputs_df["name"] == p]
-        if len(p_percs) == 0: return
+        if len(p_percs) == 0: continue
 
         top_bottom_ranks = [p_percs.sort_values(by = "percentile", ascending = False).head(5)] + [p_percs.sort_values(by = "percentile", ascending = False).tail(5)]
         top_bottom_ranks = pd.concat(top_bottom_ranks)
