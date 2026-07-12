@@ -1,6 +1,16 @@
 import argparse
 
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("true", "t", "1", "yes", "y"):
+        return True
+    if v.lower() in ("false", "f", "0", "no", "n"):
+        return False
+    raise argparse.ArgumentTypeError("Boolean value expected, got %r." % v)
+
+
 def get_args():
     parser = argparse.ArgumentParser(description="Learning node embeddings.")
 
@@ -31,7 +41,7 @@ def get_args():
     
     # Save
     parser.add_argument('--save_prefix', type=str, default='../data/pinnacle_embeds/pinnacle', help='Prefix of all saved files')
-    parser.add_argument('--plot', type=bool, default=False, help='Boolean to fit and plot a UMAP')
+    parser.add_argument('--plot', type=str2bool, default=False, help='Boolean to fit and plot a UMAP')
     
     args = parser.parse_args()
     return args
