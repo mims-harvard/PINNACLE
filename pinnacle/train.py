@@ -120,8 +120,8 @@ def train(epoch, model, optimizer, center_loss):
                      "train_loss = {:.5f}".format(loss), 
                      "val_roc = {:.5f}".format(roc_score), 
                      "val_ap = {:.5f}".format(ap_score), 
-                     "val_f1 = {:.5f}".format(val_acc), 
-                     "val_acc = {:.5f}".format(val_f1)])
+                     "val_acc = {:.5f}".format(val_acc),
+                     "val_f1 = {:.5f}".format(val_f1)])
     print(res)
     log_f.write(res + "\n")
     wandb.log({"total_loss": loss, "total_val_roc": roc_score, "total_val_ap": ap_score, "total_val_acc": val_acc, "total_val_f1": val_f1, "total_val_calinski_harabasz_score": calinski_harabasz, "total_val_davies_bouldin_score": davies_bouldin})
